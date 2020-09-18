@@ -3,7 +3,7 @@
     <div class="logo">
       <nuxt-link :to="{ name: 'index' }">Scripted Pixels</nuxt-link>
 
-      <span class="subheader">Design, Develop, Delivery</span>
+      <span class="subheader">Design, Develop, Deliver</span>
     </div>
   </nav>
 </template>
