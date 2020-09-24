@@ -16,12 +16,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo,
-  },
   computed: {
     posts() {
       return this.$store.state.posts.all
