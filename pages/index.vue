@@ -1,17 +1,16 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <div class="links">
-        <nuxt-link
-          v-for="post in posts"
-          :key="post.id"
-          :to="{ name: 'posts-id', params: { id: post.id } }"
-          class="button--grey"
-        >
-          {{ post.title }}
-        </nuxt-link>
-      </div>
+    <h1>Scripted Pixels</h1>
+
+    <div class="links">
+      <h3>Latest posts from the blog</h3>
+      <ul>
+        <li v-for="post in posts" :key="post.id">
+          <nuxt-link :to="`/blog/${post.id}`">
+            {{ post.title }}
+          </nuxt-link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
