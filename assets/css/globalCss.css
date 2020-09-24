@@ -23,6 +23,7 @@ html {
 }
 body {
   background: var(--navy);
+  padding: 0 10px;
   color: white;
 }
 
