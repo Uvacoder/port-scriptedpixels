@@ -83,3 +83,14 @@ h4 {
   color: var(--yellow);
   font-weight: lighter;
 }
+
+.posts-list {
+  list-style-type: decimal;
+  padding: 0 0 0 30px;
+  margin: 0;
+}
+
+.posts-list-link {
+  margin: 20px 0 0;
+  padding: 0;
+}

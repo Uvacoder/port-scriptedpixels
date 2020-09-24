@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h1>Blog: A list of the most recent blog posts, in bactches of 10</h1>
+    <h1>Blog: A list of the most recent blog posts, in pages of 10</h1>
     <div class="links">
       <h3>Latest posts from the blog</h3>
-      <ul>
-        <li v-for="post in posts" :key="post.id">
+      <ul class="posts-list">
+        <li v-for="post in posts" :key="post.id" class="posts-list-link">
           <nuxt-link :to="`/blog/${post.id}`">
             {{ post.title }}
           </nuxt-link>
@@ -17,7 +17,7 @@
 <script>
 export default {
   asyncData({ $axios }) {
-    return $axios.get('http://jsonplaceholder.typicode.com/posts?_limit=20').then((response) => {
+    return $axios.get('http://jsonplaceholder.typicode.com/posts?_limit=10').then((response) => {
       return { posts: response.data }
     })
   },

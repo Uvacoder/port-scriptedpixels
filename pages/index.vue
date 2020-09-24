@@ -4,8 +4,8 @@
 
     <div class="links">
       <h3>Latest posts from the blog</h3>
-      <ul>
-        <li v-for="post in posts" :key="post.id">
+      <ul class="posts-list">
+        <li v-for="post in posts" :key="post.id" class="posts-list-link">
           <nuxt-link :to="`/blog/${post.id}`">
             {{ post.title }}
           </nuxt-link>
@@ -20,7 +20,7 @@
 export default {
   components: {},
   asyncData({ $axios }) {
-    return $axios.get('http://jsonplaceholder.typicode.com/posts?_limit=20').then((response) => {
+    return $axios.get('http://jsonplaceholder.typicode.com/posts?_limit=5').then((response) => {
       return { posts: response.data }
     })
   },
