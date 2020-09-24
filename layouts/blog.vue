@@ -39,7 +39,7 @@ export default {}
 }
 .blog-content {
   margin: 0 20px 0 0;
-  flex: 1 0 420px;
+  flex: 1 1 420px;
 }
 aside {
   background-color: rgba(255, 255, 255, 0.1);
