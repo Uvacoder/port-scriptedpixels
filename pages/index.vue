@@ -16,6 +16,7 @@
 </template>
 
 <script>
+/* eslint-disable no-alert, no-console */
 export default {
   computed: {
     posts() {
@@ -28,6 +29,7 @@ export default {
     }
   },
 }
+/* eslint-disable no-alert, no-console */
 </script>
 
 <style>
