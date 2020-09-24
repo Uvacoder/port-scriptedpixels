@@ -1,10 +1,9 @@
 <template>
-  <nav class="nav">
-    <div class="logo">
-      <nuxt-link :to="{ name: 'index' }">Scripted Pixels</nuxt-link>
-
-      <span class="subheader">Design, Develop, Deliver</span>
-    </div>
+  <nav class="container nav">
+    <nuxt-link :to="{ name: 'index' }">Home</nuxt-link>
+    <nuxt-link :to="{ name: 'about' }">About</nuxt-link>
+    <nuxt-link :to="{ name: 'work' }">Work</nuxt-link>
+    <nuxt-link :to="{ name: 'blog' }">Blog</nuxt-link>
   </nav>
 </template>
 
@@ -14,34 +13,22 @@ export default {}
 
 <style scoped>
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 70px;
-  font-weight: lighter;
-  letter-spacing: 0.5px;
+  text-align: right;
+  padding: 20px;
 }
-.nav .logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+nav a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  display: inline-block;
+  padding: 0 0 10px 0;
+  margin: 0 10px;
 }
-.nav .logo .subheader {
-  opacity: 0.7;
-  font-size: 0.9rem;
-  color: white;
+
+nav a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.nav .nav-content {
-  font-size: 1rem;
-}
-.nav-content ul {
-  display: flex;
-  list-style: none;
-}
-.nav-content ul li {
-  padding: 2px 10px;
-}
-.nav-content ul li:not(:first-of-type) {
-  border-left: 1px solid rgb(255, 255, 255, 0.2);
+
+.nuxt-link-exact-active {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 </style>
