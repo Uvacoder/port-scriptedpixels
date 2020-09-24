@@ -28,7 +28,8 @@ nav a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.nuxt-link-exact-active {
+.nuxt-link-exact-active,
+.nuxt-link-active {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 </style>
