@@ -18,11 +18,17 @@
 <script>
 /* eslint-disable no-alert, no-console */
 export default {
-  computed: {
-    posts() {
-      return this.$store.state.posts.all
-    },
+  components: {},
+  asyncData({ $axios }) {
+    return $axios.get('http://jsonplaceholder.typicode.com/posts').then((response) => {
+      return { posts: response.data }
+    })
   },
+  // computed: {
+  //   posts() {
+  //     return this.$store.state.posts.all
+  //   },
+  // },
   head() {
     return {
       title: 'Scripted Pixels | Home Page',
