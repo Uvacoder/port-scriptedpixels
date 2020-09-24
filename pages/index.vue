@@ -20,7 +20,7 @@
 export default {
   components: {},
   asyncData({ $axios }) {
-    return $axios.get('http://jsonplaceholder.typicode.com/posts').then((response) => {
+    return $axios.get('http://jsonplaceholder.typicode.com/posts?_limit=20').then((response) => {
       return { posts: response.data }
     })
   },
