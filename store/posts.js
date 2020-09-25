@@ -1,5 +1,5 @@
 export const state = () => ({
-  all: [
+  list: [
     {
       id: 'balut',
       title: 'What is Balut?',
