@@ -1,9 +1,8 @@
 <template>
   <div>
     <TheNavbar />
-
     <div class="container">
-      <h1>The blog layout:</h1>
+      <h1>Blog: A list of the most recent blog posts, in pages of 10</h1>
 
       <div class="flex-layout">
         <div class="blog-content">
@@ -11,14 +10,8 @@
         </div>
 
         <aside>
-          <!-- <h3>Related posts:</h3>
-          <ul>
-            <li v-for="related in relatedPosts" :key="related.id">
-              <nuxt-link :to="'/blog/' + related.id">
-                {{ related.title }}
-              </nuxt-link>
-            </li>
-          </ul> -->
+          <h3>Related posts:</h3>
+          <RelatedPosts />
         </aside>
       </div>
     </div>
