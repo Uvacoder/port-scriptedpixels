@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Blog: A list of the most recent blog posts, in pages of 10</h1>
     <div class="links">
       <h3>Latest posts from the blog</h3>
       <ul class="posts-list">
@@ -16,11 +15,12 @@
 
 <script>
 export default {
-  asyncData({ $axios }) {
-    return $axios.get('http://jsonplaceholder.typicode.com/posts?_limit=10').then((response) => {
-      return { posts: response.data }
-    })
+  computed: {
+    posts() {
+      return this.$store.state.posts.list // goes to store/posts.js and returns the state list array
+    },
   },
+  layout: 'blog',
 }
 </script>
 
