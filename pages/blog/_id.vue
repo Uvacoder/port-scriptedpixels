@@ -7,7 +7,6 @@
     <p>
       <small>User: {{ post.userId }}</small>
     </p>
-
     <p>{{ post.body }}</p>
   </article>
 </template>
