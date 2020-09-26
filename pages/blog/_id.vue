@@ -12,12 +12,15 @@
 </template>
 
 <script>
-/* eslint-disable no-alert, no-console */
 export default {
-  asyncData({ $axios, route }) {
-    return $axios.get(`http://jsonplaceholder.typicode.com/posts/${route.params.id}`).then((response) => {
-      return { post: response.data }
-    })
+  async fetch({ store, route }) {
+    await store.dispatch('GET_POST', route.params.id)
+  },
+  computed: {
+    // goes to store/index.js and returns the post from state
+    post() {
+      return this.$store.state.post
+    },
   },
   layout: 'blog',
   head() {
@@ -30,7 +33,6 @@ export default {
     }
   },
 }
-/* eslint-disable no-alert, no-console */
 </script>
 
 <style scoped></style>
