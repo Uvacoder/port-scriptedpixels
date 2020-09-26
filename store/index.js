@@ -16,11 +16,11 @@ export const mutations = {
 
 export const actions = {
   async GET_POSTS({ commit }) {
-    const { data } = await axios.get('http://jsonplaceholder.typicode.com/posts?_limit=10')
+    const { data } = await axios.get('https://jsonplaceholder.typicode.com/posts?_limit=10')
     commit('SET_POSTS', data)
   },
   async GET_POST({ commit }, id) {
-    const { data } = await axios.get(`http://jsonplaceholder.typicode.com/posts/${id}`)
+    const { data } = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
     commit('SET_POST', data)
   },
 }
