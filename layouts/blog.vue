@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheNavbar />
+    <Navigation />
     <div class="container">
       <h1>Blog: A list of the most recent blog posts, in pages of 10</h1>
 
@@ -19,7 +19,15 @@
 </template>
 
 <script>
-export default {}
+import Navigation from '@/components/TheNavbar'
+import RelatedPosts from '@/components/RelatedPosts'
+
+export default {
+  components: {
+    Navigation,
+    RelatedPosts,
+  },
+}
 </script>
 
 <style scoped>

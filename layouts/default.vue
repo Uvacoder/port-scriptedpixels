@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheNavbar />
+    <Navigation />
 
     <div class="container">
       <Nuxt />
@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import TheNavbar from '@/components/TheNavbar'
+import Navigation from '@/components/TheNavbar'
 
 export default {
   components: {
-    TheNavbar,
+    Navigation,
   },
 }
 </script>
