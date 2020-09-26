@@ -15,9 +15,13 @@
 
 <script>
 export default {
+  async fetch({ store }) {
+    await store.dispatch('GET_POSTS')
+  },
   computed: {
+    // goes to store/index.js and returns the posts from state
     posts() {
-      return this.$store.state.posts.list // goes to store/posts.js and returns the state list array
+      return this.$store.state.posts
     },
   },
   layout: 'blog',
