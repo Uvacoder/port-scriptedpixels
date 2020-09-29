@@ -1,37 +1,27 @@
 <template>
   <article class="container">
-    <h1 class="title">{{ post.title }}</h1>
+    <h1 class="title">{{ currentPost.title }}</h1>
     <p>
-      <small>ID: {{ post.id }}</small>
+      <small>ID: {{ currentPost.id }}</small>
     </p>
     <p>
-      <small>User: {{ post.userId }}</small>
+      <small>User: {{ currentPost.userId }}</small>
     </p>
-    <p>{{ post.body }}</p>
+    <p>{{ currentPost.body }}</p>
   </article>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
-  async fetch({ store, route }) {
-    await store.dispatch('GET_POST', route.params.id)
+  async fetch({ store, params }) {
+    await store.dispatch('GET_POST', params.id)
   },
   computed: {
-    // goes to store/index.js and returns the post from state
-    post() {
-      return this.$store.state.post
-    },
+    ...mapState(['currentPost']),
   },
   layout: 'blog',
-  head() {
-    return {
-      title: `Scripted Pixels | ${this.post.title}`,
-      meta: [
-        { name: 'twitter:title', content: this.post.title },
-        { name: 'twitter:description', content: this.post.content },
-      ],
-    }
-  },
 }
 </script>
 
