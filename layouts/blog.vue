@@ -43,7 +43,6 @@ export default {
   flex: 1 1 420px;
 }
 aside {
-  background-color: rgba(255, 255, 255, 0.1);
   min-height: 100px;
   min-width: 300px;
   flex: 1 1 300px;
