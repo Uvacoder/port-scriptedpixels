@@ -3,7 +3,7 @@
     <h1>Scripted Pixels</h1>
 
     <div class="links">
-      <h3>Latest posts from the blog</h3>
+      <h3>Latest 10 posts from the blog</h3>
       <ul class="posts-list">
         <li v-for="post in posts" :key="post.id" class="posts-list-link">
           <nuxt-link :to="`/blog/${post.id}`">
@@ -16,26 +16,21 @@
 </template>
 
 <script>
-/* eslint-disable no-alert, no-console */
+import { mapState } from 'vuex'
+
 export default {
-  components: {},
-  asyncData({ $axios }) {
-    return $axios.get('http://jsonplaceholder.typicode.com/posts?_limit=5').then((response) => {
-      return { posts: response.data }
-    })
+  async fetch({ store }) {
+    await store.dispatch('GET_POSTS')
   },
-  // computed: {
-  //   posts() {
-  //     return this.$store.state.posts.all
-  //   },
-  // },
+  computed: {
+    ...mapState(['posts']),
+  },
   head() {
     return {
       title: 'Scripted Pixels | Home Page',
     }
   },
 }
-/* eslint-disable no-alert, no-console */
 </script>
 
 <style>
