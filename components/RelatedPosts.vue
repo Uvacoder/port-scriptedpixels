@@ -1,18 +1,21 @@
 <template>
   <ul>
-    <li>Related Posts to go here</li>
-    <!-- <li v-for="related in relatedPosts" :key="related.id">
-      <nuxt-link :to="'/blog/' + related.id">
-        {{ related.title }}
+    <li v-for="post in posts" :key="post.id">
+      <nuxt-link :to="'/blog/' + post.id">
+        {{ post.title }}
       </nuxt-link>
-    </li> -->
+    </li>
   </ul>
 </template>
 
 <script>
-/* eslint-disable no-alert, no-console */
-export default {}
-/* eslint-disable no-alert, no-console */
+import { mapState } from 'vuex'
+
+export default {
+  computed: {
+    ...mapState(['posts']),
+  },
+}
 </script>
 
 <style scoped></style>
