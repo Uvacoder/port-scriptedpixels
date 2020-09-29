@@ -14,15 +14,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   async fetch({ store }) {
     await store.dispatch('GET_POSTS')
   },
   computed: {
-    // goes to store/index.js and returns the posts from state
-    posts() {
-      return this.$store.state.posts
-    },
+    ...mapState(['posts']),
   },
   layout: 'blog',
 }
