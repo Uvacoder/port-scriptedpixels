@@ -23,7 +23,6 @@ export default {
   computed: {
     ...mapState(['posts']),
   },
-  layout: 'blog',
 }
 </script>
 
