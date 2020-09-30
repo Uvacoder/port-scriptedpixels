@@ -16,7 +16,7 @@ import { mapState } from 'vuex'
 
 export default {
   async fetch({ store, params }) {
-    await store.dispatch('GET_POST', params.id)
+    await store.dispatch('GET_CURRENT_POST', params.id)
   },
   computed: {
     ...mapState(['currentPost']),

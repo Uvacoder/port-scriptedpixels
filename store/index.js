@@ -19,8 +19,16 @@ export const actions = {
     const { data } = await axios.get('https://jsonplaceholder.typicode.com/posts?_limit=10')
     commit('SET_POSTS', data)
   },
-  async GET_POST({ commit }, postId) {
-    const { data } = await axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}`)
-    commit('SET_CURRENT_POST', data)
+  async GET_CURRENT_POST({ commit }, postId) {
+    // check the posts to see if this ID exists
+    const postToFetch = this.state.posts.find((post) => post.id === postId)
+
+    if (postToFetch) {
+      commit('SET_CURREN_POST', postToFetch)
+    } else {
+      // if not, make the request to get the data
+      const { data } = await axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+      commit('SET_CURRENT_POST', data)
+    }
   },
 }
