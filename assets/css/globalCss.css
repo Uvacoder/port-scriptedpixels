@@ -82,6 +82,11 @@ h3,
 h4 {
   color: var(--yellow);
   font-weight: lighter;
+  margin-bottom: 20px;;
+}
+
+p {
+  margin: 0 0 20px;
 }
 
 .posts-list {
@@ -93,4 +98,8 @@ h4 {
 .posts-list-link {
   margin: 20px 0 0;
   padding: 0;
+}
+
+.links {
+  margin: 30px auto 0;
 }
