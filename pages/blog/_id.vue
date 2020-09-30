@@ -37,6 +37,7 @@ export default {
     },
   },
   layout: 'blog',
+  transition: 'test',
 }
 </script>
 
