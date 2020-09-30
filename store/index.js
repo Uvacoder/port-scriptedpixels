@@ -21,7 +21,7 @@ export const actions = {
   },
   async GET_CURRENT_POST({ commit }, postId) {
     // check the posts to see if this ID exists
-    const postToFetch = this.state.posts.find((post) => post.id === postId)
+    const postToFetch = await this.state.posts.find((post) => post.id === postId)
 
     if (postToFetch) {
       commit('SET_CURRENT_POST', postToFetch)
