@@ -24,7 +24,7 @@ export const actions = {
     const postToFetch = this.state.posts.find((post) => post.id === postId)
 
     if (postToFetch) {
-      commit('SET_CURREN_POST', postToFetch)
+      commit('SET_CURRENT_POST', postToFetch)
     } else {
       // if not, make the request to get the data
       const { data } = await axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}`)
