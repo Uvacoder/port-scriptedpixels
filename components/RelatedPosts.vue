@@ -1,6 +1,6 @@
 <template>
-  <ul>
-    <li v-for="post in posts" :key="post.id">
+  <ul class="posts-list">
+    <li v-for="post in posts" :key="post.id" class="posts-list-link">
       <nuxt-link :to="'/blog/' + post.id">
         {{ post.title }}
       </nuxt-link>
@@ -9,11 +9,12 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-
 export default {
-  computed: {
-    ...mapState(['posts']),
+  props: {
+    posts: {
+      type: Array,
+      default() {},
+    },
   },
 }
 </script>
