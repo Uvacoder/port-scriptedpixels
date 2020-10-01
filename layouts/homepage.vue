@@ -11,9 +11,7 @@
         </div>
       </div>
     </section>
-    <section class="hero is-fullheight">
-      <Nuxt />
-    </section>
+    <Nuxt />
     <TheFooter />
   </div>
 </template>
