@@ -1,16 +1,18 @@
 <template>
-  <div>
-    <div class="links">
-      <h3>Latest posts from the blog</h3>
-      <ul class="posts-list">
-        <li v-for="post in posts" :key="post.id" class="posts-list-link">
-          <nuxt-link :to="`/blog/${post.id}`">
-            {{ post.title }}
-          </nuxt-link>
-        </li>
-      </ul>
+  <section class="section grid-content">
+    <div class="container">
+      <h1 class="title">Latest posts from the blog</h1>
+      <div class="links">
+        <ul class="posts-list">
+          <li v-for="post in posts" :key="post.id" class="posts-list-link">
+            <nuxt-link :to="`/blog/${post.id}`">
+              {{ post.title }}
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

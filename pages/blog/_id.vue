@@ -1,21 +1,25 @@
 <template>
-  <div class="flex-layout">
-    <article class="container blog-content">
-      <h1 class="title">{{ currentPost.title }}</h1>
-      <p>
-        <small>ID: {{ currentPost.id }}</small>
-      </p>
-      <p>
-        <small>User: {{ currentPost.userId }}</small>
-      </p>
-      <p>{{ currentPost.body }}</p>
-    </article>
+  <section class="section grid-content">
+    <div class="container">
+      <div class="flex-layout">
+        <article class="container blog-content">
+          <h1 class="title">{{ currentPost.title }}</h1>
+          <p>
+            <small>ID: {{ currentPost.id }}</small>
+          </p>
+          <p>
+            <small>User: {{ currentPost.userId }}</small>
+          </p>
+          <p>{{ currentPost.body }}</p>
+        </article>
 
-    <aside>
-      <h3>Related posts:</h3>
-      <RelatedPosts :posts="relatedPosts" />
-    </aside>
-  </div>
+        <aside>
+          <h3>Related posts:</h3>
+          <RelatedPosts :posts="relatedPosts" />
+        </aside>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
