@@ -2,7 +2,7 @@
   <div>
     <h1>About: about page</h1>
     <h2>Netlify forms test</h2>
-    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/pages/success">
       <input type="hidden" name="form-name" value="ask-question" />
       <p>
         <label for="name">Your Name:</label>
