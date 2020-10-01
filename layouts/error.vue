@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="grid-container">
     <div v-if="error.statusCode === 404">
       <h1>Page not found</h1>
       <p>Test</p>
