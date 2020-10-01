@@ -19,7 +19,8 @@
         </select>
       </p>
       <p>
-        <label>Message: <textarea name="message"></textarea></label>
+        <label for="message">Message:</label>
+        <textarea name="message"></textarea>
       </p>
       <p>
         <button type="submit">Send</button>
