@@ -1,8 +1,5 @@
 <template>
-  <div class="container">
-    <h1>Scripted Pixels</h1>
-    <p>New portfolio home page with some lovely info...</p>
-  </div>
+  <p>Test</p>
 </template>
 
 <script>
@@ -12,6 +9,7 @@ export default {
       title: 'Scripted Pixels | Home Page',
     }
   },
+  layout: 'homepage',
 }
 </script>
 
