@@ -6,6 +6,10 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
+  router: {
+    linkActiveClass: 'is-active',
+  },
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'Scripted Pixels Ltd',
@@ -18,7 +22,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  // css: ['~/assets/scss/tailwind.scss'],
+  css: ['~/assets/scss/scriptedpixels.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: ['~/plugins/axios'],
@@ -30,17 +34,31 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     // '@nuxtjs/eslint-module',
+    '@nuxtjs/style-resources',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/bulma',
+    'nuxt-purgecss',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    postcss: {
+      preset: {
+        features: {
+          customProperties: false,
+        },
+      },
+    },
+  },
+  purgeCSS: {
+    mode: 'postcss',
+  },
 }
