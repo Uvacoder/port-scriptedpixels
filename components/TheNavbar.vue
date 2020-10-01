@@ -1,14 +1,48 @@
 <template>
-  <nav class="container nav">
-    <nuxt-link exact :to="{ name: 'index' }">Home</nuxt-link>
-    <nuxt-link :to="{ name: 'about' }">About</nuxt-link>
-    <nuxt-link :to="{ name: 'work' }">Work</nuxt-link>
-    <nuxt-link :to="{ name: 'blog' }">Blog</nuxt-link>
+  <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-left" href="/">
+        <img src="~/assets/images/scriptedPixelsLogo--initials.svg" width="75" height="85" />
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+        @click="toggleClass()"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu" :class="[isActive ? 'is-active' : '']">
+      <div class="navbar-end">
+        <nuxt-link class="navbar-item" exact :to="{ name: 'index' }">Home</nuxt-link>
+        <nuxt-link class="navbar-item" :to="{ name: 'about' }">About</nuxt-link>
+        <nuxt-link class="navbar-item" :to="{ name: 'work' }">Work</nuxt-link>
+        <nuxt-link class="navbar-item" :to="{ name: 'blog' }">Blog</nuxt-link>
+      </div>
+    </div>
   </nav>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      isActive: false,
+    }
+  },
+  methods: {
+    toggleClass() {
+      this.isActive = !this.isActive
+    },
+  },
+}
 </script>
 
 <style scoped></style>
