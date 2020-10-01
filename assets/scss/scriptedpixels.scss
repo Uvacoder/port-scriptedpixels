@@ -36,7 +36,7 @@ body {
 }
 
 .grid-container {
-  grid-template-rows: 52px 1fr auto;
+  grid-template-rows: 52px 1fr auto; // 52px is height of the header
   grid-template-areas:
   'header'
   'content'

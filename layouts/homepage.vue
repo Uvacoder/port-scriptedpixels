@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section class="hero is-fullheight-with-navbar">
-      <Navigation />
+    <Navigation />
+    <section class="hero is-fullheight">
       <div class="hero-body">
         <div class="container">
           <div class="container has-text-centered">
@@ -11,18 +11,21 @@
         </div>
       </div>
     </section>
-    <section class="hero">
+    <section class="hero is-fullheight">
       <Nuxt />
     </section>
+    <TheFooter />
   </div>
 </template>
 
 <script>
 import Navigation from '@/components/TheNavbar'
+import TheFooter from '@/components/TheFooter'
 
 export default {
   components: {
     Navigation,
+    TheFooter,
   },
 }
 </script>
