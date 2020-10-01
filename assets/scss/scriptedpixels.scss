@@ -1,10 +1,9 @@
-:root {
-  --navy: #112f41;
-  --teal: #068587;
-  --teal-light: #4fb99f;
-  --yellow: #f2b134;
-  --main-bg-color: coral;
-}
+@import "~bulma/sass/utilities/_all.sass";
+
+$subtitle-family: 'code-light';
+$subtitle-weight: 700;
+
+@import "~bulma/sass/elements/title.sass";
 
 .page-enter-active,
 .page-leave-active,
@@ -19,24 +18,41 @@
   opacity: 0;
 }
 
-
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
 }
+
+html,
 body {
-  background: var(--navy);
-  padding: 0 10px;
-  color: white;
+  height: 100%;
+}
+
+.grid-container {
+  grid-template-rows: 52px 1fr auto;
+  grid-template-areas:
+  'header'
+  'content'
+  'footer';
+  display: grid;
+  height: 100vh;
+}
+
+.grid-content {
+  grid-area: content;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.subtitle {
+  letter-spacing: 3px;
 }
