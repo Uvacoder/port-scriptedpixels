@@ -26,7 +26,7 @@ export default {
   components: {
     RelatedPosts,
   },
-  async fetch({ store, params }) {
+  async asyncData({ store, params }) {
     await store.dispatch('GET_POSTS', params.id)
     await store.dispatch('GET_CURRENT_POST', params.id)
   },

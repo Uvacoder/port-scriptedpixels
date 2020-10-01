@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  async fetch({ store }) {
+  async asyncData({ store }) {
     await store.dispatch('work/GET_PROJECTS')
   },
   computed: {

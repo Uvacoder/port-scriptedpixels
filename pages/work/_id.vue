@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  async fetch({ store, params }) {
+  async asyncData({ store, params }) {
     await store.dispatch('work/GET_PROJECTS')
     await store.dispatch('work/GET_CURRENT_PROJECT', params.id)
   },
