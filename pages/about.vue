@@ -4,19 +4,19 @@
     <h2>Netlify forms test</h2>
     <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
       <p>
-        <label>Your Name: <input type="text" name="name" /></label>
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" />
       </p>
       <p>
-        <label>Your Email: <input type="email" name="email" /></label>
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" />
       </p>
       <p>
-        <label
-          >Your Role:
-          <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select></label
-        >
+        <label for="role[]">Your Role:</label>
+        <select name="role[]" multiple>
+          <option value="leader">Leader</option>
+          <option value="follower">Follower</option>
+        </select>
       </p>
       <p>
         <label>Message: <textarea name="message"></textarea></label>
