@@ -3,7 +3,7 @@
     <h1>About: about page</h1>
     <h2>Netlify forms test</h2>
     <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success">
-      <input type="hidden" name="form-name" value="ask-question" />
+      <input type="hidden" name="contact" value="ask-question" />
       <p>
         <label for="name">Your Name:</label>
         <input type="text" name="name" />
