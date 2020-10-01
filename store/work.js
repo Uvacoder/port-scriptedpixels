@@ -19,7 +19,6 @@ export const actions = {
     commit('SET_PROJECTS', data)
   },
   async GET_CURRENT_PROJECT({ commit }, projectId) {
-    console.log(projectId)
     const projectToFetch = await this.state.work.projects.find((project) => project.id === projectId)
 
     if (projectToFetch) {
