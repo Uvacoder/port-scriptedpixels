@@ -1,9 +1,5 @@
 export default {
-  server: {
-    port: 3000,
-    host: '127.0.0.1',
-    timing: false,
-  },
+  server: {},
 
   loading: { color: '#fff' },
 
@@ -22,7 +18,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['@/assets/css/globalCss.css'],
+  // css: ['~/assets/scss/tailwind.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: ['~/plugins/axios'],

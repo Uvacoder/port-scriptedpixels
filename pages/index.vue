@@ -15,8 +15,4 @@ export default {
 }
 </script>
 
-<style>
-.links {
-  margin: 30px auto 0;
-}
-</style>
+<style></style>

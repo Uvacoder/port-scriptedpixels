@@ -41,23 +41,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.flex-layout {
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 30px 0 0;
-  flex-wrap: wrap;
-  display: flex;
-}
-
-.blog-content {
-  margin: 0 20px 0 0;
-  flex: 1 1 420px;
-}
-
-aside {
-  min-height: 100px;
-  min-width: 300px;
-  flex: 1 1 300px;
-}
-</style>
+<style scoped></style>
