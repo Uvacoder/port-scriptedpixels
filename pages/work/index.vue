@@ -12,8 +12,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-
 export default {
   async fetch({ store }) {
     await store.dispatch('work/GET_PROJECTS')
