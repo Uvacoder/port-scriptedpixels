@@ -2,7 +2,7 @@
   <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item has-text-left" href="/">
-        <img src="~/assets/images/scriptedPixelsLogo--initials.svg" width="75" height="85" />
+        <img src="~/assets/images/scriptedPixelsLogo.svg" width="150" height="85" />
       </a>
 
       <a
