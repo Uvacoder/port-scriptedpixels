@@ -5,7 +5,7 @@
       <div class="hero-body">
         <div class="container">
           <div class="container has-text-centered">
-            <img src="~/assets/images/scriptedPixelsLogo.png" alt="Scripted Pixels Logo" width="900" />
+            <img src="~/assets/images/scriptedPixelsLogo.svg" alt="Scripted Pixels Logo" width="700" />
             <h2 class="subtitle">Design, Develop, Deliver</h2>
           </div>
         </div>
