@@ -1,6 +1,6 @@
 @import "~bulma/sass/utilities/_all.sass";
 
-$subtitle-family: 'code-light';
+$subtitle-family: 'CodeLightRegular';
 $subtitle-weight: 700;
 
 @import "~bulma/sass/elements/title.sass";
@@ -34,6 +34,10 @@ html {
 html,
 body {
   height: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: $subtitle-family;
 }
 
 .grid-container {
