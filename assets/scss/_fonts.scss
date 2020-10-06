@@ -47,3 +47,26 @@ h1, h2, h3, h4 {
 	-webkit-text-stroke: 0.40px;
 	letter-spacing: 3px;
 }
+
+.title {
+	padding: 0 0 10px;
+	margin: 0 0 20px;
+
+	// adds a transaprent bottom border
+	&.title--with-bottom-border {
+		border-bottom: 2px solid transparent;
+
+		// adds color to border
+		&.title--border-danger {
+			border-color: map-get($brandColours, 'danger');
+		}
+
+		&.title--border-link {
+			border-color: map-get($brandColours, 'link');
+		}
+
+		&.title--border-success {
+			border-color: map-get($brandColours, 'success');
+		}
+	}
+}

@@ -23,8 +23,6 @@ export default {
   async asyncData({ $content, params }) {
     const blogPosts = await $content('blog', params.slug).only(['title', 'description']).sortBy('date', 'asc').fetch()
 
-    console.log(blogPosts)
-
     return {
       blogPosts,
     }
