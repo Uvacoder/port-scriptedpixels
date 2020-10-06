@@ -60,11 +60,10 @@ body {
 }
 
 .grid-container {
-  grid-template-rows: 52px 1fr auto; // 52px is height of the header
+  grid-template-rows: 1fr 52px; // 52px is height of the header
   grid-template-areas:
-  'header'
   'content'
-  'footer';
+  'navigation';
   display: grid;
   height: 100vh;
 }
@@ -73,10 +72,6 @@ body {
   grid-area: content;
 }
 
-footer {
-  grid-area: footer;
-}
-
-.subtitle {
-  letter-spacing: 3px;
+.nav {
+  grid-area: navigation;
 }
