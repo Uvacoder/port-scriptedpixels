@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navigation />
-    <section class="hero is-fullheight">
+    <section class="hero is-fullheight-with-navbar">
       <div class="hero-body">
         <div class="container">
           <div class="container has-text-centered">
@@ -12,7 +12,7 @@
       </div>
     </section>
     <Nuxt />
-    <TheFooter />
+    <!-- <TheFooter /> -->
   </div>
 </template>
 
