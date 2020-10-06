@@ -31,18 +31,6 @@ html {
   margin: 0;
 }
 
-html,
-body {
-  height: 100%;
-}
-
-h1, h2, h3, h4 {
-  -webkit-font-smoothing:antialiased;
-  text-rendering: optimizeLegibility;
-  font-family: $subtitle-family;
-  -webkit-text-stroke: 0.40px;
-}
-
 .grid-container {
   grid-template-rows: 52px 1fr auto; // 52px is height of the header
   grid-template-areas:

@@ -39,3 +39,15 @@
     font-weight: normal;
     font-style: normal;
 }
+
+h1, h2, h3, h4 {
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: $subtitle-family;
+	-webkit-text-stroke: 0.40px;
+	letter-spacing: 3px;;
+}
+
+h2.subtitle {
+  // font-size: clamp(1.085rem, 1.25em, 1.25rem); need to look in to this
+}
