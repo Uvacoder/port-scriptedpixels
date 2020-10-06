@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-6 is-fluid">
+  <div class="container is-fluid">
     <div class="columns">
       <div class="column m-2">
         <h3 class="title title--with-bottom-border title--border-danger is-spaced">Design</h3>
