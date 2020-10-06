@@ -1,7 +1,11 @@
 <template>
-  <div class="grid-container">
+  <div>
     <Navigation />
-    <Nuxt />
+    <section class="section grid-content">
+      <div class="container is-fluid">
+        <Nuxt />
+      </div>
+    </section>
   </div>
 </template>
 

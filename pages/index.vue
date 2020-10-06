@@ -2,7 +2,7 @@
   <div class="container py-6 is-fluid">
     <div class="columns">
 
-      <div class="column has-background-link-light m-2">
+      <div class="column has-background-warning-light m-2">
           <h3 class="title">Design</h3>
           <h4 class="subtitle">Wireframes, Sketch, Prototypes</h4>
           <p>
@@ -11,7 +11,7 @@
           </p>
       </div>
 
-      <div class="column has-background-primary-light m-2">
+      <div class="column has-background-link-light m-2">
           <h3 class="title">Develop</h3>
           <h4 class="subtitle">Coding, iterate, create</h4>
           <p>
@@ -20,7 +20,7 @@
           </p>
       </div>
 
-      <div class="column has-background-warning-light m-2">
+      <div class="column has-background-success-light m-2">
           <h3 class="title">Deliver</h3>
           <h4 class="subtitle">Deploy, release, production</h4>
           <p>

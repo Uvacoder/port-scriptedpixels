@@ -1,8 +1,19 @@
 <template>
-  <section class="section grid-content">
-    <div class="container">
-      <h1 class="title">About</h1>
-      <h2>Netlify forms test</h2>
+  <div>
+    <div class="content">
+      <h1 class="title is-spaced">About Scripted Pixels</h1>
+
+      <h4 class="subtitle">Who's behind Scripted Pixels?</h4>
+
+      <p class="">I'm a ...</p>
+    </div>
+
+    <div class="content">
+      <h4 class="subtitle">Contact Scripted Pixels?</h4>
+    </div>
+
+    <div class="content">
+      <h4>Netlify forms test</h4>
       <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success">
         <input type="hidden" name="form-name" value="contact" />
         <p>
@@ -29,7 +40,7 @@
         </p>
       </form>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>

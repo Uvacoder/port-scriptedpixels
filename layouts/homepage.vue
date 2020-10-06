@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navigation />
-    <section class="hero is-fullheight-with-navbar">
+    <section class="hero is-large">
       <div class="hero-body">
         <div class="container">
           <div class="container has-text-centered">
