@@ -19,6 +19,9 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    bodyAttrs: {
+      class: 'has-navbar-fixed-bottom',
+    },
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -40,8 +43,8 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
+    '@nuxt/content',
     '@nuxtjs/axios',
-    '@nuxtjs/bulma',
     'nuxt-purgecss',
   ],
 
