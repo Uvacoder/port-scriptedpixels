@@ -1,10 +1,8 @@
 <template>
   <div>
     <Navigation />
-    <section class="section grid-content">
-      <div class="container is-fluid">
-        <Nuxt />
-      </div>
+    <section class="section grid-content container is-fluid">
+      <Nuxt />
     </section>
   </div>
 </template>
