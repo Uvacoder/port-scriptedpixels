@@ -1,11 +1,5 @@
 <template>
-  <section class="section grid-content">
-    <div class="container">
-      <pre> {{ blogPost }} </pre>
-      <hr />
-      <nuxt-content :document="blogPost" />
-    </div>
-  </section>
+  <nuxt-content :document="blogPost" />
 </template>
 
 <script>
