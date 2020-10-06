@@ -1,6 +1,8 @@
 <template>
   <section class="section grid-content">
     <div class="container">
+      <pre> {{ blogPost }} </pre>
+      <hr />
       <nuxt-content :document="blogPost" />
     </div>
   </section>
@@ -15,5 +17,3 @@ export default {
   },
 }
 </script>
-
-<style scoped></style>
