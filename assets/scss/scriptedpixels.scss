@@ -1,10 +1,34 @@
-@import "~bulma/sass/utilities/_all.sass";
+@charset "utf-8";
+
+// SCRIPTED "PIXELS" COLOURS
+$orange:	hsl(20, 100%, 50%);
+$green: hsl(100, 100%, 49);
+$blue: hsl(205, 90%, 60%);
+$purple: hsl(282, 100%, 50%);
+$pink: hsl(326, 100%, 50%);
+$red: hsl(360, 100%, 50%);
+
+// OVERRIDE BULMA'S GLOBAL WITH ABOVE
+$primary: $purple;
+$link: $blue;
+$info: $orange;
+$success: $green;
+$warning: $red;
+$danger: $red;
+
+// $link-light: lighten($link, 10%);
+// $primary-light: lighten($primary, 10%);
+// $warning-light: lighten($warning, 10%);
+
+// TODO: import what I only need to import from Bulma
+@import "~bulma/bulma.sass";
 
 $subtitle-family: 'CodeLightRegular';
 $subtitle-weight: 700;
 
 @import "./fonts";
 
+// NUXT PAGE TRANSITIONS
 .page-enter-active,
 .page-leave-active,
 .layout-enter-active,
