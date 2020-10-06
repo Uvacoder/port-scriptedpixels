@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="title">Latest posts from the blog</h1>
+    <h1 class="title is-spaced">Latest posts from the blog</h1>
     <div class="links">
       <ul class="posts-list">
         <li v-for="post in blogPosts" :key="post.slug" class="posts-list-link">
