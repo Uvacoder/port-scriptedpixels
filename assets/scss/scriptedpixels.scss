@@ -1,20 +1,6 @@
 @charset "utf-8";
 
-// SCRIPTED "PIXELS" COLOURS
-$orange:	hsl(20, 100%, 50%);
-$green: hsl(100, 100%, 49);
-$blue: hsl(205, 90%, 60%);
-$purple: hsl(282, 100%, 50%);
-$pink: hsl(326, 100%, 50%);
-$red: hsl(360, 100%, 50%);
-
-// OVERRIDE BULMA'S GLOBAL WITH ABOVE
-$primary: $purple;
-$link: $blue;
-$info: $orange;
-$success: $green;
-$warning: $red;
-$danger: $red;
+@import "./variables";
 
 // $link-light: lighten($link, 10%);
 // $primary-light: lighten($primary, 10%);
