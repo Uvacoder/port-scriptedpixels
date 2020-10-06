@@ -1,7 +1,7 @@
 <template>
   <div class="container is-fluid">
     <div class="columns">
-      <div class="column m-2">
+      <div class="column">
         <h3 class="title title--with-bottom-border title--border-danger is-spaced">Design</h3>
         <h4 class="subtitle">Wireframes, Sketch, Prototypes</h4>
         <p>
@@ -10,7 +10,7 @@
         </p>
       </div>
 
-      <div class="column m-2">
+      <div class="column">
         <h3 class="title title--with-bottom-border title--border-link is-spaced">Develop</h3>
         <h4 class="subtitle">Coding, iterate, create</h4>
         <p>
@@ -19,7 +19,7 @@
         </p>
       </div>
 
-      <div class="column m-2">
+      <div class="column">
         <h3 class="title title--with-bottom-border title--border-success is-spaced">Deliver</h3>
         <h4 class="subtitle">Deploy, release, production</h4>
         <p>
