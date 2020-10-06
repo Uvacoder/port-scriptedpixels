@@ -2,7 +2,6 @@
   <div class="grid-container">
     <Navigation />
     <Nuxt />
-    <TheFooter />
   </div>
 </template>
 
