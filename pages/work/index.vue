@@ -1,25 +1,29 @@
 <template>
   <div>
-    <h1 class="title">Work: home page to list out most recent projects I've worked on</h1>
-    <ul class="posts-list">
-      <li v-for="project in projects" :key="project.id">
-        <h2>{{ project.title.rendered }}</h2>
-        <small v-html="project.excerpt.rendered"></small>
-        <nuxt-link :to="`/work/${project.id}`">Read more...</nuxt-link>
-      </li>
-    </ul>
+    <h1 class="title is-spaced">Work: list out most recent projects I've worked on</h1>
+    <div class="links">
+      <ul class="posts-list">
+        <li v-for="post in workPosts" :key="post.slug" class="posts-list-link">
+          <nuxt-link :to="`/work/${post.slug}`">
+            {{ post.title }}
+          </nuxt-link>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData({ store }) {
-    await store.dispatch('work/GET_PROJECTS')
-  },
-  computed: {
-    projects() {
-      return this.$store.state.work.projects
-    },
+  async asyncData({ $content, params }) {
+    const workPosts = await $content('work', params.slug)
+      .only(['title', 'date', 'description', 'slug'])
+      .sortBy('createdAt', 'desc')
+      .fetch()
+
+    return {
+      workPosts,
+    }
   },
 }
 </script>
