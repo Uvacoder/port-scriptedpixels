@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-content">
       <h4 class="title is-size-4">
-        <nuxt-link :to="`${postData.path}`">
+        <nuxt-link :to="`${postData.slug}`">
           {{ postData.title }}
         </nuxt-link>
       </h4>
