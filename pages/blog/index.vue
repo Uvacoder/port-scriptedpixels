@@ -3,7 +3,7 @@
     <h1 class="title is-spaced">Latest posts from the blog</h1>
     <div class="columns is-multiline">
       <div v-for="post in blogPosts" :key="post.slug" class="column is-full">
-        {{ post }}
+        {{ post.path }}
         <ListItem :post-data="post" />
       </div>
     </div>
@@ -22,6 +22,8 @@ export default {
       .only(['title', 'date', 'description', 'slug'])
       .sortBy('createdAt', 'desc')
       .fetch()
+
+    console.log(blogPosts)
 
     return {
       blogPosts,
