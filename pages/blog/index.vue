@@ -4,7 +4,7 @@
     <div class="columns is-multiline">
       <div v-for="post in blogPosts" :key="post.slug" class="column is-full">
         {{ post }}
-        <!-- <ListItem :post-data="post" /> -->
+        <ListItem :post-data="post" />
       </div>
     </div>
   </div>
