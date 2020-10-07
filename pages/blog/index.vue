@@ -23,6 +23,7 @@ export default {
       .sortBy('createdAt', 'desc')
       .fetch()
 
+    // eslint-disable-next-line no-console
     console.log(blogPosts)
 
     return {
