@@ -6,7 +6,7 @@
         <div class="card">
           <div class="card-content">
             <h4 class="title is-size-4">
-              <nuxt-link :to="`work/${post.slug}`">
+              <nuxt-link :to="`${route.path}/${post.slug}`">
                 {{ post.title }}
               </nuxt-link>
             </h4>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
+  async asyncData({ $content, params, route }) {
     const workPosts = await $content('work', params.slug)
       .only(['title', 'date', 'description', 'slug'])
       .sortBy('createdAt', 'desc')
@@ -28,6 +28,7 @@ export default {
 
     return {
       workPosts,
+      route,
     }
   },
 }
