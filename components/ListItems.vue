@@ -1,9 +1,9 @@
 <template>
   <div class="card">
-    {{ postData }}
+    <p>inside list item</p>
     <div class="card-content">
       <h4 class="title is-size-4">
-        <nuxt-link :to="`${postData.slug}`">
+        <nuxt-link :to="`${route}/${postData.slug}`">
           {{ postData.title }}
         </nuxt-link>
       </h4>
@@ -14,6 +14,6 @@
 
 <script>
 export default {
-  props: ['postData'],
+  props: ['postData', 'route'],
 }
 </script>

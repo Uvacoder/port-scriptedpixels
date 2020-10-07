@@ -3,6 +3,7 @@
     <h1 class="title is-spaced">Latest projects I've worked on</h1>
     <div class="columns is-multiline">
       <div v-for="post in workPosts" :key="post.slug" class="column is-full">
+        <ListItem :post-data="post" :route="route.path" />
         <div class="card">
           <div class="card-content">
             <h4 class="title is-size-4">
@@ -19,7 +20,12 @@
 </template>
 
 <script>
+import ListItem from '~/components/ListItems'
+
 export default {
+  components: {
+    ListItem,
+  },
   async asyncData({ $content, params, route }) {
     const workPosts = await $content('work', params.slug)
       .only(['title', 'date', 'description', 'slug'])
