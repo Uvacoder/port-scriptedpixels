@@ -3,6 +3,7 @@
     <h1 class="title is-spaced">Latest posts from the blog</h1>
     <div class="columns is-multiline">
       <div v-for="post in blogPosts" :key="post.slug" class="column is-full">
+        {{ post }}
         <ListItem :post-data="post" />
       </div>
     </div>
