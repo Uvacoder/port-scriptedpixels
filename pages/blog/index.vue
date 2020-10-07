@@ -3,19 +3,23 @@
     <h1 class="title is-spaced">Latest posts from the blog</h1>
     <div class="columns is-multiline">
       <div v-for="post in blogPosts" :key="post.slug" class="column is-full">
-        <ListItem :post-data="post" />
+        <div class="card">
+          <div class="card-content">
+            <h4 class="title is-size-4">
+              <nuxt-link :to="`blog/${post.slug}`">
+                {{ post.title }}
+              </nuxt-link>
+            </h4>
+            <p class="subtsitle">Date pusblished: {{ post.date }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ListItem from '~/components/ListItems'
-
 export default {
-  components: {
-    ListItem,
-  },
   async asyncData({ $content, params }) {
     const blogPosts = await $content('blog', params.slug)
       .only(['title', 'date', 'description', 'slug'])
