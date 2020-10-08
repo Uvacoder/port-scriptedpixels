@@ -36,7 +36,8 @@ _You'll notice my version is nearly the same as all three links and I can admit 
 
 My slightly modified reset.css file contains the following:
 
-/\* Reset \*/
+```css
+// Reset
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, caption, canvas, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, form, footer, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav,object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, tt, table, tbody, textarea, tfoot, thead, time, tr, th, td, u, ul, var, video {
 	font-family: inherit;
 	font-weight: inherit;
@@ -50,27 +51,33 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 	outline: 0;
 	background: transparent;
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 :focus {
 	outline: 0;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/\*
+/*
 	SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
 	If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill
-\*/
-\* {
+*/
+
+* {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -79,6 +86,7 @@ table {
 body {
 	-webkit-text-size-adjust: 100%;
 }
+```
 
 I added a fonts.css to setup my custom fonts and a global font size. Ensuring that I don't need repeat CSS setting a font-family multiple times in multiple places in the project. This works the same for setting the font-size too - reducing the tedious task of ensuring all font sizes are the same throughout the projects files.
 
@@ -86,9 +94,11 @@ What is REM? CSS3 introduces a few new units, including the rem unit, which stan
 
 The em unit is relative to the font-size of the parent, which causes the compounding issue. The rem unit is relative to the root—or the html—element. That means that we can define a single font size on the html element and define all rem units to be a percentage of that.
 
+```css
 html { font-size: 62.5%; }
-body { font-size: 1.4rem; } /\* =14px \*/
-h1   { font-size: 2.4rem; } /\* =24px \*/
+body { font-size: 1.4rem; } /* =14px */
+h1   { font-size: 2.4rem; } /* =24px */
+```
 
 I'm defining a base font-size of 62.5% to have the convenience of sizing rems in a way that is similar to using px.
 
@@ -98,9 +108,11 @@ You might be surprised to find that browser support is surprisingly decent: Safa
 
 What do we do for browsers that don't support rem units? We can specify the fall-back using px, if you don't mind users of older versions of Internet Explorer still being unable to resize the text (well, there's still page zoom in IE7 and IE8). To do so, we specify the font-size using px units first and then define it again using rem units.
 
+```css
 html { font-size: 62.5%; }
-body { font-size: 14px; font-size: 1.4rem; } /\* =14px \*/
-h1   { font-size: 24px; font-size: 2.4rem; } /\* =24px \*/
+body { font-size: 14px; font-size: 1.4rem; } /* =14px */
+h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
+```
 
 And voila, we now have consistent and predictable sizing in all browsers, and resizable text in the current versions of all major browsers.
 
@@ -108,12 +120,14 @@ HOW TO MAKE IT WORK? My main style sheet, named styles.css, contains the CSS for
 
 A file called "mediaqueries.css" plays the main role here for me. It controls the layout for any given screen resolution chosen. This file works from the smallest screen size up. The initial media query sets the breakpoint to optimise the layout for a screen that has a max-width of 480px. This is usually associate with mobiles in landscape. You can enhance these media-queries further by accessing the orientation as well as detecting high resolution (retina) screens to really make sure you've provided the best user experience. My standard code is as follows:
 
-/\* -------------- SIZE 320 to 480 ----------------- \*/
+```css
+/* -------------- SIZE 320 to 480 ----------------- */
 @media only screen and (min-width: 320px) {
 	#wrapper {
 		max-width: 480px;
 	}
 }
+```
 
 A file called "responsivegrid.css" holds all the magic of the grid. It's created by [Denis Leblanc](https://www.responsivegridsystem.com) and provides the classes that control the width of the columns. Unlike twitter bootstrap's version my file is only 64 lines of code - without comments.
 
@@ -129,35 +143,38 @@ Things to remember `.col:first-child` The last col element gets the right margin
 
 To ensure the columns only apply their widths when needed I wrap the width's for each span in a media query
 
-/\*
+```css
+/*
 	APPLY GRID WHEN ON SCREENS > TABLETS
-\*/
+*/
 @media (min-width: 768px) {
-	.span\_1 { width: 2.25%; }
-	.span\_2 { width: 6.5%; }
-	.span\_3 { width: 10.75%; }
-	.span\_4 { width: 15.0%; }
-	.span\_5 { width: 19.25%; }
-	.span\_6 { width: 23.5%; }
-	.span\_7 { width: 27.75%; }
-	.span\_8 { width: 32.0%; }
-	.span\_9 { width: 36.25%; }
-	.span\_10 { width: 40.5%; }
-	.span\_11 { width: 44.75%; }
-	.span\_12 { width: 49.0%; }
-	.span\_13 { width: 53.25%; }
-	.span\_14 { width: 57.5%; }
-	.span\_15 { width: 61.75%; }
-	.span\_16 { width: 66.0%; }
-	.span\_17 { width: 70.25%; }
-	.span\_18 { width: 74.5%; }
-	.span\_19 { width: 78.75%; }
-	.span\_20 { width: 83.0%; }
-	.span\_21 { width: 87.25%; }
-	.span\_22 { width: 91.5%; }
-	.span\_23 { width: 95.75%; }
-	.span\_24 { width: 100%; }
+	.span_1 { width: 2.25%; }
+	.span_2 { width: 6.5%; }
+	.span_3 { width: 10.75%; }
+	.span_4 { width: 15.0%; }
+	.span_5 { width: 19.25%; }
+	.span_6 { width: 23.5%; }
+	.span_7 { width: 27.75%; }
+	.span_8 { width: 32.0%; }
+	.span_9 { width: 36.25%; }
+	.span_10 { width: 40.5%; }
+	.span_11 { width: 44.75%; }
+	.span_12 { width: 49.0%; }
+	.span_13 { width: 53.25%; }
+	.span_14 { width: 57.5%; }
+	.span_15 { width: 61.75%; }
+	.span_16 { width: 66.0%; }
+	.span_17 { width: 70.25%; }
+	.span_18 { width: 74.5%; }
+	.span_19 { width: 78.75%; }
+	.span_20 { width: 83.0%; }
+	.span_21 { width: 87.25%; }
+	.span_22 { width: 91.5%; }
+	.span_23 { width: 95.75%; }
+	.span_24 { width: 100%; }
 }
+```
+
 
 This current example, and one that I hardly change, "activates" the column layout when the screen width is at a minimum width of 768 pixels. Originally, this was the set transitional width for when viewports would transition from landscape to tablet.
 

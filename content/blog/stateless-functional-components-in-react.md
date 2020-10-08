@@ -56,10 +56,10 @@ We don't need to import the `Component` from React here as we won't be making u
 Turning this in to a functional component, using ES6, also gives us some nice little features. We use an arrow function and pass in `props` : `Const Forms = props =>()`. This allows us to drop the word "`this`" from the component. All annoying quirks with JavasScripts `this` word are avoided. Making larger components easier to navigate. See the `onSubmit`
 
 ```js
-/\* Class \*/
+// Class
 <form onSubmit={this.props.getWeather}>
 
-/\* Functional \*/
+// Functional
 <form onSubmit={props.getWeather}>
 ```
 

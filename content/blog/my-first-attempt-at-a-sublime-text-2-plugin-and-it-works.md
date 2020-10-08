@@ -28,7 +28,7 @@ From what I remember, here are the steps I took:
 3. Paste in code from block 1
 4. Save
 5. Select Preferences | Key Bindings - User
-6. Paste the second block of code in between the " \[ \] "'s
+6. Paste the second block of code in between the " [ ] "'s
 7. Save
 
 You then head over to a CSS document with, stupidly, typed CSS and highlight one selector block (it only works one block at a time) and press the keys, ctrl+shift+j, previously assigned to the plugin (these are editable).

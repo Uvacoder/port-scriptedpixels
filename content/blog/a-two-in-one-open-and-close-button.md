@@ -10,7 +10,7 @@ The Demo:
 <iframe width="100%" height="300" src="https://jsfiddle.net/scriptedpixels/GvAtx/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 HTML:
-
+```html
 	<div class="container">
 		<div id="SlidingDown">
 			<div id="buttonWrap">
@@ -22,121 +22,125 @@ HTML:
 			</div>
 		</div>
 	</div>
+```
 
 CSS:
+``css
+	body {
+		text-align:center;
+		font-family:'Helvetica Neue';
+		font-weight: lighter;
+		font-size: 16px;
+		background: #e7e7e7;
+		padding-top: 50px;
+	}
 
-		body {
-			text-align:center;
-			font-family:'Helvetica Neue';
-			font-weight: lighter;
-			font-size: 16px;
-			background: #e7e7e7;
-			padding-top: 50px;
-		}
-			a {
-				color: #f0f0f0;
-				text-decoration: none;
-			}
-		.container {
-			clear: both;
-			display: block;
-			margin: 0 auto;
-			width: 100%;
-			height: 9000px;
-			position: relative;
-		}
-		/\* ANIMATIONS \*/
-		.animate {
-			-webkit-transition: all 0.35s ease-out;
-			-moz-transition: all 0.35s ease-out;
-			-ms-transition: all 0.35s ease-out;
-			-o-transition: all 0.35s ease-out;
-			transition: all 0.35s ease-out;
-		}
-		#SlidingDown {
-			width: 500px;
-			min-height: 60px;
-			display: block;
-			margin: 0 auto;
-			overflow: hidden;
-			border: 1px solid rgba(255, 255, 255,1);
-		}
-			#content {
-				display: block;
-				overflow: hidden;
-				height: 0;
-			}
-				#content.open {
-					min-height: 100px;
-				}
-			#content p {
-				width: 95%;
-				margin:0 auto;
-				text-align: left;
-				margin: 10px 5px;
-				display: inline-block;
-			}
-		#buttonWrap {
-			margin: 0 auto;
-			width: 100%;
-			height: 60px;
-		}
-		#buttonWrap h3 {
-			margin: 15px 10px 0;
-			text-align: left;
-			width: 420px;
-			float: left;
-			font-weight: 100;
-			font-size: 25px;
-			text-align: right;
-		}
-			#buttonWrap #button {
-				width: 50px;
-				height: 50px;
-				float: right;
-				display: block;
-				background: #4789e1;
-				border-radius: 50%;
-				position: relative;
-				line-height: 36px;
-				cursor: pointer;
-				margin: 5px 5px 0 0;
-				display: inline-block;
-			}
-				#buttonWrap #button.open {
-					-webkiot-box-shadow:0px 0px 5px rgba(0,0,0,0.2);
-					-moz-box-shadow:0px 0px 5px rgba(0,0,0,0.2);
-					-ms-box-shadow:0px 0px 5px rgba(0,0,0,0.2);
-					-o-box-shadow:0px 0px 5px rgba(0,0,0,0.2);
-					box-shadow:0px 0px 5px rgba(0,0,0,0.2);
-				}
-				#buttonWrap span {
-					position: relative;
-					color: rgba(255, 255, 255, 1);
-					font-size: 4em;
-					text-align: center;
-					font-weight: 100;
-					display: block;
-					margin: 0;
-					padding: 0;
-					width: 100%;
-					height: 100%;
-				}
-					#buttonWrap .open span {
-						-webkit-transform: rotate(135deg);
-						-moz-transform: rotate(135deg);
-						-o-transform: rotate(135deg);
-						-ms-transform: rotate(135deg);
-							transform: rotate(135deg);
-					}
+	a {
+		color: #f0f0f0;
+		text-decoration: none;
+	}
+
+	.container {
+		clear: both;
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		height: 9000px;
+		position: relative;
+	}
+
+	// ANIMATIONS
+	.animate {
+		transition: all 0.35s ease-out;
+	}
+
+	#SlidingDown {
+		width: 500px;
+		min-height: 60px;
+		display: block;
+		margin: 0 auto;
+		overflow: hidden;
+		border: 1px solid rgba(255, 255, 255,1);
+	}
+
+	#content {
+		display: block;
+		overflow: hidden;
+		height: 0;
+	}
+
+	#content.open {
+		min-height: 100px;
+	}
+
+	#content p {
+		width: 95%;
+		margin:0 auto;
+		text-align: left;
+		margin: 10px 5px;
+		display: inline-block;
+	}
+
+	#buttonWrap {
+		margin: 0 auto;
+		width: 100%;
+		height: 60px;
+	}
+
+	#buttonWrap h3 {
+		margin: 15px 10px 0;
+		text-align: left;
+		width: 420px;
+		float: left;
+		font-weight: 100;
+		font-size: 25px;
+		text-align: right;
+	}
+
+	#buttonWrap #button {
+		width: 50px;
+		height: 50px;
+		float: right;
+		display: block;
+		background: #4789e1;
+		border-radius: 50%;
+		position: relative;
+		line-height: 36px;
+		cursor: pointer;
+		margin: 5px 5px 0 0;
+		display: inline-block;
+	}
+
+	#buttonWrap #button.open {
+		box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+	}
+
+	#buttonWrap span {
+		position: relative;
+		color: rgba(255, 255, 255, 1);
+		font-size: 4em;
+		text-align: center;
+		font-weight: 100;
+		display: block;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	#buttonWrap .open span {
+		transform: rotate(135deg);
+	}
+```
 
 JavaScript:
-
-	<script>
-		$("#button").click(function() {
-			$("#button, #content").toggleClass('open');
-		});
-	</script>
+```js
+<script>
+	$("#button").click(function() {
+		$("#button, #content").toggleClass('open');
+	});
+</script>
+```
 
 I think it's quite clear to see what's happening here. When the #button is clicked a class called "open" is added to the #button and a DIV called with the ID of "content".
 

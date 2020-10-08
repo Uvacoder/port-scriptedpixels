@@ -13,27 +13,27 @@ _#webdev #wordpress #asianfootballawards #jquery How a simple mobile menu can be
 It was a simple idea but, to be honest, it did take me a little while to figure out a way to make the menu act how I wanted it too. I wanted both drop down menus to know if the other was open and if it was/wasn't then to close and then open. You can see this happening in the video above.
 
 <!-- mobile menu -->
-	<div id="mobile\_menu" class="col span\_12">
+	<div id="mobile_menu" class="col span_12">
 		<a href="" id="mobileMenuButton" >Menu</a>
 			<!-- Wordpress Menu -->
-			<?php wp\_nav\_menu(); ?>
+			<?php wp_nav_menu(); ?>
 	</div>
 	<!-- share -->
-	<div id="share" class="col span\_12">
+	<div id="share" class="col span_12">
 		<a href="#" class="hover" onclick="return false;" >Share</a>
 		<!-- AddThis Button BEGIN -->
-		<div class="addthis\_toolbox addthis\_default\_style ">
-		<a class="addthis\_button\_facebook\_like" fb:like:layout="button\_count"></a>
-		<a class="addthis\_button\_tweet"></a>
-		<a class="addthis\_button\_pinterest\_pinit"></a>
-		<a class="addthis\_counter addthis\_pill\_style"></a>
+		<div class="addthis_toolbox addthis_default_style ">
+		<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+		<a class="addthis_button_tweet"></a>
+		<a class="addthis_button_pinterest_pinit"></a>
+		<a class="addthis_counter addthis_pill_style"></a>
 		</div>
 		<!-- AddThis Button END -->
 	</div>
 
-At the very top I've created a wrapper called "mobile\_menu" that contains the MENU button with text as well as a line of PHP that brings in my WordPress Menu. This next line of PHP brings in the list HTML used for the main menu:
+At the very top I've created a wrapper called "mobile_menu" that contains the MENU button with text as well as a line of PHP that brings in my WordPress Menu. This next line of PHP brings in the list HTML used for the main menu:
 
-<?php wp\_nav\_menu(); ?>
+<?php wp_nav_menu(); ?>
 
 <div class="menu">
 <ul>
@@ -49,7 +49,7 @@ The- items are not literal in this example...clearly.
 
     Both the Menu and Share This are structured the same. They have a wrapping DIV and a "Button" inside with a DIV following that acts as the list container. I've created a plain example below:
 
-    <div id="mobile\_menu" >
+    <div id="mobile_menu" >
         <a href="#" id="mobileMenuButton" >Menu</a>
             <ul>
                 <li> </li>
@@ -69,8 +69,8 @@ The- items are not literal in this example...clearly.
     The theory behind it was that if a button was clicked it would look at the state of the other menu and then close it if it was open. The clicked menu would then open when it knew the other menu was closed. Sounds a lot simpler when spelling it out but I did find it a little trickier when writing it, for some reason.
 
     $(document).ready(function(){
-        var menu        = $("#mobile\_menu .menu ul");
-        var share       = $('.addthis\_toolbox.addthis\_default\_style');
+        var menu        = $("#mobile_menu .menu ul");
+        var share       = $('.addthis_toolbox.addthis_default_style');
 
         $("#mobileMenuButton").bind('click', function(event) {
             event.preventDefault();
