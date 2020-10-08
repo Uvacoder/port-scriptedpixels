@@ -13,7 +13,7 @@ The CSS behind this is pretty straightforwards but the trick is to ensure that 
 
 I've used a bottom border in the example code below:
 
-```scss
+```sass
 @mixin Transition( $values...) {
   $transitions: ();
   @each $declaration in $values {

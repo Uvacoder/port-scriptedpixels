@@ -28,7 +28,7 @@ export default {
   css: ['~/assets/scss/scriptedpixels.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['~/plugins/axios'],
+  plugins: ['@/plugins/axios'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -48,13 +48,7 @@ export default {
     'nuxt-purgecss',
   ],
 
-  content: {
-    markdown: {
-      prism: {
-        theme: 'prism-themes/themes/prism-material-oceanic.css',
-      },
-    },
-  },
+  content: {},
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
