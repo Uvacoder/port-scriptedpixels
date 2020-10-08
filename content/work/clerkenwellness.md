@@ -3,7 +3,7 @@ title: "clerkenwellness"
 date: "2013-04-16"
 ---
 
-Website link: [Clerkenwellness](http://www.clerkenwellness.co.uk "www.clerkenwellness.co.uk")
+Website link: [Clerkenwellness](https://www.clerkenwellness.co.uk "www.clerkenwellness.co.uk")
 
 Website features:
 

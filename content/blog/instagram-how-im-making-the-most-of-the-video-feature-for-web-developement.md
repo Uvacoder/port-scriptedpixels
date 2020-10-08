@@ -9,11 +9,11 @@ I thought it would be a good idea to show off some small jQuery animation and my
 
 What I recorded is embedded below. It's basically showcasing how the "my work" boxes react when hovered over. This hover state is disabled for touch devices though. Why? - because hover isn't supported, widely, on touch devices AND it looks a mess when it's enabled: The block would be half way through animating "up" and then the next page would load in - not a nice experience for my visitors!
 
-video.instagram, img.instagram {width: 100% !important; height: auto !important;}   
-  
-_#webdev My website's JS, javascript, in action. Web development istagram'd! by @[scriptedpixels](http://instagram.com/scriptedpixels)_
+video.instagram, img.instagram {width: 100% !important; height: auto !important;}
 
-_Kudos to the site that enables an amazing service to embed instagram video/photo's: [Embed Instagram](http://ctrlq.org/instagram "Embed your instagram video/photo")_
+_#webdev My website's JS, javascript, in action. Web development istagram'd! by @[scriptedpixels](https://instagram.com/scriptedpixels)_
+
+_Kudos to the site that enables an amazing service to embed instagram video/photo's: [Embed Instagram](https://ctrlq.org/instagram "Embed your instagram video/photo")_
 
 What does this mean to me, and you, in the future? I'll be looking to record and embed more videos showcasing how code "works" ... as well as using online sites, such as CodePen, to showoff.
 

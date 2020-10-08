@@ -62,7 +62,7 @@ You should be able to see that it's a pretty simple and straightforward effect t
 
 See it in action on CodePen here:
 
-<p class="codepen" data-height="147" data-theme-id="0" data-slug-hash="mJmyBe" data-default-tab="result" data-user="kambanwait">See the Pen <a href="http://codepen.io/kambanwait/pen/mJmyBe/">Animate underline</a> by Scripted Pixels Ltd (<a href="http://codepen.io/kambanwait">@kambanwait</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p class="codepen" data-height="147" data-theme-id="0" data-slug-hash="mJmyBe" data-default-tab="result" data-user="kambanwait">See the Pen <a href="https://codepen.io/kambanwait/pen/mJmyBe/">Animate underline</a> by Scripted Pixels Ltd (<a href="https://codepen.io/kambanwait">@kambanwait</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js" async></script>
 
  

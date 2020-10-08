@@ -3,15 +3,15 @@ title: "Custom mini image gallery, made with jQuery"
 date: "2013-09-30"
 ---
 
-\[ 20/11/2013 UPDATE: This is now responsive and available [here](http://scriptedpixels.co.uk/playground/thumbGallery.html "Now Responsive :)") \]
+\[ 20/11/2013 UPDATE: This is now responsive and available [here](https://scriptedpixels.co.uk/playground/thumbGallery.html "Now Responsive :)") \]
 
-This is a short tutorial on how I created the mini gallery, seen after clicking the large image, on [LuxDeco's Discover page](http://www.luxdeco.com/discover "The mini gallery on LuxDeco "). I've been asked to write up how I created the gallery as part of another tutorial found [here](http://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview "Grid with expanding preview"). I recommend reading through the tutorial on how to get the whole grid setup before continuing with this article, just so you're up to speed and don't get lost with code examples I use.
+This is a short tutorial on how I created the mini gallery, seen after clicking the large image, on [LuxDeco's Discover page](https://www.luxdeco.com/discover "The mini gallery on LuxDeco "). I've been asked to write up how I created the gallery as part of another tutorial found [here](https://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview "Grid with expanding preview"). I recommend reading through the tutorial on how to get the whole grid setup before continuing with this article, just so you're up to speed and don't get lost with code examples I use.
 
 To start with I'll create a demo of the actual gallery and thumbnails to show you how it works. I'll then show you where I used the code. This way you'll have the demo and will be able to take it across to your site line by line and implement how you need it.
 
-Here's the demo: 
+Here's the demo:
 
-<iframe width="100%" height="600" src="http://jsfiddle.net/scriptedpixels/rphaM/embedded/result,js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="600" src="https://jsfiddle.net/scriptedpixels/rphaM/embedded/result,js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 The code can be easily taken the JSFiddle above or from below:
 
@@ -22,19 +22,19 @@ THE HTML
 		<div class="PreviewImageContainer">
 			<div class="LargePreviewImageContainer">
 				<div class="og-fullimg">
-					<img src="http://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg" alt="" >
+					<img src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg" alt="" >
 				</div>
 			</div>
 
 			<div class="SmallPreviewImageContainer">
-				<a class="SmallImage" rel="http://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg" href="#">
-					<img class="thumb" src="http://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg">
+				<a class="SmallImage" rel="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg" href="#">
+					<img class="thumb" src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg">
 				</a>
-				<a class="SmallImage" rel="http://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/2.jpg" href="#">
-					<img class="thumb" src="http://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/2.jpg">
+				<a class="SmallImage" rel="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/2.jpg" href="#">
+					<img class="thumb" src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/2.jpg">
 				</a>
-				<a class="SmallImage" rel="http://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/3.jpg" href="#">
-					<img class="thumb" src="http://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/3.jpg">
+				<a class="SmallImage" rel="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/3.jpg" href="#">
+					<img class="thumb" src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/3.jpg">
 				</a>
 			</div>
 		</div>
@@ -161,7 +161,7 @@ The previous code:
 		        <div class="og-details">
 		            <h3>Veggies sunt bona vobis</h3>
 		            <p>Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.</p>
-		            <a href="http://cargocollective.com/jaimemartinez/">Visit website</a>
+		            <a href="https://cargocollective.com/jaimemartinez/">Visit website</a>
 		        </div>
 		    </div>
 		</div>
@@ -171,7 +171,7 @@ My new code:
 		<div class="og-expander">
 		    <div class="og-expander-inner">
 		        <span class="og-close"></span>
-		        
+
 		        <div class="PreviewImageContainer">
         			<div class="LargePreviewImageContainer">
         				<div class="og-fullimg">
@@ -192,19 +192,19 @@ My new code:
         				</a>
         			</div>
         		</div>
-		        
+
 		        <div class="og-details">
 		            <h3>Veggies sunt bona vobis</h3>
 		            <p>Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.</p>
-		            <a href="http://cargocollective.com/jaimemartinez/">Visit website</a>
+		            <a href="https://cargocollective.com/jaimemartinez/">Visit website</a>
 		        </div>
 		    </div>
 		</div>
 
 That should pretty much do the trick for you. You'll need to ensure that you've got jQuery pulled in as per normal.
 
-I created the [LuxDeco Discover page](http://www.luxdeco.com/discover "LuxDeco Discover") with this tutorial too. It was built with Magento providing the content for each preview. Initially this was a little to pull off but it fell in to place in the end with the use of jQuery and a lot of appends and data-attributes.
+I created the [LuxDeco Discover page](https://www.luxdeco.com/discover "LuxDeco Discover") with this tutorial too. It was built with Magento providing the content for each preview. Initially this was a little to pull off but it fell in to place in the end with the use of jQuery and a lot of appends and data-attributes.
 
 Please, ask questions, highlight issues, complain or provide some constructive feedback below – everything is welcome!
 
-\[ 20/11/2013 UPDATE: This is now responsive and available [here](http://scriptedpixels.co.uk/playground/thumbGallery.html "Now Responsive :)") \]
+\[ 20/11/2013 UPDATE: This is now responsive and available [here](https://scriptedpixels.co.uk/playground/thumbGallery.html "Now Responsive :)") \]

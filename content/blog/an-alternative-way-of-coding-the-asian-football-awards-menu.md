@@ -5,9 +5,9 @@ date: "2013-08-21"
 
 As promised, although it's a little later than I said it would be, here's my take on how I should have coded the menus for the Asian Football Awards website, for mobile particularly, I [posted about last week](/how-i-made-the-animated-menu-for-asian-football-awards/).
 
-I've created a [JSFiddle](http://jsfiddle.net/scriptedpixels/LtCk7) demo so you can grab the HTML, JS, CSS and see it in action:
+I've created a [JSFiddle](https://jsfiddle.net/scriptedpixels/LtCk7) demo so you can grab the HTML, JS, CSS and see it in action:
 
-<iframe width="100%" height="300" src="http://jsfiddle.net/scriptedpixels/LtCk7/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="https://jsfiddle.net/scriptedpixels/LtCk7/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 I've added comments in the above example but here's a break down of what's going on:
 
@@ -22,5 +22,5 @@ I've added comments in the above example but here's a break down of what's going
 
 It should be pretty clear on how it all works. I've added a "live demo" video below so you can see it in action. (This was taken from a previous version of my portfolio site)
 
-video.instagram, img.instagram {width: 100% !important; height: auto !important;}   
-_#webdev #wordpress how a previous iteration of my site worked with a, better thought out, #jQuery nav (comparing to my previous code/video for Asian Football Awards) by @[scriptedpixels](http://instagram.com/scriptedpixels)_
+video.instagram, img.instagram {width: 100% !important; height: auto !important;}
+_#webdev #wordpress how a previous iteration of my site worked with a, better thought out, #jQuery nav (comparing to my previous code/video for Asian Football Awards) by @[scriptedpixels](https://instagram.com/scriptedpixels)_

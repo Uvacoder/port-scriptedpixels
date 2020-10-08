@@ -9,7 +9,7 @@ I wanted to share the React app that I've created. I've found that going through
 
 1 month later after coding this...
 
-I've given myself a long break from this piece and come back to it today. I've actually broken down some of the tutorial in a [previous post](http://scriptedpixels.co.uk/stateless-functional-components-in-react/) already.
+I've given myself a long break from this piece and come back to it today. I've actually broken down some of the tutorial in a [previous post](https://scriptedpixels.co.uk/stateless-functional-components-in-react/) already.
 
 #### Down to the details
 
@@ -154,7 +154,7 @@ getWeather = async e => {
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
     const api\_call = await fetch(
-        \`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API\_KEY}&units=metric\`
+        \`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API\_KEY}&units=metric\`
     );
     const data = await api\_call.json();
     if (city && country) {
@@ -189,7 +189,7 @@ getWeather = async e => {
     if (city && country) {
         try {
             const api\_call = await fetch(
-                \`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API\_KEY}&units=metric\`
+                \`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API\_KEY}&units=metric\`
             );
             const data = await api\_call.json();
 

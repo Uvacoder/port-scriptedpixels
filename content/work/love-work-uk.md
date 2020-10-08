@@ -3,7 +3,7 @@ title: "love work uk"
 date: "2013-04-16"
 ---
 
-Website link: [Love Work UK (holding page)](http://www.loveworkuk.co.uk "www.loveworkuk.co.uk")
+Website link: [Love Work UK (holding page)](https://www.loveworkuk.co.uk "www.loveworkuk.co.uk")
 
 Website features:
 
@@ -20,7 +20,7 @@ Website features:
 11. WordPress integration
 12. Job listings via WordPress
 
-More information: The site was designed by [The Tiny Agency](http://www.thetinyagency.com "The Tiny Agency"). The use of Adobe Illustrator allowed us to scale design elements for high resolution displays. The full site is currently being developed and will be built for mobile first and then tablet with desktop following.
+More information: The site was designed by [The Tiny Agency](https://www.thetinyagency.com "The Tiny Agency"). The use of Adobe Illustrator allowed us to scale design elements for high resolution displays. The full site is currently being developed and will be built for mobile first and then tablet with desktop following.
 
 The full site is currently being developed without WordPress integration. This is allowing me to work out any issues with the site's responsive design; the menu's, job posts, hover states for touch devices and carousels are features that may cause issues across devices and browsers.
 

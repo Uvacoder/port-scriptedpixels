@@ -3,7 +3,7 @@ title: "Stateless, functional, components in React"
 date: "2018-11-03"
 ---
 
-I've been learning [React](http://reactjs.org) for the past year and have found many projects, and tutorials, that use class components when a stateless/functional component would be ideal.
+I've been learning [React](https://reactjs.org) for the past year and have found many projects, and tutorials, that use class components when a stateless/functional component would be ideal.
 
 I decided I wanted to update my **very, very,** outdated blog with what I'm currently currently working on, and what better way to do it than brain dump some new learnings.
 

@@ -3,11 +3,11 @@ title: "Thumbnail grid with expanding preview and mini gallery"
 date: "2013-11-19"
 ---
 
-After being asked many times, via [this tutorial](http://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview/ "Tympanu Expanding grid") and emails, how I created the [LuxDeco Discover page](http://luxdeco.com/discover/ "LuxDeco Discover Page") I decided to finally create my own version of the Grid for you to download.
+After being asked many times, via [this tutorial](https://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview/ "Tympanu Expanding grid") and emails, how I created the [LuxDeco Discover page](https://luxdeco.com/discover/ "LuxDeco Discover Page") I decided to finally create my own version of the Grid for you to download.
 
 I'll aim to keep this short because most people just want the answer and I don't have too much time on my hands at the moment, hence the lack of posts.
 
-I've got a working example [here](http://scriptedpixels.co.uk/playground/thumbGalleryGrid.html "Thumbnail Grid with mini-gallery"). You can also download the code from [this link](http://www.putlocker.com/file/5204FA1C7F182E7D "Scripted Pixels Thumbnail Grid").
+I've got a working example [here](https://scriptedpixels.co.uk/playground/thumbGalleryGrid.html "Thumbnail Grid with mini-gallery"). You can also download the code from [this link](https://www.putlocker.com/file/5204FA1C7F182E7D "Scripted Pixels Thumbnail Grid").
 
 To show you what the structure of the new mini-gallery I drew at the image below. It may not be as clear as it could be but I think it's a good rough outline.
 
@@ -22,7 +22,7 @@ I started off with editing a few bits of the Grid JavaScript first. I've include
 			this.$fullSizeImg			 	 = $('<img src="" alt="" />');
 			// A div for the large gallery image
 			this.$fullSizeImgContainer		 = $('<div class="og-fullimg"></div>').append(this.$fullSizeImg, this.$loading );
-			
+
 		// PREPARE THE thumbnails
 			// Thumbnails IMG SRC first to appen later to relative wrapper
 			this.$thumbnailSrcOne			 = $('<img class="thumb" rel="" src="">');
@@ -91,14 +91,14 @@ For each grid item I've had to include some extra data-attributes. These hold th
 
 <li><!--
 	<a
-	href="http://scriptedpixels.co.uk/blog" - THE PAGE LINK
+	href="https://scriptedpixels.co.uk/blog" - THE PAGE LINK
 	data-thumb-1="images/1.jpg" - THUMBNAIL ONE
 	data-thumb-2="images/2.jpg" - THUMBNAIL TWO
 	data-thumb-3="images/3.jpg" - THUMBNAIL THREE
 	data-largesrc="images/2.jpg" - THE LARGE IMAGE
 	data-title="Veggies sunt bona vobis" - PREVIEW TTILE
 	data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu."  - PREVIEW DESCRIPTION TEXT >-->
-	<a href="http://scriptedpixels.co.uk/blog" data-thumb-1="images/1.jpg" data-thumb-2="images/2.jpg" data-thumb-3="images/3.jpg" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+	<a href="https://scriptedpixels.co.uk/blog" data-thumb-1="images/1.jpg" data-thumb-2="images/2.jpg" data-thumb-3="images/3.jpg" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
  <img src="images/2.jpg" alt="img02"/></a></li>
 
 Once you've edited the grid elements as needed you'll need to fire it all up within the DOC READY function:
@@ -110,6 +110,6 @@ $(document).ready(function(){
 });
 </script>
 
-You can see it all in action [here](http://scriptedpixels.co.uk/playground/thumbGalleryGrid.html "Scripted Pixels Thumbnail Grid with Mini-Gallery"). You can also download the code from [this link](http://s000.tinyupload.com/?file_id=88527630786784161460 "Scripted Pixels Thumbnail Grid") too!
+You can see it all in action [here](https://scriptedpixels.co.uk/playground/thumbGalleryGrid.html "Scripted Pixels Thumbnail Grid with Mini-Gallery"). You can also download the code from [this link](https://s000.tinyupload.com/?file_id=88527630786784161460 "Scripted Pixels Thumbnail Grid") too!
 
 Hope it's of some use to you all! Please, ask questions, highlight issues, complain or provide some constructive feedback below – everything is welcome!

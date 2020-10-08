@@ -13,13 +13,13 @@ I spent about 10 minutes manually spacing, new line-in' and indenting the CSS in
 
 This was when I turned to Google and looked for a ready made plugin to clean up the CSS automatically as manually doing this wasn't going to go down well for me and the people around me. I was more frustrated with why this code was written like this in the first place than anything else; no developer should write code like this...unless they're manually minifying the code (which never happens).
 
-I came across this post - [Sublime Forum](http://www.sublimetext.com/forum/viewtopic.php?f=6&t=2237 "Plugin help") - and was presented with the following two blocks of code:
+I came across this post - [Sublime Forum](https://www.sublimetext.com/forum/viewtopic.php?f=6&t=2237 "Plugin help") - and was presented with the following two blocks of code:
 
 `import sublime, sublime_plugin, re # toggle a single-line or multi-line formatted css statement class ToggleSingleLineCssCommand(sublime_plugin.TextCommand): def run(self,edit): for region in reversed(self.view.sel()): text = self.view.substr(region) # check if the css statement needs to be expanded or collapsed if re.match('^.*\{.*}\s*$', text): # expand the css statement m = re.search('^(?P.*)\{(?P.*)\;\s*}$', text) multiline = '%s{\n\t%s;\n}' % (m.group('key'), m.group('params').strip().replace('; ', ';\n\t')) self.view.replace(edit, region, multiline) else: # collapse the css statement singleline = ' '.join([x.strip() for x in text.split('\n')]) self.view.replace(edit, region, singleline)`
 
 `{ "keys": ["ctrl+shift+j"], "command": "toggle_single_line_css" }`
 
-There was no explanation on what to do with these so I Google'd again and found what I [needed todo](http://sublimetext.info/docs/en/extensibility/plugins.html#your-first-plugin "How to set up your own plugin"):
+There was no explanation on what to do with these so I Google'd again and found what I [needed todo](https://sublimetext.info/docs/en/extensibility/plugins.html#your-first-plugin "How to set up your own plugin"):
 
 From what I remember, here are the steps I took:
 

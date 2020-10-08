@@ -17,7 +17,7 @@ I looked at creating a circular pre-loader, yes this is traditional again, but m
 
 Lets get started, shall we:
 
-**All credit goes to this [website](http://blakek.us/labs/jquery/css3-pie-graph-timer "css pie graph and timer") which I used to make all of the animation.**
+**All credit goes to this [website](https://blakek.us/labs/jquery/css3-pie-graph-timer "css pie graph and timer") which I used to make all of the animation.**
 
 The html
 ```html
@@ -281,12 +281,12 @@ The jQuery
 ```
 
 Here it is in action via instagram: video.instagram, img.instagram {width: 100% !important; height: auto !important;}
-_#webdev #html #css #jquery Circular loading animation. Started from an iPad idea. by @[scriptedpixels](http://instagram.com/scriptedpixels)_
+_#webdev #html #css #jquery Circular loading animation. Started from an iPad idea. by @[scriptedpixels](https://instagram.com/scriptedpixels)_
 
-and via [JSFiddle](http://jsfiddle.net/scriptedpixels/LKBnx/light/):
+and via [JSFiddle](https://jsfiddle.net/scriptedpixels/LKBnx/light/):
 
 ```html
-<iframe width="100%" height="600" src="http://jsfiddle.net/scriptedpixels/LKBnx/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="600" src="https://jsfiddle.net/scriptedpixels/LKBnx/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 ```
 
 Just to get this out the door I'm going to end this post here. I'll figure out a way to annotate all the code in a nice legible and logical way as I'd like to highlight what I've done.

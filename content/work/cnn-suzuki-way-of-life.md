@@ -3,7 +3,7 @@ title: "cnn: suzuki way of life"
 date: "2013-04-16"
 ---
 
-Website link: [CNN: Suzuki Way of life feature](http://advertisementfeature.cnn.com/suzuki/mwol/index.html "CNN: Suzuki - Way Of Life")
+Website link: [CNN: Suzuki Way of life feature](https://advertisementfeature.cnn.com/suzuki/mwol/index.html "CNN: Suzuki - Way Of Life")
 
 Website features:
 
@@ -18,4 +18,4 @@ Website features:
 9. PSD to HTML conversion
 10. AJAX
 
-More information: Working for [Turner Broadcasting](http://www.turner.com/ "Turner broadcasting"), a media agency, I was tasked with creating a feature advertisement page for Suzuki. This page was to then be updated in to the CNN page specially built for Suzuki.
+More information: Working for [Turner Broadcasting](https://www.turner.com/ "Turner broadcasting"), a media agency, I was tasked with creating a feature advertisement page for Suzuki. This page was to then be updated in to the CNN page specially built for Suzuki.

@@ -7,7 +7,7 @@ A quick post showing a concept I had in mind about a HTML/CSS button that contro
 
 The Demo:
 
-<iframe width="100%" height="300" src="http://jsfiddle.net/scriptedpixels/GvAtx/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="https://jsfiddle.net/scriptedpixels/GvAtx/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 HTML:
 
@@ -75,7 +75,7 @@ CSS:
 				text-align: left;
 				margin: 10px 5px;
 				display: inline-block;
-			} 
+			}
 		#buttonWrap {
 			margin: 0 auto;
 			width: 100%;

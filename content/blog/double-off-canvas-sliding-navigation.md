@@ -3,13 +3,13 @@ title: "Double off-canvas, sliding, navigation"
 date: "2013-11-20"
 ---
 
-Whilst working at my current contract, at [LuxDeco](http://www.luxdeco.com "LuxDeco"), I was tasked with creating a, mobile optimised, Magento theme where the design featured two slide-out/in info panels. These were to act similar to the slide out/in panels featured in the new Facebook mobile-app where the user is able to view a hidden panel that's hidden off the left and right hand side of the main content page.
+Whilst working at my current contract, at [LuxDeco](https://www.luxdeco.com "LuxDeco"), I was tasked with creating a, mobile optimised, Magento theme where the design featured two slide-out/in info panels. These were to act similar to the slide out/in panels featured in the new Facebook mobile-app where the user is able to view a hidden panel that's hidden off the left and right hand side of the main content page.
 
 Here's a sketch of what I was looking to create: ![image](images/image.jpg)
 
 And here's the final version: ![Screen Shot 2013-10-15 at 14.06.25](images/Screen-Shot-2013-10-15-at-14.06.25.png)
 
-Annnd here's a working [demo](http://scriptedpixels.co.uk/playground/doubleNavSliding.html "Double slide out/in navigation").
+Annnd here's a working [demo](https://scriptedpixels.co.uk/playground/doubleNavSliding.html "Double slide out/in navigation").
 
 Before I even started to figure out how it was going to work I thought I'd start looking for a plugin, or tutorials, as this design is seen on a fair few websites now, especially as more and more sites are being optimised for smaller screens. I looked for plugins/tutorials that offered near-similar functionality. I assumed it would be a short search **but** what I found was a bunch of 'plugins/tutorials' that had 'issues'. These were issues that I found after implementing them and wasted an hour or so on each plugin/tutorial.
 
@@ -17,7 +17,7 @@ The main issue I had was that some of the menu's didn't think of what would happ
 
 This is a big **NO NO** for mobile sites; why takeaway a, now everyone knows how to do it, natural gesture from the user? It's not a nice user experience and if this was going to be used on a e-commerce store, like I was planning to use it, I didn't want visitors to not have the ability to zoom in to product images.
 
-After all the searching and testing I did come across one very useful resource, this is what I've based my version on, from [Smashing Magazine.](http://coding.smashingmagazine.com/2013/01/15/off-canvas-navigation-for-responsive-website/ "Off canvas navigation") Their [final demo](http://dbushell.github.io/Responsive-Off-Canvas-Menu/step4.html "final demo(off canvas)") sold it for me, I knew I could manipulate it in to how I wanted it to function with ease :)
+After all the searching and testing I did come across one very useful resource, this is what I've based my version on, from [Smashing Magazine.](https://coding.smashingmagazine.com/2013/01/15/off-canvas-navigation-for-responsive-website/ "Off canvas navigation") Their [final demo](https://dbushell.github.io/Responsive-Off-Canvas-Menu/step4.html "final demo(off canvas)") sold it for me, I knew I could manipulate it in to how I wanted it to function with ease :)
 
 Now, the bit you're looking for; the code!
 
@@ -84,7 +84,7 @@ THE HTML:
                             <a href="#">Chapter 14</a>
                         </li>
                     </ul>
-                    
+
                 </div>
             </nav>
 
@@ -116,18 +116,18 @@ THE HTML:
             <div id="main" role="main">
                 <article class="block prose">
                     <h1>Some title...</h1>
-                    
+
                     <p>Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 
                 </article>
             </div>
         </div>
         <!-- Footer should go here somewhere -->
-        
+
     <!-- inner-wrap -->
     </div>
 <!-- outer-wrap -->
-</div> 
+</div>
 <!-- phone -->
 
 Pretty straightforward here; you've got wrapping DIV's that hold the content together with some hidden over flows. This hidden overflow helps hide the slide out/in navigation panels for us. It looks a little more complicated as I've got the #phone wrapper on this example.
@@ -151,7 +151,7 @@ body {
     text-align:center;
     min-height: 100%;
     font-size: 16px;
-    margin: 0 auto;    
+    margin: 0 auto;
     height: 100%;
     width: 100%;
     padding: 0;
@@ -362,7 +362,7 @@ p {
             backface-visibility: hidden;
             left: 0;
         }
-        .csstransforms3d.csstransitions.js-ready #nav2 {            
+        .csstransforms3d.csstransitions.js-ready #nav2 {
             -webkit-transform: translate3d(-100%, 0, 0);
             -moz-transform: translate3d(-100%, 0, 0);
             -ms-transform: translate3d(-100%, 0, 0);
@@ -458,7 +458,7 @@ p {
         position: relative;
         display: block;
     }
-        li a {            
+        li a {
             line-height: 1.28571em;
             padding: 1.5rem 0rem;
             font-size: 0.875em;
@@ -487,19 +487,19 @@ p {
             right: -1.3rem;
             z-index: 50;
             content: "";
-            top: 50%;            
+            top: 50%;
         }
         #nav2 li.is-active:after {
             border-top: 0.625em transparent solid;
             border-bottom: 0.625em transparent solid;
             border-left: 0.625em white solid;
-            margin-top: -0.625em;            
+            margin-top: -0.625em;
             border-right: none;
             position: absolute;
             display: block;
             left: -1.3rem;
             z-index: 50;
-            content: "";            
+            content: "";
             top: 50%;
         }
 /\* FIN \*/
@@ -651,7 +651,7 @@ There's a lot there to go through and as much as I wish to talk through it all I
 
 One important 'thing' to point out is that this is pure JavaScript. Not jQuery. I've added & modified the JavaScript to introduce the second navigation and added to & modified the CSS to match.
 
-To achieve the smooth animation of the sliding effect you'll need to add the following jQuery library called Fastclick, available [here](https://github.com/ftlabs/fastclick "Fast Click JQ"). As well as a [custom version of Modernizr](http://scriptedpixels.co.uk/playground/js/modernizr.js "modernizr").
+To achieve the smooth animation of the sliding effect you'll need to add the following jQuery library called Fastclick, available [here](https://github.com/ftlabs/fastclick "Fast Click JQ"). As well as a [custom version of Modernizr](https://scriptedpixels.co.uk/playground/js/modernizr.js "modernizr").
 
 Add the modernizr library in the of the document and then the following before the closing tag.
 
@@ -668,7 +668,7 @@ Add the modernizr library in the of the document and then the following before t
 
 With all the above copied or downloaded, images included, you'll have a working double slide-out/in navigation enabled, mobile optimised, website!
 
-[DEMO](http://scriptedpixels.co.uk/playground/doubleNavSliding.html)
+[DEMO](https://scriptedpixels.co.uk/playground/doubleNavSliding.html)
 
 p.s: I've added some Media queries for you too so it'll appear different on mobile and desktop :)
 

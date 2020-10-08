@@ -5,10 +5,10 @@ date: "2013-09-04"
 
 I made this a little while back and have since used it in all my new website builds.
 
-Here it is in action: video.instagram, img.instagram {width: 100% !important; height: auto !important;}   
-_A video of my very own #responsive #framework #html #css3 #mediaqueries #DIY #grid #webdev #scriptedpixels #MobileDev by @[scriptedpixels](http://instagram.com/scriptedpixels)_
+Here it is in action: video.instagram, img.instagram {width: 100% !important; height: auto !important;}
+_A video of my very own #responsive #framework #html #css3 #mediaqueries #DIY #grid #webdev #scriptedpixels #MobileDev by @[scriptedpixels](https://instagram.com/scriptedpixels)_
 
-DEMO I've finally added a direct link to the [Demo here](http://scriptedpixels.co.uk/playground/basicresponsivegrid/ "Scripted Pixels 24 column demo")
+DEMO I've finally added a direct link to the [Demo here](https://scriptedpixels.co.uk/playground/basicresponsivegrid/ "Scripted Pixels 24 column demo")
 
 WHY? I was working a late night on a project and decided to investigate some general frameworks and twitter bootstrap was appearing on all the blogs, plus I had heard a lot, good and bad, about it. With the majority of reviews being good; I decided to download it and give it a try.
 
@@ -30,7 +30,7 @@ I could've spent hours overwriting CSS ensuring current CSS wasn't being overwri
 
 HOW? I started off building my own framework by going back to the basics and getting some 'resets' in place.
 
-Kudos to: [Eric Meyer](http://meyerweb.com/eric/tools/css/reset/ "Eric Meyer Reset") for his CSS reset, it's used **everywhere!**, [Responsive.gs](http://www.responsivegridsystem.com "Responsive Grid System") for the basic structure, to the [TutPlus.com](https://tutsplus.com) network for their amazing article on [A basic responsive Grid](http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/a-basic-responsive-grid-plus-handy-css3-media-query-reporter/) and finally thanks to: [www.snook.ca](http://snook.ca/archives/html_and_css/font-size-with-rem "Sizing with REM's")
+Kudos to: [Eric Meyer](https://meyerweb.com/eric/tools/css/reset/ "Eric Meyer Reset") for his CSS reset, it's used **everywhere!**, [Responsive.gs](https://www.responsivegridsystem.com "Responsive Grid System") for the basic structure, to the [TutPlus.com](https://tutsplus.com) network for their amazing article on [A basic responsive Grid](https://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/a-basic-responsive-grid-plus-handy-css3-media-query-reporter/) and finally thanks to: [www.snook.ca](https://snook.ca/archives/html_and_css/font-size-with-rem "Sizing with REM's")
 
 _You'll notice my version is nearly the same as all three links and I can admit that at first I did copy all their code, which I then manipulated and made my own_
 
@@ -68,7 +68,7 @@ table {
 }
 /\*
 	SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
-	If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill 
+	If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill
 \*/
 \* {
 	-webkit-box-sizing: border-box;
@@ -86,7 +86,7 @@ What is REM? CSS3 introduces a few new units, including the rem unit, which stan
 
 The em unit is relative to the font-size of the parent, which causes the compounding issue. The rem unit is relative to the root—or the html—element. That means that we can define a single font size on the html element and define all rem units to be a percentage of that.
 
-html { font-size: 62.5%; } 
+html { font-size: 62.5%; }
 body { font-size: 1.4rem; } /\* =14px \*/
 h1   { font-size: 2.4rem; } /\* =24px \*/
 
@@ -98,7 +98,7 @@ You might be surprised to find that browser support is surprisingly decent: Safa
 
 What do we do for browsers that don't support rem units? We can specify the fall-back using px, if you don't mind users of older versions of Internet Explorer still being unable to resize the text (well, there's still page zoom in IE7 and IE8). To do so, we specify the font-size using px units first and then define it again using rem units.
 
-html { font-size: 62.5%; } 
+html { font-size: 62.5%; }
 body { font-size: 14px; font-size: 1.4rem; } /\* =14px \*/
 h1   { font-size: 24px; font-size: 2.4rem; } /\* =24px \*/
 
@@ -115,7 +115,7 @@ A file called "mediaqueries.css" plays the main role here for me. It controls th
 	}
 }
 
-A file called "responsivegrid.css" holds all the magic of the grid. It's created by [Denis Leblanc](http://www.responsivegridsystem.com) and provides the classes that control the width of the columns. Unlike twitter bootstrap's version my file is only 64 lines of code - without comments.
+A file called "responsivegrid.css" holds all the magic of the grid. It's created by [Denis Leblanc](https://www.responsivegridsystem.com) and provides the classes that control the width of the columns. Unlike twitter bootstrap's version my file is only 64 lines of code - without comments.
 
 `.row` Add this class to any element that spans the entire width of your container to clear any floating child elements. Also allows you to define spacing between rows.
 

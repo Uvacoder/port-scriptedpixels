@@ -3,7 +3,7 @@ title: "made.com"
 date: "2013-04-15"
 ---
 
-Website link: [Made.com](http://www.made.com "www.made.com")
+Website link: [Made.com](https://www.made.com "www.made.com")
 
 Website features:
 
