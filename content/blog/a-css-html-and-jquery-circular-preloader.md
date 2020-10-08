@@ -20,7 +20,7 @@ Lets get started, shall we:
 **All credit goes to this [website](http://blakek.us/labs/jquery/css3-pie-graph-timer "css pie graph and timer") which I used to make all of the animation.**
 
 The html
-
+```html
 <div class="container">
 		<div class="loader">
 			<div class="loader-bg">
@@ -48,11 +48,12 @@ The html
 			</div>
 		</div>
 	</div>
+```
 
 The circle is split in to four squares, I'm not totally sure why but I'm guessing it's to do with the math and transformations occurring in the background when the jQuery rotates the inner, loading, circle - I'm experimenting with this and getting some very funky shapes!
 
 The CSS
-
+```css
 .text {
 			color: rgba(255, 255, 255, 1);
 			font-size: 6em;
@@ -216,15 +217,16 @@ The CSS
 			-ms-transform-origin: 100% 100%;
 			transform-origin: 100% 100%;
 		}
+```
 
 WOW - where do I even start with this lot. I understand all of this but explaining it here is going to be difficult!
 
 The jQuery
-
+```js
 <script>
 		function renderProgress(progress) {
 		    progress = Math.floor(progress);
-		    
+
 		    if(progress<25){
 		        var angle = -90 + (progress/100)\*360;
 		        $(".animate-0-25-b").css("transform","rotate("+angle+"deg)");
@@ -248,14 +250,14 @@ The jQuery
 		    }
 		    $(".text").html(progress+"%");
 		}
-		  
+
 		function clearProgress() {
 		    $(".animate-75-100-b, .animate-50-75-b, .animate-25-50-b, .animate-0-25-b").css("transform","rotate(90deg)");
 		}
-		  
+
 		var i 			=0;
 		var times 		= 0;
-		
+
 		var interval 	= setInterval(function (){
             i++;
             times += 1;
@@ -276,13 +278,16 @@ The jQuery
             renderProgress(i);
 		},60);
 </script>
+```
 
-Here it is in action via instagram: video.instagram, img.instagram {width: 100% !important; height: auto !important;}   
+Here it is in action via instagram: video.instagram, img.instagram {width: 100% !important; height: auto !important;}
 _#webdev #html #css #jquery Circular loading animation. Started from an iPad idea. by @[scriptedpixels](http://instagram.com/scriptedpixels)_
 
-and via [JSFiddle](http://jsfiddle.net/scriptedpixels/LKBnx/light/): 
+and via [JSFiddle](http://jsfiddle.net/scriptedpixels/LKBnx/light/):
 
+```html
 <iframe width="100%" height="600" src="http://jsfiddle.net/scriptedpixels/LKBnx/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+```
 
 Just to get this out the door I'm going to end this post here. I'll figure out a way to annotate all the code in a nice legible and logical way as I'd like to highlight what I've done.
 
