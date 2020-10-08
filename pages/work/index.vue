@@ -11,7 +11,7 @@
                 {{ post.title }}
               </nuxt-link>
             </h4>
-            <p class="subtsitle">Date pusblished: {{ post.date }}</p>
+            <p class="subtitle">Date pusblished: {{ post.date }}</p>
           </div>
         </div>
       </div>
