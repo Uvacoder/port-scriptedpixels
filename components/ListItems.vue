@@ -1,6 +1,5 @@
 <template>
   <div class="card">
-    <p>inside list item</p>
     <div class="card-content">
       <h4 class="title is-size-4">
         <nuxt-link :to="`${route}/${postData.slug}`">
