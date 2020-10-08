@@ -3,17 +3,7 @@
     <h1 class="title is-spaced">Latest projects I've worked on</h1>
     <div class="columns is-multiline">
       <div v-for="post in workPosts" :key="post.slug" class="column is-full">
-        <ListItem :post-data="post" :route="route.path" />
-        <div class="card">
-          <div class="card-content">
-            <h4 class="title is-size-4">
-              <nuxt-link :to="`${route.path}/${post.slug}`">
-                {{ post.title }}
-              </nuxt-link>
-            </h4>
-            <p class="subtitle">Date pusblished: {{ post.date }}</p>
-          </div>
-        </div>
+        <ListItem :post-data="post" :route="path" />
       </div>
     </div>
   </div>
@@ -27,14 +17,22 @@ export default {
     ListItem,
   },
   async asyncData({ $content, params, route }) {
-    const workPosts = await $content('work', params.slug)
-      .only(['title', 'date', 'description', 'slug'])
-      .sortBy('createdAt', 'desc')
-      .fetch()
+    try {
+      const workPosts = await $content('work', params.slug)
+        .only(['title', 'date', 'description', 'slug'])
+        .sortBy('createdAt', 'desc')
+        .fetch()
 
-    return {
-      workPosts,
-      route,
+      const path = route.path
+
+      return {
+        workPosts,
+        path,
+      }
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.log(error)
+      return false
     }
   },
 }
