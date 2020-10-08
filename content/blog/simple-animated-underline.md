@@ -13,6 +13,7 @@ The CSS behind this is pretty straightforwards but the trick is to ensure that 
 
 I've used a bottom border in the example code below:
 
+```scss
 @mixin Transition( $values...) {
   $transitions: ();
   @each $declaration in $values {
@@ -55,6 +56,7 @@ ul.navigation {
         }
       }
 }
+```
 
 The Sass mixin creates vendor prefixes for the CSS output as well as taking care of all other transitions used at a later date with different values.
 

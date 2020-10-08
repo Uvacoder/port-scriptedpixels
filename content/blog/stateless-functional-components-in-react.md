@@ -17,6 +17,7 @@ An example, taken from a "[Find what the weather is](https://www.youtube.com/wat
 
 A classic React, `class`, component:
 
+```js
 import React, { Component } from "react";
 
 export default class Forms extends Component {
@@ -30,11 +31,13 @@ export default class Forms extends Component {
     );
   }
 }
+```
 
 The example above has no state management and has a a `prop` of `getWeather` being passed down from `App.js`. This prop is a function that's used to make an API call to [https://www.openweathermap.org.](https://www.openweathermap.org)
 
 The above can easily be changed to a functional React component. See below:
 
+```js
 import React from "react";
 
 const Forms = props => (
@@ -46,16 +49,19 @@ const Forms = props => (
 );
 
 export default Forms;
+```
 
 We don't need to import the `Component` from React here as we won't be making use of the methods it supplies, such as `ComponentDidMount()` or `ComponentWillUpdate()`.
 
 Turning this in to a functional component, using ES6, also gives us some nice little features. We use an arrow function and pass in `props` : `Const Forms = props =>()`. This allows us to drop the word "`this`" from the component. All annoying quirks with JavasScripts `this` word are avoided. Making larger components easier to navigate. See the `onSubmit`
 
+```js
 /\* Class \*/
 <form onSubmit={this.props.getWeather}>
 
 /\* Functional \*/
 <form onSubmit={props.getWeather}>
+```
 
 We can also drop the bind keyword! 🙏🏽
 
