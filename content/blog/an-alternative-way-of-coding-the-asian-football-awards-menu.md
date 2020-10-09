@@ -3,7 +3,7 @@ title: "An alternative way of coding the Asian Football Awards menu"
 date: "2013-08-21"
 ---
 
-As promised, although it's a little later than I said it would be, here's my take on how I should have coded the menus for the Asian Football Awards website, for mobile particularly, I [posted about last week](/how-i-made-the-animated-menu-for-asian-football-awards/).
+As promised, although it's a little later than I said it would be, here's my take on how I should have coded the menus for the Asian Football Awards website, for mobile particularly, I [posted about last week](animated-menu).
 
 I've created a [JSFiddle](https://jsfiddle.net/scriptedpixels/LtCk7) demo so you can grab the HTML, JS, CSS and see it in action:
 
