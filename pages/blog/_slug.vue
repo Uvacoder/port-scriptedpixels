@@ -1,5 +1,8 @@
 <template>
-  <nuxt-content :document="blogPost" />
+  <div class="content">
+    <h1 class="title is-spaced">{{ blogPost.title }}</h1>
+    <nuxt-content :document="blogPost" />
+  </div>
 </template>
 
 <script>
