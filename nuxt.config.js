@@ -1,7 +1,7 @@
 export default {
   server: {},
 
-  loading: { color: '#fff' },
+  loading: { color: '#000' },
 
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -88,6 +88,7 @@ export default {
       'keyword-let',
       'operator',
       'string',
+      'icon',
     ],
   },
 }
