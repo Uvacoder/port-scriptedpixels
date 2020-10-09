@@ -33,6 +33,7 @@ $subtitle-weight: 700;
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
+
 html,
 body {
   min-height: 100%;
@@ -60,4 +61,8 @@ body {
 
 .nav {
   grid-area: navigation;
+}
+
+.content pre {
+  margin: 2em 0 4em;
 }
