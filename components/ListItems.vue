@@ -1,14 +1,11 @@
 <template>
-  <div class="card">
-    <div class="card-content">
-      <h4 class="title is-size-4">
-        <nuxt-link :to="`${route}/${postData.slug}`">
-          {{ postData.title }}
-        </nuxt-link>
-      </h4>
-      <p class="subtsitle">Date pusblished: {{ postData.date }}</p>
-    </div>
-  </div>
+  <nuxt-link :to="`${route}/${postData.slug}`">
+    <h3 class="title">
+      {{ postData.title }}
+    </h3>
+    <p class="subtitle">{{ postData.description }}</p>
+    <p class="is-light">Date pusblished: {{ postData.date }}</p>
+  </nuxt-link>
 </template>
 
 <script>
