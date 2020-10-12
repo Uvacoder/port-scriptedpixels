@@ -1,11 +1,21 @@
 <template>
   <div>
-    <h1 class="title is-spaced">Latest posts from the blog</h1>
-    <div class="columns is-multiline">
-      <div v-for="post in blogPosts" :key="post.slug" class="column is-full">
-        <ListItem :post-data="post" :route="path" />
+    <section class="hero is-light">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-size-2 is-spaced p-0 mb-0">The Blog</h2>
+        </div>
       </div>
-    </div>
+    </section>
+    <section class="section grid-content container">
+      <div class="content">
+        <div class="columns is-multiline">
+          <div v-for="post in blogPosts" :key="post.slug" class="column is-full mb-6">
+            <ListItem :post-data="post" :route="path" />
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -35,5 +45,6 @@ export default {
       return false
     }
   },
+  layout: 'post',
 }
 </script>
