@@ -1,6 +1,7 @@
 ---
 title: 'Weather finder React App'
 date: '2019-01-18'
+description: 'A React App that uses data from the Open Weathermap API'
 ---
 
 My version of the "Weather Finder App", from [this tutorial](https://www.youtube.com/watch?v=204C9yNeOYI&t=2450s), can be used [**here**](https://scriptedpixels.co.uk/playground/weather-finder/).
