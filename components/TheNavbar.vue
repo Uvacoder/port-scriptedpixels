@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar is-white is-fixed-bottom" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-light is-fixed-bottom" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item has-text-left" href="/">
         <img src="~/assets/images/scriptedPixelsLogo.svg" width="150" height="85" />
@@ -11,6 +11,7 @@
         aria-label="menu"
         aria-expanded="false"
         data-target="navbarBasicExample"
+        :class="[isActive ? 'is-active' : '']"
         @click="toggleClass()"
       >
         <span aria-hidden="true"></span>
@@ -46,8 +47,7 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(2px);
+.nav {
+  grid-area: navigation;
 }
 </style>
