@@ -1,17 +1,6 @@
 @charset "utf-8";
-
 @import "./variables";
-
-// $link-light: lighten($link, 10%);
-// $primary-light: lighten($primary, 10%);
-// $warning-light: lighten($warning, 10%);
-
-// TODO: import what I only need to import from Bulma
 @import "~bulma/bulma.sass";
-
-$subtitle-family: 'CodeLightRegular';
-$subtitle-weight: 700;
-
 @import "./fonts";
 
 // NUXT PAGE TRANSITIONS
@@ -28,7 +17,6 @@ $subtitle-weight: 700;
 .layout-leave-active {
   opacity: 0;
 }
-
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -59,9 +47,6 @@ body {
   grid-area: content;
 }
 
-.nav {
-  grid-area: navigation;
-}
 
 .content pre {
   margin: 2em 0 4em;
