@@ -33,6 +33,11 @@
 
 <script>
 export default {
+  asyncData({ $config }) {
+    // eslint-disable-next-line no-console
+    console.log($config)
+    return true
+  },
   head() {
     return {
       title: 'Scripted Pixels | Home Page',

@@ -1,4 +1,12 @@
 export default {
+  publicRuntimeConfig: {
+    baseURL: 'https://nuxtjs.org',
+  },
+
+  privateRuntimeConfig: {
+    apiSecret: process.env.KAM_TEST_PROD_VAR,
+  },
+
   server: {},
 
   loading: { color: '#000' },
