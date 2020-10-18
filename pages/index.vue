@@ -7,6 +7,10 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi corporis eveniet ipsam blanditiis in amet,
           eligendi, optio earum totam similique eius nostrum. Voluptatem facilis possimus saepe molestias nisi cum.
+          <br />
+          <span style="color: red">{{ test }}: key</span>
+          <br />
+          Kam
         </p>
       </div>
 
@@ -35,8 +39,9 @@
 export default {
   asyncData({ $config }) {
     // eslint-disable-next-line no-console
-    console.log($config)
-    return true
+    const test = $config.apiSecret
+
+    return test
   },
   head() {
     return {
