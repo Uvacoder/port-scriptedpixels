@@ -1,11 +1,21 @@
 <template>
   <div>
-    <h1 class="title is-spaced">Latest projects I've worked on</h1>
-    <div class="columns is-multiline">
-      <div v-for="post in workPosts" :key="post.slug" class="column is-full">
-        <ListItem :post-data="post" :route="path" />
+    <section class="hero is-light">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-size-2 is-spaced p-0 mb-0">Latest projects I've worked on</h2>
+        </div>
       </div>
-    </div>
+    </section>
+    <section class="section grid-content container">
+      <div class="content">
+        <div class="columns is-multiline">
+          <div v-for="post in workPosts" :key="post.slug" class="column is-full">
+            <ListItem :post-data="post" :route="path" />
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -31,10 +41,11 @@ export default {
       }
     } catch (error) {
       // eslint-disable-next-line no-console
-      console.log(error)
+      console.error(error)
       return false
     }
   },
+  layout: 'post',
 }
 </script>
 
