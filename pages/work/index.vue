@@ -3,7 +3,7 @@
     <section class="hero is-light">
       <div class="hero-body">
         <div class="container">
-          <h2 class="title is-size-2 is-spaced p-0 mb-0">Latest projects I've worked on</h2>
+          <h3 class="title is-size-3 is-spaced p-0 mb-0">Latest projects I've worked on</h3>
         </div>
       </div>
     </section>
