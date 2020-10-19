@@ -41,7 +41,7 @@ export default {
     // eslint-disable-next-line no-console
     const test = $config.apiSecret
 
-    return test
+    return { test }
   },
   head() {
     return {
