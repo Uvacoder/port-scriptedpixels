@@ -4,7 +4,8 @@
       {{ postData.title }}
     </h3>
     <p class="subtitle">{{ postData.description }}</p>
-    <p class="is-light">Date pusblished: {{ postData.date }}</p>
+    <p class="is-light">Date published: {{ postData.date }}</p>
+    <p v-if="postData.category" class="is-light">Category: {{ postData.category }}</p>
   </nuxt-link>
 </template>
 

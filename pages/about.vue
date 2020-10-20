@@ -4,7 +4,6 @@
       <div class="hero-body">
         <div class="container">
           <h3 class="title is-size-3 is-spaced p-0 mb-0">About</h3>
-          <h4 class="subtitle p-0 mb-0">.....</h4>
         </div>
       </div>
     </section>

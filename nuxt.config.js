@@ -114,9 +114,13 @@ export default {
       'p-',
       'mb-',
       'is-',
+      'pr-0',
       'is-one-quarter',
       'is-one-third',
       'is-two-fifths',
+      'is-size-6',
+      'is-size-7',
+      'tags',
     ],
   },
 }

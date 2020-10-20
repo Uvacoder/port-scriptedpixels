@@ -29,7 +29,7 @@ export default {
   async asyncData({ $content, params, route }) {
     try {
       const blogPosts = await $content('blog', params.slug)
-        .only(['title', 'date', 'description', 'slug'])
+        .only(['title', 'date', 'description', 'slug', 'category', 'tags'])
         .sortBy('createdAt', 'desc')
         .fetch()
 
