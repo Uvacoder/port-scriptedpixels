@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar is-light is-fixed-bottom" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item has-text-left" href="/">
+      <a class="navbar-item has-text-left logo" href="/">
         <img src="~/assets/images/scriptedPixelsLogo.svg" width="150" height="85" />
       </a>
 
@@ -46,8 +46,8 @@ export default {
 }
 </script>
 
-<style scoped>
-.nav {
+<style scoped lang="scss">
+.navbar {
   grid-area: navigation;
 }
 </style>
