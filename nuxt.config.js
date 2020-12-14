@@ -1,8 +1,4 @@
 export default {
-  publicRuntimeConfig: {
-    baseURL: 'https://nuxtjs.org',
-  },
-
   privateRuntimeConfig: {
     apiSecret: process.env.KAM_TEST_PROD_VAR,
   },
@@ -72,7 +68,7 @@ export default {
     },
   },
   purgeCSS: {
-    enabled: true, // True means it's always on in dev/build/generate mode
+    enabled: false, // True means it's always on in dev/build/generate mode
     // The two below options achieve the happy medium between Prism.js and PurgeCSS
     // If you're having trouble with code highlighting, try adding the pertinent clases to the whitelist
     whitelistPatternsChildren: [/token$/],
@@ -105,6 +101,7 @@ export default {
       'is-warning',
       'is-bold',
       'is-light',
+      'is-wight',
       'nuxt-content-container',
       'nuxt-content-editor',
       'is-editing',
@@ -119,6 +116,7 @@ export default {
       'is-one-third',
       'is-two-fifths',
       'is-size-6',
+      'is-size-*',
       'is-size-7',
       'tags',
     ],
