@@ -34,3 +34,9 @@ export default {
   },
 }
 </script>
+
+<style>
+header {
+  background-color: var(--brand-grey);
+}
+</style>
