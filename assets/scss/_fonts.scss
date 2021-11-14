@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5 {
 
 .nuxt-content {
 	h1, h2, h3, h4, h5 {
-		@extend .is-size-5;
+    font-weight: 300;
 
 		> a {
 			position: relative;
@@ -78,10 +78,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .title {
+  font-weight: 300;
 	padding: 0 0 10px;
 	margin: 0 0 20px;
 
-	// adds a transaprent bottom border
+	// adds a transparent bottom border
 	&.title--with-bottom-border {
 		border-bottom: 2px solid transparent;
 
