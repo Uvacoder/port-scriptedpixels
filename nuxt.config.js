@@ -69,7 +69,7 @@ export default {
     },
   },
   purgeCSS: {
-    enabled: false, // True means it's always on in dev/build/generate mode
+    enabled: true, // True means it's always on in dev/build/generate mode
     // The two below options achieve the happy medium between Prism.js and PurgeCSS
     // If you're having trouble with code highlighting, try adding the pertinent clases to the whitelist
     whitelistPatternsChildren: [/token$/],
