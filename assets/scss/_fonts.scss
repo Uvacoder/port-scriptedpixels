@@ -116,3 +116,7 @@ h1, h2, h3, h4, h5 {
 		}
 	}
 }
+
+.is-active {
+  @apply text-blue-500;
+}
