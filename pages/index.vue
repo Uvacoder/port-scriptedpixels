@@ -1,14 +1,13 @@
 <template>
-  <div class="container is-fluid">
-    <div class="columns">
-      <div class="column">
+  <div>
+    <!-- <div class="column">
         <h3 class="title title--with-bottom-border title--border-danger is-spaced">Design</h3>
         <h4 class="subtitle">Wireframes, Sketch, Prototypes</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi corporis eveniet ipsam blanditiis in amet,
           eligendi, optio earum totam similique eius nostrum. Voluptatem facilis possimus saepe molestias nisi cum.
           <br />
-          Kam
+          {{ test }}
         </p>
       </div>
 
@@ -29,7 +28,7 @@
           eligendi, optio earum totam similique eius nostrum. Voluptatem facilis possimus saepe molestias nisi cum.
         </p>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

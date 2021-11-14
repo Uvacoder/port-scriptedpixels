@@ -1,5 +1,5 @@
 <template>
-  <div class="grid-container">
+  <div>
     <div v-if="error.statusCode === 404">
       <h1>Page not found</h1>
       <p>Test</p>
@@ -11,8 +11,11 @@
 
 <script>
 export default {
-  props: ['error'],
+  props: {
+    error: {
+      type: String,
+      default: 'error',
+    },
+  },
 }
 </script>
-
-<style></style>
