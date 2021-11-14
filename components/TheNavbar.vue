@@ -2,7 +2,13 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <a href="#">
       <p aria-hidden class="hidden">Scripted Pixels</p>
-      <img src="~/assets/images/scriptedPixelsLogo.svg" width="150" height="85" aria-hidden alt="Scripted Pixes Logo" />
+      <img
+        src="~/assets/images/scriptedPixelsLogo--initials.svg"
+        width="150"
+        height="85"
+        aria-hidden
+        alt="Scripted Pixes Logo"
+      />
     </a>
 
     <div class="navbar-menu" :class="[isActive ? 'is-active' : '']">
