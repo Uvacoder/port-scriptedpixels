@@ -57,7 +57,5 @@
 </template>
 
 <script>
-export default {
-  layout: 'about',
-}
+export default {}
 </script>

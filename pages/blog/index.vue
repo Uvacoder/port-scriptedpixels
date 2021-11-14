@@ -53,6 +53,5 @@ export default {
       return false
     }
   },
-  layout: 'post',
 }
 </script>

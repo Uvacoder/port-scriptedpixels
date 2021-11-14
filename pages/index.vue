@@ -43,7 +43,6 @@ export default {
       title: 'Scripted Pixels | Home Page',
     }
   },
-  layout: 'homepage',
 }
 </script>
 
