@@ -1,23 +1,29 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <a href="#">
-      <p aria-hidden class="hidden">Scripted Pixels</p>
-      <img
-        src="~/assets/images/scriptedPixelsLogo--initials.svg"
-        width="150"
-        height="85"
-        aria-hidden
-        alt="Scripted Pixes Logo"
-      />
-    </a>
+  <header class="fixed w-screen border-b-2 border-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-3">
+      <div class="flex justify-between items-center py-3">
+        <nuxt-link to="/">
+          <img
+            src="~/assets/images/scriptedpixelslogoInitial--white.svg"
+            width="150"
+            height="85"
+            aria-hidden=""
+            alt="Scripted Pixes Logo"
+            class="w-12 md:w-20"
+          />
+        </nuxt-link>
 
-    <div class="navbar-menu" :class="[isActive ? 'is-active' : '']">
-      <nuxt-link class="navbar-item" exact :to="{ name: 'index' }">Home</nuxt-link>
-      <nuxt-link class="navbar-item" :to="{ name: 'about' }">About</nuxt-link>
-      <nuxt-link class="navbar-item" :to="{ name: 'work' }">Work</nuxt-link>
-      <nuxt-link class="navbar-item" :to="{ name: 'blog' }">Blog</nuxt-link>
+        <nav role="navigation" aria-label="main navigation">
+          <div class="text-white" :class="[isActive ? 'is-active' : '']">
+            <nuxt-link class="tracking-widest" exact :to="{ name: 'index' }">Home</nuxt-link>
+            <nuxt-link class="tracking-widest" :to="{ name: 'about' }">About</nuxt-link>
+            <nuxt-link class="tracking-widest" :to="{ name: 'work' }">Work</nuxt-link>
+            <nuxt-link class="tracking-widest" :to="{ name: 'blog' }">Blog</nuxt-link>
+          </div>
+        </nav>
+      </div>
     </div>
-  </nav>
+  </header>
 </template>
 
 <script>
