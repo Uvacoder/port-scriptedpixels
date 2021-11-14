@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed w-screen border-b-2 border-gray-900">
+  <header class="w-screen border-b-2 border-gray-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-3">
       <div class="flex justify-between items-center py-3">
         <nuxt-link to="/">
