@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section class="flex flex-col justify-center h-screen">
     <!-- <div class="column">
         <h3 class="title title--with-bottom-border title--border-danger is-spaced">Design</h3>
         <h4 class="subtitle">Wireframes, Sketch, Prototypes</h4>
@@ -29,7 +29,7 @@
         </p>
       </div>
     </div> -->
-  </div>
+  </section>
 </template>
 
 <script>
