@@ -27,10 +27,18 @@ export default {
     ListItem,
   },
   async asyncData({ $content, params, route }) {
+    const perPage = 10
+
+    // eslint-disable-next-line no-console
+    // console.log($content)
+    // eslint-disable-next-line no-console
+    // console.log(params)
+
     try {
       const blogPosts = await $content('blog', params.slug)
         .only(['title', 'date', 'description', 'slug', 'category', 'tags'])
         .sortBy('createdAt', 'desc')
+        .limit(perPage)
         .fetch()
 
       const path = route.path
