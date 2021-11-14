@@ -33,18 +33,9 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
-
-.grid-container {
-  grid-template-rows: 1fr 52px; // 52px is height of the header
-  grid-template-areas:
-  'content'
-  'navigation';
-  display: grid;
-  height: 100vh;
-}
-
-.grid-content {
-  grid-area: content;
+.hidden {
+  visibility: hidden;
+  display: none;
 }
 
 
