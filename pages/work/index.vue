@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <section>
+  <section>
+    <div class="mx-auto px-4 sm:px-3">
       <h3 class="title is-size-3 is-spaced p-0 mb-0">Latest projects I've worked on</h3>
-    </section>
-    <section>
       <div v-for="post in workPosts" :key="post.slug" class="column is-full">
         <ListItem :post-data="post" :route="path" />
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>

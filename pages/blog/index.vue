@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <section class="hero is-light">
+  <section>
+    <div class="mx-auto px-4 sm:px-3">
       <div class="hero-body">
         <div class="container">
           <h3 class="title is-size-3 is-spaced p-0 mb-0">The Blog</h3>
         </div>
       </div>
-    </section>
-    <section class="section grid-content container">
       <div class="content">
         <div class="columns is-multiline">
           <div v-for="post in blogPosts" :key="post.slug" class="column is-full mb-6">
@@ -15,8 +13,8 @@
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
