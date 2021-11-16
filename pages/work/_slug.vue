@@ -1,5 +1,7 @@
 <template>
-  <nuxt-content :document="workPost" />
+  <section class="max-w-7xl mx-auto mx-auto px-4 sm:px-3">
+    <nuxt-content :document="workPost" />
+  </section>
 </template>
 
 <script>
