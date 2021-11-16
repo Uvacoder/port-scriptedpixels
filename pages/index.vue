@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col justify-center h-screen">
+  <section class="flex flex-col justify-center min-h-screen -mt-12 -mb-20">
     <div class="mx-auto px-4 sm:px-3">
       <img src="../assets/images/scriptedpixels-logo--white.svg" alt="" />
       <h2 ref="subHeading" class="text-center text-l text-white md:text-2xl my-0 mt-5">Design, Develop, Deliver</h2>
