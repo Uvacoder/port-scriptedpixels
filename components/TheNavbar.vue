@@ -13,13 +13,13 @@
           />
         </nuxt-link> -->
 
-        <nav role="navigation" aria-label="main navigation">
-          <div class="text-white" :class="[isActive ? 'is-active' : '']">
-            <nuxt-link class="tracking-widest" exact :to="{ name: 'index' }">Home</nuxt-link>
-            <nuxt-link class="tracking-widest" :to="{ name: 'about' }">About</nuxt-link>
-            <nuxt-link class="tracking-widest" :to="{ name: 'work' }">Work</nuxt-link>
+        <nav role="navigation" aria-label="main navigation" class="text-white">
+          <template :class="[isActive ? 'is-active' : '']">
+            <nuxt-link class="tracking-widest mr-1" exact :to="{ name: 'index' }">Home</nuxt-link>
+            <nuxt-link class="tracking-widest mr-1" :to="{ name: 'about' }">About</nuxt-link>
+            <nuxt-link class="tracking-widest mr-1" :to="{ name: 'work' }">Work</nuxt-link>
             <nuxt-link class="tracking-widest" :to="{ name: 'blog' }">Blog</nuxt-link>
-          </div>
+          </template>
         </nav>
       </div>
     </div>
