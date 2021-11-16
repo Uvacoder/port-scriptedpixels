@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <section class="max-w-7xl mx-auto px-4 sm:px-3">
     <h1>Great success!</h1>
     <p>Form Submitted</p>
-  </div>
+  </section>
 </template>
 
 <script>
