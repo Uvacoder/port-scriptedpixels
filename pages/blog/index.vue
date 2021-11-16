@@ -1,20 +1,7 @@
 <template>
-  <section>
-    <div class="mx-auto px-4 sm:px-3">
-      <div class="hero-body">
-        <div class="container">
-          <h3 class="title is-size-3 is-spaced p-0 mb-0">The Blog</h3>
-        </div>
-      </div>
-      <div class="content">
-        <div class="columns is-multiline">
-          <div v-for="post in blogPosts" :key="post.slug" class="column is-full mb-6">
-            <ListItem :post-data="post" :route="path" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <ul class="my-10">
+    <ListItem v-for="post in blogPosts" :key="post.slug" :post-data="post" :route="path" />
+  </ul>
 </template>
 
 <script>
