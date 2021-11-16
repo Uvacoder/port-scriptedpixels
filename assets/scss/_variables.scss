@@ -1,4 +1,4 @@
-// SCRIPTED "PIXELS" COLOURS
+// SCRIPTED PIXELS BRAND COLOURS
 $orange:	hsl(20, 100%, 50%);
 $green: hsl(100, 100%, 49);
 $blue: hsl(205, 90%, 60%);
@@ -6,31 +6,16 @@ $purple: hsl(282, 100%, 50%);
 $pink: hsl(326, 100%, 50%);
 $red: hsl(360, 100%, 50%);
 
-// OVERRIDE BULMA'S GLOBAL WITH ABOVE
-$danger: $red;
-$link: $blue;
-$success: $green;
-$primary: $purple;
-$info: $orange;
-$warning: $pink;
-
 $brandColours: (
-  'danger': $danger,
-  'link': $link,
-  'success': $success,
-  'primary': $primary,
-  'info': $info,
-  'warning': $warning,
+  'danger': $red,
+  'link': $blue,
+  'success': $green,
+  'primary': $purple,
+  'info': $orange,
+  'warning': $pink,
 );
 
-$link-light: lighten($link, 10%);
-$primary-light: lighten($primary, 10%);
-$warning-light: lighten($warning, 10%);
-$info-light: lighten($info, 10%);
-
-// $section-padding: 3rem 1rem;
-// 32px = bulma default
-$gap: 16px;
+$brandColoursList: $red, $blue, $green, $purple, $orange, $pink;
 
 :root {
   --brand-grey: #272727;
