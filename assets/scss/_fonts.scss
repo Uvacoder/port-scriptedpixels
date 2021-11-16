@@ -70,26 +70,27 @@ h1, h2, h3, h4, h5 {
 
 .nuxt-content {
 	h1, h2, h3, h4, h5 {
-    font-weight: 300;
 
 		> a {
 			position: relative;
-			margin-left: 0;
+			padding-left: 30px;
 
 			&::before {
-				line-height: inherit;
+        color: map-get($brandColours, 'primary');
+        vertical-align: top;
 				text-align: center;
 				position: absolute;
 				font-weight: 400;
-				color: $primary;
 				height: 1.5rem;
+				line-height: 1;
 				content: "#";
 				width: 100%;
 				opacity: 1;
 				left: 0;
 				top: 0;
 			}
-		}	}
+		}
+	}
 }
 
 .title {
@@ -114,8 +115,4 @@ h1, h2, h3, h4, h5 {
 			border-color: map-get($brandColours, 'success');
 		}
 	}
-}
-
-.is-active {
-  @apply text-blue-500;
 }
