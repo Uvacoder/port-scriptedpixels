@@ -18,6 +18,8 @@
 </template>
 
 <script>
+import Prism from '~/plugins/prism'
+
 export default {
   async asyncData({ $content, params }) {
     const blogPost = await $content('blog', params.slug).fetch()
@@ -25,5 +27,8 @@ export default {
     return { blogPost }
   },
   layout: 'post',
+  mounted() {
+    Prism.highlightAll()
+  },
 }
 </script>

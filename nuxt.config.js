@@ -28,11 +28,20 @@ export default {
     },
   },
 
+  content: {
+    markdown: {
+      prism: {
+        // theme: 'prism-themes/themes/prism-material-oceanic.css',
+        theme: 'prism-themes/themes/prism-material-oceanic.css',
+      },
+    },
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['~/assets/scss/scriptedpixels.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['~/plugins/axios'],
+  plugins: ['~/plugins/axios', '~/plugins/prism'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -53,26 +62,17 @@ export default {
     'nuxt-purgecss',
   ],
 
-  content: {},
-
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {
-    postcss: {
-      preset: {
-        features: {
-          customProperties: false,
-        },
-      },
-    },
-  },
+  build: {},
+
   purgeCSS: {
     enabled: false, // True means it's always on in dev/build/generate mode
     // The two below options achieve the happy medium between Prism.js and PurgeCSS
     // If you're having trouble with code highlighting, try adding the pertinent clases to the whitelist
     whitelistPatternsChildren: [/token$/],
-    whitelist: [],
+    whitelist: ['pre', 'code'],
   },
 }
