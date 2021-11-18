@@ -5,11 +5,16 @@
 </template>
 
 <script>
+import Prism from '~/plugins/prism'
+
 export default {
   async asyncData({ $content, params }) {
     const workPost = await $content('work', params.slug).fetch()
 
     return { workPost }
+  },
+  mounted() {
+    Prism.highlightAll()
   },
 }
 </script>
