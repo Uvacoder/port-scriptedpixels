@@ -23,7 +23,6 @@
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      action="/success"
       class="my-10"
     >
       <fieldset disabled>
