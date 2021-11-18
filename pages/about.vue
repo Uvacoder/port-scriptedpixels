@@ -17,8 +17,16 @@
       <a href="https://linkedin.com/in/kambanwait" target="_blank">LinkedIn</a> or send me a message below:
     </p>
 
-    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success">
-      <fieldset>
+    <form
+      name="contact"
+      aria-disabled="disabled"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      action="/success"
+      class="my-10"
+    >
+      <fieldset disabled>
         <input type="hidden" name="form-name" value="contact" />
 
         <div class="field">
