@@ -2,16 +2,16 @@
   <header class="fixed w-screen border-b border-gray-900 h-12 top-0 z-50 drop-shadow-md">
     <div class="max-w-7xl mx-auto px-3 md:px-6">
       <div class="flex justify-center md:justify-end items-center py-3">
-        <!-- <nuxt-link to="/">
+        <nuxt-link to="/" class="md:ml-0 md:mr-auto">
           <img
             src="~/assets/images/scriptedpixelslogoInitial--white.svg"
             width="150"
             height="85"
             aria-hidden=""
             alt="Scripted Pixes Logo"
-            class="w-10"
+            class="w-7 hidden md:block"
           />
-        </nuxt-link> -->
+        </nuxt-link>
 
         <nav role="navigation" aria-label="main navigation" class="text-white">
           <template :class="[isActive ? 'is-active' : '']">
