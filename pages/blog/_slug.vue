@@ -10,9 +10,7 @@
       <span v-for="tag in blogPost.tags" :key="tag" class="tag is-light mb-0 pr-0 is-size-6">{{ tag }}</span>
     </p>
 
-    <div class="content">
-      <nuxt-content :document="blogPost" />
-    </div>
+    <nuxt-content :document="blogPost" />
   </section>
 </template>
 
