@@ -1,6 +1,6 @@
 export default {
   privateRuntimeConfig: {
-    apiSecret: process.env.KAM_TEST_PROD_VAR,
+    apiSecret: process.env.KAM_TEST_PROD_VAR
   },
 
   server: {},
@@ -11,7 +11,7 @@ export default {
   target: 'static',
 
   router: {
-    linkActiveClass: 'is-active',
+    linkActiveClass: 'is-active'
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -20,20 +20,20 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: '' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     bodyAttrs: {
-      class: '',
-    },
+      class: ''
+    }
   },
 
   content: {
     markdown: {
       prism: {
-        theme: 'prismjs/themes/prism-tomorrow.css',
-      },
-    },
+        theme: 'prismjs/themes/prism-tomorrow.css'
+      }
+    }
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -50,7 +50,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     // '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -58,7 +58,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxt/content',
     '@nuxtjs/axios',
-    'nuxt-purgecss',
+    'nuxt-purgecss'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -72,6 +72,6 @@ export default {
     // The two below options achieve the happy medium between Prism.js and PurgeCSS
     // If you're having trouble with code highlighting, try adding the pertinent clases to the whitelist
     whitelistPatternsChildren: [/token$/],
-    whitelist: ['pre', 'code'],
-  },
+    whitelist: ['pre', 'code']
+  }
 }

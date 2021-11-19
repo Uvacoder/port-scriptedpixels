@@ -29,6 +29,6 @@ export default {
   layout: 'post',
   mounted() {
     Prism.highlightAll()
-  },
+  }
 }
 </script>

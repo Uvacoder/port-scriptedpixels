@@ -21,6 +21,6 @@
 
 <script>
 export default {
-  props: ['postData', 'route'],
+  props: ['postData', 'route']
 }
 </script>
