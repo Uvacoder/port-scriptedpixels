@@ -22,7 +22,10 @@
 html {
   background-color: var(--brand-grey);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding: 70px;
   @apply text-white;
+  overflow: auto;
 }
 
 html,
