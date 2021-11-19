@@ -15,6 +15,6 @@ export default {
   },
   mounted() {
     Prism.highlightAll()
-  },
+  }
 }
 </script>
