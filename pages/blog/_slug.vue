@@ -3,16 +3,15 @@
     <h4 class="my-10 text-4xl">{{ blogPost.title }}</h4>
 
     <section class="my-10 p-2 rounded-sm text-sm border border-gray-700">
-      <p class="mb-2">Date posted: {{ blogPost.date }}</p>
+      <p class="mb-2"><span class="font-semibold">Date posted:</span> {{ blogPost.date }}</p>
 
-      <p v-if="blogPost.category" class="mb-2">Category: {{ blogPost.category }}</p>
+      <p v-if="blogPost.category" class="mb-2"><span class="font-semibold">Category:</span> {{ blogPost.category }}</p>
 
       <p v-if="blogPost.tags" class="mb-1">
-        Tags: [
+        <span class="font-semibold">Tags:</span>
         <span v-for="(tag, i) in blogPost.tags" :key="tag + i" :class="i + 1 == tagsTotal ? '' : 'mr-2'"
           >{{ tag }}{{ i + 1 == tagsTotal ? '' : ',' }}</span
         >
-        ]
       </p>
     </section>
 
