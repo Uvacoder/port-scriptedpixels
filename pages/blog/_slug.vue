@@ -1,14 +1,20 @@
 <template>
-  <section>
+  <section class="my-10">
+    <h4 class="my-10 text-4xl">{{ blogPost.title }}</h4>
 
-    <p class="is-size-6">Date posted: {{ blogPost.date }}</p>
+    <section class="my-10 p-2 rounded-sm text-sm border border-gray-700">
+      <p class="mb-2">Date posted: {{ blogPost.date }}</p>
 
-    <p v-if="blogPost.category" class="is-size-6">Category: {{ blogPost.category }}</p>
+      <p v-if="blogPost.category" class="mb-2">Category: {{ blogPost.category }}</p>
 
-    <p v-if="blogPost.tags" class="tags has-addons is-size-6">
-      Tags:
-      <span v-for="tag in blogPost.tags" :key="tag" class="tag is-light mb-0 pr-0 is-size-6">{{ tag }}</span>
-    </p>
+      <p v-if="blogPost.tags" class="mb-1">
+        Tags: [
+        <span v-for="(tag, i) in blogPost.tags" :key="tag + i" :class="i + 1 == tagsTotal ? '' : 'mr-2'"
+          >{{ tag }}{{ i + 1 == tagsTotal ? '' : ',' }}</span
+        >
+        ]
+      </p>
+    </section>
 
     <nuxt-content :document="blogPost" />
   </section>
