@@ -1,6 +1,5 @@
 <template>
   <section>
-    <h4 class="title mb-0">{{ blogPost.title }}</h4>
 
     <p class="is-size-6">Date posted: {{ blogPost.date }}</p>
 

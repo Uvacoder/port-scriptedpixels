@@ -1,7 +1,7 @@
 <template>
   <li class="mb-20">
     <nuxt-link :to="`${route}/${postData.slug}`">
-      <h4 class="title mt-0 mb-4 text-4xl">
+      <h4 class="mt-0 mb-4 text-4xl">
         {{ postData.title }}
       </h4>
 
