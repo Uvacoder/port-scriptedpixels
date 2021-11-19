@@ -26,6 +26,11 @@ export default {
     return { blogPost }
   },
   layout: 'post',
+  computed: {
+    tagsTotal() {
+      return this.blogPost.tags.length
+    }
+  },
   mounted() {
     Prism.highlightAll()
   }
