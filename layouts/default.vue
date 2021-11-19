@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navigation />
-    <section class="max-w-7xl mx-auto px-4 sm:px-3 pt-12">
+    <section class="max-w-7xl mx-auto px-3 md:px-6 pt-12">
       <Nuxt />
     </section>
     <Footer />

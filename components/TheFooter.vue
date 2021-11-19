@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="flex flex-col md:flex-row justify-between max-w-7xl mx-auto px-4 sm:px-3 mt-6 pb-6 text-white opacity-50"
+    class="flex flex-col md:flex-row justify-between max-w-7xl mx-auto px-3 md:px-6 mt-6 pb-6 text-white opacity-50"
   >
     <p class="mb-3">&copy; Scripted Pixels Ltd 2021</p>
 

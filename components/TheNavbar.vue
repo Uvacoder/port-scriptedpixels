@@ -1,6 +1,6 @@
 <template>
   <header class="fixed w-screen border-b border-gray-900 h-12 top-0 z-50 drop-shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-3">
+    <div class="max-w-7xl mx-auto px-3 md:px-6">
       <div class="flex justify-center md:justify-end items-center py-3">
         <!-- <nuxt-link to="/">
           <img

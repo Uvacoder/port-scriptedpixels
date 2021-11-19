@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-7xl mx-auto px-4 sm:px-3">
+  <section class="max-w-7xl mx-auto px-3 md:px-6">
     <nuxt-content :document="workPost" />
   </section>
 </template>
