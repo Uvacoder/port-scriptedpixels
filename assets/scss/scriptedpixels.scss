@@ -2,6 +2,7 @@
 @import "./variables";
 @import "./fonts";
 @import "./mainNavigation";
+@import "./nuxt-content";
 
 // NUXT PAGE TRANSITIONS
 // .page-enter-active,
@@ -40,8 +41,4 @@ body {
 .hidden {
   visibility: hidden;
   display: none;
-}
-
-.content pre {
-  margin: 2em 0 4em;
 }

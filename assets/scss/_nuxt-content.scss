@@ -1,0 +1,47 @@
+/*
+  Styles Nuxt/Content content
+*/
+
+.nuxt-content {
+
+	h1, h2, h3, h4, h5 {
+
+		> a {
+			position: relative;
+			padding-left: 30px;
+
+			&::before {
+        color: map-get($brandColours, 'info');
+        vertical-align: top;
+				text-align: center;
+				position: absolute;
+				font-weight: 400;
+				height: 1.5rem;
+				line-height: 1;
+				content: "#";
+				width: 100%;
+				opacity: 1;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+
+  h4 {
+    @apply text-2xl
+  }
+
+  p {
+    @apply mb-6 text-lg;
+  }
+
+  // Code samples
+  .nuxt-content-highlight .code-toolbar pre[class*="language-"] {
+    @apply shadow-md rounded-sm border border-gray-800
+  }
+
+  .nuxt-content-highlight {
+    margin: 2em auto;
+  }
+
+}

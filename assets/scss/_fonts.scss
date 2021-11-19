@@ -68,31 +68,6 @@ h1, h2, h3, h4, h5 {
 	margin: 1em 0 2em;
 }
 
-.nuxt-content {
-	h1, h2, h3, h4, h5 {
-
-		> a {
-			position: relative;
-			padding-left: 30px;
-
-			&::before {
-        color: map-get($brandColours, 'primary');
-        vertical-align: top;
-				text-align: center;
-				position: absolute;
-				font-weight: 400;
-				height: 1.5rem;
-				line-height: 1;
-				content: "#";
-				width: 100%;
-				opacity: 1;
-				left: 0;
-				top: 0;
-			}
-		}
-	}
-}
-
 .title {
 
 	// adds a transparent bottom border
