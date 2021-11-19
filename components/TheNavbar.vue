@@ -15,10 +15,10 @@
 
         <nav role="navigation" aria-label="main navigation" class="text-white">
           <template :class="[isActive ? 'is-active' : '']">
-            <nuxt-link class="tracking-widest mr-1" exact :to="{ name: 'index' }">Home</nuxt-link>
-            <nuxt-link class="tracking-widest mr-1" :to="{ name: 'about' }">About</nuxt-link>
-            <nuxt-link class="tracking-widest mr-1" :to="{ name: 'work' }">Work</nuxt-link>
-            <nuxt-link class="tracking-widest" :to="{ name: 'blog' }">Blog</nuxt-link>
+            <nuxt-link class="tracking-widest mr-1 text-lg" exact :to="{ name: 'index' }">Home</nuxt-link>
+            <nuxt-link class="tracking-widest mr-1 text-lg" :to="{ name: 'about' }">About</nuxt-link>
+            <nuxt-link class="tracking-widest mr-1 text-lg" :to="{ name: 'work' }">Work</nuxt-link>
+            <nuxt-link class="tracking-widest text-lg" :to="{ name: 'blog' }">Blog</nuxt-link>
           </template>
         </nav>
       </div>
