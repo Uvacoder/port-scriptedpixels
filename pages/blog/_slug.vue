@@ -1,8 +1,8 @@
 <template>
-  <section class="my-10">
-    <h4 class="my-10 text-4xl">{{ blogPost.title }}</h4>
+  <section>
+    <h4 class="my-28 text-4xl mx-auto">{{ blogPost.title }}</h4>
 
-    <section class="my-10 p-2 rounded-sm text-sm border border-gray-700">
+    <section class="my-10 p-2 rounded-sm text-sm border border-gray-700 max-w-3xl mx-auto">
       <p class="mb-2"><span class="font-semibold">Date posted:</span> {{ blogPost.date }}</p>
 
       <p v-if="blogPost.category" class="mb-2"><span class="font-semibold">Category:</span> {{ blogPost.category }}</p>
@@ -15,7 +15,7 @@
       </p>
     </section>
 
-    <nuxt-content :document="blogPost" />
+    <nuxt-content :document="blogPost" class="max-w-3xl mx-auto" />
   </section>
 </template>
 
