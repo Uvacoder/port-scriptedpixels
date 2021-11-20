@@ -23,10 +23,16 @@
 import Prism from '~/plugins/prism'
 
 export default {
-  async asyncData({ $content, params }) {
-    const blogPost = await $content('blog', params.slug).fetch()
-
-    return { blogPost }
+  async asyncData({ $content, params, error }) {
+    try {
+      const blogPost = await $content('blog', params.slug).fetch()
+      return { blogPost }
+    } catch (err) {
+      error({
+        statusCode: 404,
+        message: 'Page could not be found'
+      })
+    }
   },
   layout: 'post',
   computed: {
