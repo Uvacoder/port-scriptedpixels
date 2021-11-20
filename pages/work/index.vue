@@ -1,7 +1,9 @@
 <template>
-  <ul class="mt-28 mb-16">
-    <ListItem v-for="post in workPosts" :key="post.slug" :post-data="post" :route="path" />
-  </ul>
+  <section class="flex max-w-7xl mx-auto px-3 md:px-6 pt-12">
+    <ul class="mt-28 mb-16">
+      <ListItem v-for="post in workPosts" :key="post.slug" :post-data="post" :route="path" />
+    </ul>
+  </section>
 </template>
 
 <script>
