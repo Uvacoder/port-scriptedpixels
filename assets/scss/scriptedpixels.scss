@@ -30,8 +30,12 @@ html {
 
 html,
 body {
-  @apply font-light;
+  @apply font-extralight;
   min-height: 100%;
+}
+
+strong {
+  @apply font-semibold;
 }
 
 *,
