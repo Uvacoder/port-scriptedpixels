@@ -31,6 +31,7 @@ export default {
       console.error(error)
       return false
     }
-  }
+  },
+  layout: 'blog'
 }
 </script>
