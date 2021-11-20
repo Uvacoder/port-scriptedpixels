@@ -86,6 +86,6 @@ label {
 }
 
 button {
-  background-color: var(--brand-green);
+  @apply bg-brandGreen-700;
 }
 </style>
