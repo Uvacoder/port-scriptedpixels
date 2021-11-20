@@ -1,16 +1,16 @@
 <template>
   <div>
     <h3 class="text-3xl">About</h3>
-    <p class="my-5">I'm an independent creative front-end developer.</p>
-    <p class="my-5">
+    <p>I'm an independent creative front-end developer.</p>
+    <p>
       I work with companies to develop their website(s). Taking ideas from wireframes to prototypes toward a final
       product.
     </p>
-    <p class="my-5">
+    <p>
       I’m skilled in HTML, CSS (Sass), JavaScript (framework of choice is Vue), PHP CMS’ (Magento & WordPress), image
       editing (Sketch, Photoshop and Adobe XD). I also like to try new frameworks & tech-stacks.
     </p>
-    <p class="my-5">
+    <p>
       If you have a project that needs to be designed and/or built, if you need some help or advice, then please do
       contact me on on any of the following:
       <a href="https://www.twitter.com/scriptedpixels" target="_blank">Twitter</a>,
