@@ -1,5 +1,5 @@
 <template>
-  <ul class="my-10">
+  <ul class="mt-28 mb-16">
     <ListItem v-for="post in workPosts" :key="post.slug" :post-data="post" :route="path" />
   </ul>
 </template>
