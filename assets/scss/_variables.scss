@@ -5,6 +5,7 @@ $blue: hsl(205, 90%, 60%);
 $purple: hsl(282, 100%, 50%);
 $pink: hsl(326, 100%, 50%);
 $red: hsl(360, 100%, 50%);
+$grey: hsl(0, 0%, 15%);
 
 $brandColours: (
   'danger': $red,
@@ -18,7 +19,14 @@ $brandColours: (
 $brandColoursList: $red, $blue, $green, $purple, $orange, $pink;
 
 :root {
-  --brand-grey: #272727;
-  --brand-grey--opaque: rgba(255, 0, 0, .65)
-  --brand-grey--light: rgba(255, 0, 0, .35);
+  --brand-grey: #{$grey};
+  --brand-grey--opaque: hsla(#{$grey}, 0.65);
+  --brand-grey--light: hsla(0, 100%, 50%, 0.35);
+
+  --brand-red: #{$red};
+  --brand-blue: #{$blue};
+  --brand-green: #{$green};
+  --brand-purple: #{$purple};
+  --brand-orange: #{$orange};
+  --brand-pink: #{$pink};
 }
