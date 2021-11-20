@@ -73,5 +73,9 @@ export default {
     // If you're having trouble with code highlighting, try adding the pertinent clases to the whitelist
     whitelistPatternsChildren: [/token$/],
     whitelist: ['pre', 'code']
+  },
+
+  generate: {
+    fallback: true
   }
 }
