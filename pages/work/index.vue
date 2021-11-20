@@ -9,7 +9,7 @@ import ListItem from '~/components/ListItems'
 
 export default {
   components: {
-    ListItem,
+    ListItem
   },
   async asyncData({ $content, params, route }) {
     try {
@@ -22,13 +22,13 @@ export default {
 
       return {
         workPosts,
-        path,
+        path
       }
     } catch (error) {
       // eslint-disable-next-line no-console
       console.error(error)
       return false
     }
-  },
+  }
 }
 </script>
