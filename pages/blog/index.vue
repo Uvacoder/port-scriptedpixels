@@ -26,7 +26,7 @@ import ListItem from '~/components/ListItems'
 
 export default {
   components: {
-    ListItem,
+    ListItem
   },
   async asyncData({ $content, params, route }) {
     // const perPage = 10
@@ -56,7 +56,7 @@ export default {
 
       return {
         blogPosts,
-        path,
+        path
       }
     } catch (error) {
       // eslint-disable-next-line no-console
@@ -67,6 +67,6 @@ export default {
   methods: {
     // listTags(tags) {},
   },
-  layout: 'blog',
+  layout: 'blog'
 }
 </script>
