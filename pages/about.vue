@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="max-w-7xl mx-auto px-3 md:px-6 pt-12">
     <h3 class="text-3xl">About</h3>
 
     <section class="max-w-3xl mx-auto">
