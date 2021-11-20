@@ -25,41 +25,51 @@
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        class="my-10"
+        class="mt-10 mb-20 max-w-lg"
       >
         <fieldset disabled>
           <input type="hidden" name="form-name" value="contact" />
 
-          <div class="field">
-            <label for="name" class="label">Your full name:</label>
-            <div class="control">
-              <input class="input" type="text" name="name" placeholder="Text input" aria-label="Your full name" />
-            </div>
+          <div>
+            <label for="name" class="block">Full name</label>
+            <input
+              type="text"
+              name="name"
+              class="focus:ring-indigo-500 focus:border-indigo-500 block w-full rounded-sm border-gray-300"
+              placeholder="Agent Smith"
+              aria-label="Your full name"
+            />
           </div>
 
-          <div class="field">
-            <label for="email" class="label">Your Email address:</label>
-            <div class="control">
-              <input class="input" type="email" name="email" placeholder="Text input" aria-label="Your email address" />
-            </div>
+          <div>
+            <label for="email" class="block">Your Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              class="focus:ring-indigo-500 focus:border-indigo-500 block w-full rounded-sm border-gray-300"
+              aria-label="Your email address"
+              placeholder="someone@domain.com"
+            />
           </div>
 
-          <div class="field">
-            <label for="message" class="label">Tell me a little about what you'd like help with:</label>
-            <div class="control">
-              <textarea
-                class="textarea"
-                name="message"
-                placeholder="Provide as much information as possible to help me, help you"
-              ></textarea>
-            </div>
+          <div>
+            <label for="message" class="block">Tell me a little about what you'd like help with</label>
+            <textarea
+              id="message"
+              rows="3"
+              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-sm"
+              name="message"
+              placeholder="Provide as much information as possible to help me, help you"
+            />
           </div>
 
-          <div class="field is-grouped">
-            <div class="control">
-              <button type="submit" class="button is-primary">Submit</button>
-            </div>
-          </div>
+          <button
+            type="submit"
+            class="py-2 px-8 border border-transparent rounded-sm text-white focus:outline-none focus:ring-1 focus:ring-offset-1 mt-10"
+          >
+            Submit
+          </button>
         </fieldset>
       </form>
     </section>
@@ -69,3 +79,13 @@
 <script>
 export default {}
 </script>
+
+<style>
+label {
+  @apply mt-5 mb-2;
+}
+
+button {
+  background-color: var(--brand-green);
+}
+</style>
