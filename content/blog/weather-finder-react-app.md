@@ -1,9 +1,9 @@
 ---
-title: 'Weather finder React App'
+title: 'React Weather Finder App'
 date: '2019-01-18'
-description: 'A React App that uses data from the Open Weathermap API'
-tags: ['API', 'JavaScript', 'React', 'Responsive web development', 'REST', 'webdev']
-category: 'React'
+description: 'A React application that uses the Open Weathermap API for local weather informaiton.'
+tags: ['API', 'JavaScript', 'React', 'Responsive web development', 'REST', 'Front-end']
+category: 'Web Development'
 ---
 
 My version of the "Weather Finder App", from [this tutorial](https://www.youtube.com/watch?v=204C9yNeOYI&t=2450s), can be used [**here**](https://scriptedpixels.co.uk/playground/weather-finder/).
