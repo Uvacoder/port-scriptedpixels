@@ -41,4 +41,11 @@
     margin: 2em auto;
   }
 
+  ul, ol {
+    @apply list-disc p-0 ml-5 mb-5;
+
+    li {
+      @apply mb-2;
+    }
+  }
 }
