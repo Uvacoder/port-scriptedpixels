@@ -8,7 +8,7 @@
       <p class="font-light text-xl mb-4">{{ postData.description }}</p>
 
       <section class="border border-dashed border-b-0 border-l-0 border-r-0 pt-5 border-brandGray-200">
-        <p class="mb-2 text-sm"><span class="font-semibold">Date posted:</span> {{ postData.date }}</p>
+        <p class="mb-2 text-sm"><span class="font-semibold">Date posted:</span> {{ formattedDate }}</p>
 
         <p v-if="postData.category" class="mb-2 text-sm">
           <span class="font-semibold">Category:</span> {{ postData.category }}
@@ -27,10 +27,32 @@
 
 <script>
 export default {
-  props: ['postData', 'route'],
+  props: {
+    postData: {
+      type: Object,
+      required: true
+    },
+    route: {
+      type: String,
+      required: true
+    }
+  },
   computed: {
     tagsTotal() {
       return this.postData.tags ? this.postData.tags.length : 0
+    },
+    formattedDate() {
+      const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }
+      const dateTimeFormat = new Intl.DateTimeFormat('en-gb', options)
+      const date = new Date(this.postData.date)
+      const formatDate = dateTimeFormat.format(date)
+
+      return formatDate
     }
   }
 }
