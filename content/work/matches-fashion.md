@@ -1,6 +1,9 @@
 ---
-title: "matches fashion"
+title: "Matches Fashion"
+description: '6 month contract where I created the new Inspire feature on the website. Initially tasked with general day-to-day maitenance/improvements, I was then asked to take ownership of the Inspire feature they had designed in-house and needed develpoment.'
 date: "2013-04-16"
+tags: ['Archived', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'Contract', 'Custom CMS', 'Photoshop']
+category: 'Work'
 ---
 
 Website link: [Matches Fashion: Women's Inspire](https://www.matchesfashion.com/inspire-womens-lookbook "Matches Fashion: Women's Inspire")
@@ -18,26 +21,17 @@ Website features:
 9. PSD to HTML conversion
 10. AJAX
 
-More information: Working directly with Matches Fashion I was initially tasked to do a general code tidy - taking over form the last developer and fixing any ongoing issues. I then continued to work take ownership of a new feature called “Inspire”. I carried out the following:
+More information: Working directly with Matches Fashion I was initially tasked to do a general code tidy
 
-1. Manipulated WordPress RSS feeds to display within the new website using the Google Feeds and Isotope jQuery plugins.
-
-2. Taking ownership of a new online feature called “inspire”. Providing advice and solutions to elements the creative team had requested.
-
-3. Cleaning up old JavaScript libraries while creating new libraries ensuring compatibility with their new e-commerce CMS.
-
-4. Manipulated the old homepages in to their new design whilst cleaning code and implementing their new CMS.
-
-5. Ensured the new design was cross browser compliant and placing fall backs where needed (e.g: Internet Explorer 6)
-
-6. Tweaking their mobile website to display elements correctly (jQuery touch)
-
-7. Creating and updating e-mail newsletters
-
-8. Tidied up and fixed WordPress issue; introducing a dynamic header that loaded depending on where you left the main website from.
-
-9. All code was documented and commented for future developers.
-
-10. Finding resolutions for features that lacked in their new CMS: dynamic sub navigation highlighting – a Javascript URL reader was used to match what page was currently being viewed and ensuring it was “future proof”.
-
-11. Assisted the current developer with new CSS and HTML techniques; moving them away from old tabular developing.
+- Taking over form the last developer and fixing any ongoing issues. I then continued to work take ownership of a new feature called “Inspire”. I carried out the following:
+- Manipulated WordPress RSS feeds to display within the new website using the Google Feeds and Isotope jQuery plugins.
+- Taking ownership of a new online feature called “inspire”. Providing advice and solutions to elements the creative team had requested.
+- Cleaning up old JavaScript libraries while creating new libraries ensuring compatibility with their new e-commerce CMS.
+- Manipulated the old homepages in to their new design whilst cleaning code and implementing their new CMS.
+- Ensured the new design was cross browser compliant and placing fall backs where needed (e.g: Internet Explorer 6)
+- Tweaking their mobile website to display elements correctly (jQuery touch)
+- Creating and updating e-mail newsletters
+- Tidied up and fixed WordPress issue; introducing a dynamic header that loaded depending on where you left the main website from.
+- All code was documented and commented for future developers.
+- Finding resolutions for features that lacked in their new CMS: dynamic sub navigation highlighting – a Javascript URL reader was used to match what page was currently being viewed and ensuring it was “future proof”.
+- Assisted the current developer with new CSS and HTML techniques; moving them away from old tabular developing.
