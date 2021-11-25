@@ -36,7 +36,7 @@ export default {
   layout: 'post',
   computed: {
     tagsTotal() {
-      return this.blogPost.tags.length
+      return this.workPost.tags.length
     }
   },
   mounted() {
