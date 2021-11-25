@@ -1,6 +1,9 @@
 ---
-title: "asian football awards"
+title: "Asian Football Awards Website"
+description: 'Converting a static site to WordPress: The AFA website is the best place to find all information about, past & present, AFA ceremonies - rewarding & recognising Asians in the football industry.'
 date: "2013-04-16"
+tags: ['Archived', 'WordPress', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'freelance']
+category: 'Work'
 ---
 
 Website link: [The Asian football Awards](https://www.asianfootballawards.co.uk "www.asianfootballawards.co.uk")
@@ -20,7 +23,6 @@ Website features:
 11. Social sharing via [addthis.com](https://www.addthis.com "add this")
 12. Responsive and touch carousel
 13. CSS3 animations
-14. High resolution screen friendly
 
 More information: The site was designed by[The Tiny Agency](https://www.thetinyagency.com "The Tiny Agency"). The use of Adobe Illustrator allowed us to scale the icons easily for high resolution displays.
 
