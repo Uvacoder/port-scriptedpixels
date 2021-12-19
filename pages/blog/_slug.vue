@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h4 class="mt-28 mb-16 text-4xl mx-auto text-center">{{ blogPost.title }}</h4>
+    <h4 class="mt-32 mb-20 text-6xl mx-auto text-center">{{ blogPost.title }}</h4>
 
     <section class="my-10 p-2 pb-0 rounded-sm text-sm border border-gray-700 max-w-3xl mx-auto">
       <p class="mb-2"><span class="font-semibold">Date posted:</span> {{ blogPost.date }}</p>
