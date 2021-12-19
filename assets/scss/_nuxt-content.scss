@@ -32,6 +32,11 @@
     @apply text-2xl mt-12 mb-3
   }
 
+  a {
+    text-decoration: underline;
+    position: relative;
+  }
+
   // Code samples
   .nuxt-content-highlight .code-toolbar pre[class*="language-"] {
     @apply shadow-md rounded-sm border border-gray-800
