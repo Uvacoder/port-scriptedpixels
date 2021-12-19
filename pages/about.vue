@@ -2,7 +2,7 @@
   <section class="mt-28 mb-16 max-w-3xl mx-auto w-full">
     <h4 class="mt-0 mb-4 text-4xl">Kam Banwait</h4>
 
-    <p>I'm a freelance Front-end deveoper with over 10 years of experience.</p>
+    <p>I'm a Freelance Front-end deveoper with over 10 years of experience.</p>
 
     <p>
       I work with companies to build websites and web apps. Helping them take ideas to wireframes, to prototypes, toward
