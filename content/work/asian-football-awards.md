@@ -2,7 +2,7 @@
 title: "Asian Football Awards Website"
 description: 'Converting a static site to WordPress: The AFA website is the best place to find all information about, past & present, AFA ceremonies - rewarding & recognising Asians in the football industry.'
 date: "2013-04-16"
-tags: ['Archived', 'WordPress', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'freelance']
+tags: ['Archived', 'WordPress', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'Freelance']
 category: 'Work'
 ---
 
