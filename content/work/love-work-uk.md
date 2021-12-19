@@ -1,9 +1,12 @@
 ---
 title: "love work uk"
+description: 'Bespoke WordPress job-board website build for a small startup.'
 date: "2013-04-16"
+tags: ['Archived', 'WordPress', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'Freelance']
+category: 'Work'
 ---
 
-Website link: [Love Work UK (holding page)](https://www.loveworkuk.co.uk "www.loveworkuk.co.uk")
+Website link: [Love Work UK](https://www.loveworkuk.co.uk "www.loveworkuk.co.uk")
 
 Website features:
 

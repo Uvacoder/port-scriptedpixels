@@ -1,6 +1,9 @@
 ---
-title: "made.com"
+title: "MADE.COM"
+description: 'Freelance frontend Magento developer guiding the tech and design teams on the transition to adapt their website to be mobile first, from design to development.'
 date: "2013-04-15"
+tags: ['Archived', 'WordPress', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'Freelance']
+category: 'Work'
 ---
 
 Website link: [Made.com](https://www.made.com "www.made.com")
