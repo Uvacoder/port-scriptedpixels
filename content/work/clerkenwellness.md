@@ -1,6 +1,9 @@
 ---
 title: "clerkenwellness"
+description: 'Single page website for local Clerkenwell business.'
 date: "2013-04-16"
+tags: ['Archived', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'Freelance']
+category: 'Work'
 ---
 
 Website link: [Clerkenwellness](https://www.clerkenwellness.co.uk "www.clerkenwellness.co.uk")
