@@ -16,6 +16,8 @@
     </section>
 
     <nuxt-content :document="blogPost" class="max-w-3xl mx-auto" />
+
+    <prev-next :prev="prev" :next="next"/>
   </section>
 </template>
 
@@ -26,8 +28,14 @@ export default {
   async asyncData({ $content, params, error }) {
     try {
       const blogPost = await $content('blog', params.slug).fetch()
+      const [prev, next] = await $content('blog')
+        .only('title', 'slug')
+        .sortBy('createdAt', 'asc')
+        .surround(params.slug)
+        .fetch()
 
-      return { blogPost }
+      return { blogPost, prev, next }
+
     } catch (err) {
       error({
         statusCode: 404,
