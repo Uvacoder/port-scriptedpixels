@@ -82,7 +82,6 @@ export default {
 
   sentry: {
     dsn:
-      SENTRY_DNS ||
       'https://ab8a70f26dc943d5b092722d8b67856d@o922494.ingest.sentry.io/6129118',
     config: {
       // Add native Sentry config here
