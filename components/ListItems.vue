@@ -6,6 +6,7 @@
       rel="noopener noreferrer"
       :href="postData.archivedLink"
       title="postData.title"
+      class="block"
     >
       <h4 class="mt-0 mb-4 text-4xl">
         {{ postData.title }}
