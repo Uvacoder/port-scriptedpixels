@@ -1,7 +1,16 @@
 <template>
-  <section class="max-w-7xl mx-auto px-3 md:px-6 w-full">
-    <h1>Great success!</h1>
-    <p>Form Submitted</p>
+  <section
+    class="flex flex-col justify-center min-h-screen -mt-12 -mb-20 text-center"
+  >
+    <div class="mx-auto px-4 sm:px-3">
+      <h2 class="text-center text-l text-white md:text-2xl my-0 mt-5 mb-10">
+        Great success!
+      </h2>
+      <p>
+        Thanks for getting in touch, I'll aim to get back to you as soon as I
+        can.
+      </p>
+    </div>
   </section>
 </template>
 

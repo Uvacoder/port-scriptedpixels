@@ -42,7 +42,7 @@
       class="mb-20 max-w-lg"
     >
       <fieldset>
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="contact" value="contact" action="/success" />
 
         <div>
           <label for="name" class="block">Full name</label>
