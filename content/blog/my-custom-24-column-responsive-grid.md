@@ -1,5 +1,5 @@
 ---
-title: "My custom 24 column responsive grid...thanks, for nothing, twitter bootstrap!"
+title: "My custom 24 column responsive grid"
 date: "2013-09-04"
 description: 'A custom 24 responsive grid'
 tags: ['Responsive web development', 'Front-end', 'CSS', 'HTML']
@@ -18,7 +18,7 @@ Downloaded -> unzipped -> pulled in to Sublime 2 -> a few minutes spent looking 
 
 Why did such a greatly talked about framework documented so little...and full of bloat CSS?!
 
-I was confused and annoyed. The website was pretty poor to navigate (it may have changed since I last used it) and 
+I was confused and annoyed. The website was pretty poor to navigate (it may have changed since I last used it) and
 finding basic documentation was painful.
 
 <article-image src="blog/bootstrapCss1.jpg" alt="bootstrap css overview" ></article-image>
