@@ -40,9 +40,10 @@
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       class="mb-20 max-w-lg"
+      action="/success"
     >
       <fieldset>
-        <input type="hidden" name="contact" value="contact" action="/success" />
+        <input type="hidden" name="contact" value="contact" />
 
         <div>
           <label for="name" class="block">Full name</label>
