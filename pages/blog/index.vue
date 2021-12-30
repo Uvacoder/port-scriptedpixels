@@ -34,7 +34,7 @@ export default {
     try {
       const blogPosts = await $content('blog', params.slug)
         .only(['title', 'date', 'description', 'slug', 'category', 'tags'])
-        .sortBy('createdAt', 'desc')
+        .sortBy('date', 'desc')
         // .limit(perPage)
         .fetch()
 

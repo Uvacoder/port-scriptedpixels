@@ -17,7 +17,7 @@ export default {
     try {
       const workPosts = await $content('work', params.slug)
         .only(['title', 'date', 'description', 'slug', 'tags', 'archivedLink'])
-        .sortBy('createdAt', 'asc')
+        .sortBy('date', 'desc')
         .fetch()
 
       const path = route.path
