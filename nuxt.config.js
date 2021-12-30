@@ -58,7 +58,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxt/content',
     '@nuxtjs/axios',
-    'nuxt-purgecss'
+    'nuxt-purgecss',
+    '@nuxtjs/sentry'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -77,5 +78,15 @@ export default {
 
   generate: {
     fallback: true
+  },
+
+  sentry: {
+    dsn:
+      SENTRY_DNS ||
+      'https://ab8a70f26dc943d5b092722d8b67856d@o922494.ingest.sentry.io/6129118',
+    config: {
+      // Add native Sentry config here
+      // https://docs.sentry.io/platforms/javascript/guides/vue/configuration/options/
+    }
   }
 }
