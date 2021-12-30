@@ -1,23 +1,29 @@
 <template>
   <section class="mt-28 mb-16 max-w-3xl mx-auto w-full">
-    <h4 class="mt-0 mb-4 text-4xl">Kam Banwait</h4>
-
-    <p>I'm a Freelance Front-end deveoper with over 10 years of experience.</p>
+    <h3 class="mt-0 mb-4 text-3xl">Hi there, I'm Kam Banwait</h3>
 
     <p>
-      I work with companies to build websites and web apps. Helping them take ideas to wireframes, to prototypes, toward
-      the product.
+      I'm a creative Front-end developer with over 10 years of experience building websites and applications for many
+      companies.
     </p>
+
     <p>
-      I’m skilled in HTML, CSS (Sass), JavaScript (framework of choice is Vue), PHP CMS’ (Magento & WordPress), image
-      editing (Sketch, Photoshop & Adobe XD).
+      I’m proficient in HTML, CSS (<a href="https://sass-lang.com" target="_blank">Sass</a>), JavaScript (multiple
+      frameworks), CMS’s (Headless, Magento & WordPress), APIs, JamStack (<a href="#" target="_blank">wtf is
+      jamstack</a>), and I can also  design and edit images with the use of Sketch, Photoshop & Adobe XD.
     </p>
+
+    <p>I'm in the process of updating the whole site but check out <a href="/work" class="underline">my work</a> for an
+      idea of what I've developed.
+    </p>
+
     <p>
       If you have a project that needs to be designed and/or built, if you need some help or advice, then please do
-      contact me on on any of the following:
-      <a href="https://www.twitter.com/scriptedpixels" target="_blank">Twitter</a>,
-      <a href="https://linkedin.com/in/kambanwait" target="_blank">LinkedIn</a> or send me a message below:
+      contact me on on any of the following: <a href="https://www.twitter.com/scriptedpixels" target="_blank">Twitter
+    </a>, <a href="https://linkedin.com/in/kambanwait" target="_blank">LinkedIn</a> or send me a message below:
     </p>
+
+    <em class="text-red-500">Form is currently disabled</em>
 
     <form
       name="contact"
@@ -25,7 +31,7 @@
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      class="mt-10 mb-20 max-w-lg"
+      class="mb-20 max-w-lg"
     >
       <fieldset disabled>
         <input type="hidden" name="form-name" value="contact" />
