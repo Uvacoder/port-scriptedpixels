@@ -1,13 +1,22 @@
 <template>
   <section>
-    <h4 class="mt-28 mb-16 text-4xl mx-auto text-center">{{ workPost.title }}</h4>
+    <h4 class="mt-28 mb-16 text-4xl mx-auto text-center">
+      {{ workPost.title }}
+    </h4>
 
-    <section class="my-10 p-2 pb-0 rounded-sm text-sm border border-gray-700 max-w-3xl mx-auto">
-      <p class="mb-2"><span class="font-semibold">Date posted:</span> {{ workPost.date }}</p>
+    <section
+      class="my-10 p-2 pb-0 rounded-sm border border-gray-700 max-w-3xl mx-auto"
+    >
+      <p class="mb-2 text-sm">
+        <span class="font-semibold">Date posted:</span> {{ workPost.date }}
+      </p>
 
-      <p v-if="workPost.tags" class="mb-2">
+      <p v-if="workPost.tags" class="mb-2 text-sm">
         <span class="font-semibold">Tags:</span>
-        <span v-for="(tag, i) in workPost.tags" :key="tag + i" :class="i + 1 == tagsTotal ? '' : 'mr-2'"
+        <span
+          v-for="(tag, i) in workPost.tags"
+          :key="tag + i"
+          :class="i + 1 == tagsTotal ? '' : 'mr-2'"
           >{{ tag }}{{ i + 1 == tagsTotal ? '' : ',' }}</span
         >
       </p>
