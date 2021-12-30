@@ -17,7 +17,7 @@ To show you what the structure of the new mini-gallery I drew at the image below
 <article-image src="blog/IMG_0302-1024x768.png" alt="preview"></article-image>
 
 
-## The grid modifications:
+#### The grid modifications:
 
 I started off with editing a few bits of the Grid JavaScript first. I've included comments in the 'grid.js' file and I've pasted some key parts below. The changes start from line 341 in Grid.js:
 
@@ -95,7 +95,7 @@ PreviewGallery : function() {
 }
 ```
 
-## HTML for each grid item
+#### HTML for each grid item
 
 For each grid item I've had to include some extra data-attributes. These hold the thumbnail paths as well as our URL's.
 ```html
