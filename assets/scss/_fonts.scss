@@ -82,6 +82,7 @@ a {
   }
 
   .nuxt-content &[target="_blank"] {
+    display: inline-block;
     width: auto;
   }
 
