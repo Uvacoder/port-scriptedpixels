@@ -3,24 +3,35 @@
     <h3 class="mt-0 mb-4 text-3xl">Hi there, I'm Kam Banwait</h3>
 
     <p>
-      I'm a creative Front-end developer with over 10 years of experience building websites and applications for many
-      companies.
+      I'm a creative Front-end developer with over 10 years of experience
+      building websites and applications for many companies.
     </p>
 
     <p>
-      I’m proficient in HTML, CSS (<a href="https://sass-lang.com" target="_blank">Sass</a>), JavaScript (multiple
-      frameworks), CMS’s (Headless, Magento & WordPress), APIs, JamStack (<a href="#" target="_blank">wtf is
-      jamstack</a>), and I can also  design and edit images with the use of Sketch, Photoshop & Adobe XD.
-    </p>
-
-    <p>I'm in the process of updating the whole site but check out <a href="/work" class="underline">my work</a> for an
-      idea of what I've developed.
+      I’m proficient in HTML, CSS (<a
+        href="https://sass-lang.com"
+        target="_blank"
+        >Sass</a
+      >), JavaScript (multiple frameworks), CMS’s (Headless, Magento &
+      WordPress), APIs, JamStack (<a href="#" target="_blank">wtf is jamstack</a
+      >), and I can also design and edit images with the use of Sketch,
+      Photoshop & Adobe XD.
     </p>
 
     <p>
-      If you have a project that needs to be designed and/or built, if you need some help or advice, then please do
-      contact me on on any of the following: <a href="https://www.twitter.com/scriptedpixels" target="_blank">Twitter
-    </a>, <a href="https://linkedin.com/in/kambanwait" target="_blank">LinkedIn</a> or send me a message below:
+      I'm in the process of updating the whole site but check out
+      <a href="/work" class="underline">my work</a> for an idea of what I've
+      developed.
+    </p>
+
+    <p>
+      If you have a project that needs to be designed and/or built, if you need
+      some help or advice, then please do contact me on on any of the following:
+      <a href="https://www.twitter.com/scriptedpixels" target="_blank"
+        >Twitter</a
+      >,
+      <a href="https://linkedin.com/in/kambanwait" target="_blank">LinkedIn</a>
+      or send me a message below:
     </p>
 
     <em class="text-red-500">Form is currently disabled</em>
@@ -60,7 +71,9 @@
         </div>
 
         <div>
-          <label for="message" class="block">Tell me a little about what you'd like help with</label>
+          <label for="message" class="block"
+            >Tell me a little about what you'd like help with</label
+          >
           <textarea
             id="message"
             rows="3"
