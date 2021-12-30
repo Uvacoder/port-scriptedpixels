@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h4 class="mt-32 mb-20 text-6xl mx-auto text-center">
+    <h4 class="mt-32 mb-20 text-3xl md:text-6xl mx-auto text-center">
       {{ blogPost.title }}
     </h4>
 

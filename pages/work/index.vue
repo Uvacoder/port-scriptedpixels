@@ -1,7 +1,12 @@
 <template>
   <section class="flex max-w-7xl mx-auto px-3 md:px-6 pt-12">
     <ul class="mt-28 mb-16 max-w-3xl mx-auto w-full">
-      <ListItem v-for="post in workPosts" :key="post.slug" :post-data="post" :route="path" />
+      <ListItem
+        v-for="post in workPosts"
+        :key="post.slug"
+        :post-data="post"
+        :route="path"
+      />
     </ul>
   </section>
 </template>
