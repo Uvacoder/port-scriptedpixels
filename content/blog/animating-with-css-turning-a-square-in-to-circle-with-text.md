@@ -1,6 +1,9 @@
 ---
 title: "Animating with CSS, turning a Square in to a Circle, with text."
 date: "2013-08-22"
+description: 'Using CSS3 and HTML to create a small animation when something is hovered'
+tags: ['CSS', 'Front-end', 'HTML']
+category: 'Web Development'
 ---
 
 Just having some fun with some CSS3 animation and HTML. No jQuery or JavaScript used.
@@ -9,9 +12,28 @@ The example below shows how to use the `transform: rotate(xxxdeg);` in CSS when 
 
 Each square had to be held in a container as the "A link" text was also rotating when inside the main square `DIV`. This was a good "fault" as it gave me more control over the animations for the text. The text is set to be 100%, height and width, inside the containing DIV so that the whole square becomes a target. The opacity and absolute positioning of the text is animated with:
 
-_when not hovered_ `.ObjectContainer a { position: absolute; bottom: -200px; left: 0; opacity: 0; width: 100%; line-height: 0px; text-align: center; vertical-align: middle; }`
+_when not hovered_ 
+```css
+.ObjectContainer a {
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  line-height: 0px;
+  text-align: center;
+  vertical-align: middle;
+}
+```
 
-_when hovered_ `ObjectContainer:hover a { opacity: 1; bottom: 0; line-height: 200px;}`
+_when hovered_ 
+```css
+ObjectContainer:hover a {
+  opacity: 1;
+  bottom: 0;
+  line-height: 200px;
+}
+```
 
 The `-200px` would need to change to match the height of the square or this could be set with %'s.
 

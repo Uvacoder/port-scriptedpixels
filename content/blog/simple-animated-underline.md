@@ -1,6 +1,9 @@
 ---
 title: "Simple animated underline"
 date: "2015-06-05"
+description: 'A simple underline effect for navigation links'
+tags: ['Animation', 'Front-end', 'CSS']
+category: 'Web Development'
 ---
 
 I've mainly used this effect for highlighting navigation links when a page is currently being used, or when another navigation link is being hovered over.
@@ -13,7 +16,7 @@ The CSS behind this is pretty straightforwards but the trick is to ensure that 
 
 I've used a bottom border in the example code below:
 
-```sass
+```css
 @mixin Transition( $values...) {
   $transitions: ();
   @each $declaration in $values {
@@ -62,9 +65,6 @@ The Sass mixin creates vendor prefixes for the CSS output as well as taking car
 
 You should be able to see that it's a pretty simple and straightforward effect to created. The key is to have the 0px border already set to ensure the animation works.
 
-See it in action on CodePen here:
-
-<p class="codepen" data-height="147" data-theme-id="0" data-slug-hash="mJmyBe" data-default-tab="result" data-user="kambanwait">See the Phttps://ef="https://codepen.io/kambanwait/pen/mJmyBe/">Animate underline</a> by Scripted Pixels Lthttps://ef="https://codepen.io/kambanwait">@kambanwait</a>) https://ef="https://codepen.io">CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js" async></script>
+See it in action on CodePen [here](https://codepen.io/kambanwait/pen/mJmyBe/)
 
 Please, ask questions, highlight issues, complain or provide some constructive feedback below – everything is welcome!

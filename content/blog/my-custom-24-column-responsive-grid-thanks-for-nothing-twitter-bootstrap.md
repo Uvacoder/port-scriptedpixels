@@ -1,14 +1,14 @@
 ---
 title: "My custom 24 column responsive grid...thanks, for nothing, twitter bootstrap!"
 date: "2013-09-04"
+description: 'A custom 24 responsive grid'
+tags: ['Responsive web development', 'Front-end', 'CSS', 'HTML']
+category: 'Web Development'
 ---
 
 I made this a little while back and have since used it in all my new website builds.
 
-Here it is in action: video.instagram, img.instagram {width: 100% !important; height: auto !important;}
-_A video of my very own #responsive #framework #html #css3 #mediaqueries #DIY #grid #webdev #scriptedpixels #MobileDev by @[scriptedpixels](https://instagram.com/scriptedpixels)_
-
-DEMO I've finally added a direct link to the [Demo here](https://scriptedpixels.co.uk/playground/basicresponsivegrid/ "Scripted Pixels 24 column demo")
+Here it is in [action](https://scriptedpixels.co.uk/playground/basicresponsivegrid/ "Scripted Pixels 24 column demo")
 
 WHY? I was working a late night on a project and decided to investigate some general frameworks and twitter bootstrap was appearing on all the blogs, plus I had heard a lot, good and bad, about it. With the majority of reviews being good; I decided to download it and give it a try.
 
@@ -18,9 +18,12 @@ Downloaded -> unzipped -> pulled in to Sublime 2 -> a few minutes spent looking 
 
 Why did such a greatly talked about framework documented so little...and full of bloat CSS?!
 
-I was confused and annoyed. The website was pretty poor to navigate (it may have changed since I last used it) and finding basic documentation was painful...it was a late night after all!
+I was confused and annoyed. The website was pretty poor to navigate (it may have changed since I last used it) and 
+finding basic documentation was painful.
 
-![bootstrapCss](images/bootstrapCss1.jpg) _The standard css for bootstrap. 1080 lines of CSS, most of which won't be used!_
+<article-image src="blog/bootstrapCss1.jpg" alt="bootstrap css overview" ></article-image>
+
+_The standard css for bootstrap. 1080 lines of CSS, most of which won't be used!_
 
 The small integration test I did concluded my efforts with this "framework". I was possibly just impatient with the whole process but there was one thing that I knew I would be doing if I had continued to use it: **overwriting CSS**.
 
@@ -37,7 +40,7 @@ _You'll notice my version is nearly the same as all three links and I can admit 
 My slightly modified reset.css file contains the following:
 
 ```css
-// Reset
+/* Reset */
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, caption, canvas, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, form, footer, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav,object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, tt, table, tbody, textarea, tfoot, thead, time, tr, th, td, u, ul, var, video {
 	font-family: inherit;
 	font-weight: inherit;
@@ -135,7 +138,11 @@ A file called "responsivegrid.css" holds all the magic of the grid. It's created
 
 `.col` Add this class to child elements of a row to float left and add the default gutter width. This class must be used in conjuction with one of the span classes below.
 
-`.span_1, .span_2, .span_3, .span_4, .span_5, .span_6, .span_7, .span_8, .span_9, .span_10, .span_11, .span_12` Add one of these classes to a each col element to set it’s fluid width. On smaller screen sizes these elements will default to stack vertically.
+```css
+.span_1, .span_2, .span_3, .span_4, .span_5, .span_6, .span_7, .span_8, .span_9, .span_10, .span_11, .span_12
+```
+
+Add one of these classes to a each col element to set it’s fluid width. On smaller screen sizes these elements will default to stack vertically.
 
 `.row, .col, .clr, .group` Add either of these classes to an element to clear it’s floating children. Uses the 'clearfix' method.
 

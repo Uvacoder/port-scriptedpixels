@@ -1,6 +1,9 @@
 ---
 title: "An alternative way of coding the Asian Football Awards menu"
 date: "2013-08-21"
+description: 'An alternative I created the menu for Asian Football Awards website'
+tags: ['JavaScript', 'Responsive web development', 'Front-end', 'css', 'html']
+category: 'Web Development'
 ---
 
 As promised, although it's a little later than I said it would be, here's my take on how I should have coded the menus for the Asian Football Awards website, for mobile particularly, I [posted about last week](animated-menu).
@@ -19,8 +22,3 @@ I've added comments in the above example but here's a break down of what's going
 6. With these I get the other relative menu for the non-clicked menu item
 7. I check to see IF the other menu is open. If it is I go ahead and close it and remove the 'hover' class from the other clicked menu item
 8. At the same time I'm checking to see if the menu I've clicked has the 'hover' class. If it does I know the menu is already open and I need to close it. If it doesn't have the class then I know I need to open it and add the class - that's the IF ELSE statement.
-
-It should be pretty clear on how it all works. I've added a "live demo" video below so you can see it in action. (This was taken from a previous version of my portfolio site)
-
-video.instagram, img.instagram {width: 100% !important; height: auto !important;}
-_#webdev #wordpress how a previous iteration of my site worked with a, better thought out, #jQuery nav (comparing to my previous code/video for Asian Football Awards) by @[scriptedpixels](https://instagram.com/scriptedpixels)_

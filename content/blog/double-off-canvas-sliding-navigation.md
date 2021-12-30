@@ -1,15 +1,25 @@
 ---
 title: 'Double off-canvas, sliding, navigation'
 date: '2013-11-20'
+description: 'How I went about implementing a left and right slide in/out panel for LuxDeco'
+tags: ['Animation', 'Front-end', 'CSS', 'HTML', 'PHP']
+category: 'Web Development'
 ---
 
-Whilst working at my current contract, at [LuxDeco](https://www.luxdeco.com 'LuxDeco'), I was tasked with creating a, mobile optimised, Magento theme where the design featured two slide-out/in info panels. These were to act similar to the slide out/in panels featured in the new Facebook mobile-app where the user is able to view a hidden panel that's hidden off the left and right hand side of the main content page.
+Whilst working at my current contract, at [LuxDeco](https://www.luxdeco.com 'LuxDeco'), I was tasked with creating a 
+mobile optimised Magento theme where the design featured two slide-out/in info panels. These were to act similar to 
+the slide out/in panels featured in the new Facebook mobile-app; the user is able to view a hidden panel that's 
+hidden off the left and right-hand side of the main content page.
 
-Here's a sketch of what I was looking to create: ![image](images/image.jpg)
+Here's a sketch of what I was looking to create:
 
-And here's the final version: ![Screen Shot 2013-10-15 at 14.06.25](images/Screen-Shot-2013-10-15-at-14.06.25.png)
+<article-image src="blog/image.jpg" alt="Double off-canvas mockup" ></article-image>
 
-Annnd here's a working [demo](https://scriptedpixels.co.uk/playground/doubleNavSliding.html 'Double slide out/in navigation').
+And here's the final version:
+
+<article-image src="blog/Screen-Shot-2013-10-15-at-14.06.25.png" alt="Double off-canvas final" ></article-image>
+
+Working [demo](https://scriptedpixels.co.uk/playground/doubleNavSliding.html 'Double slide out/in navigation').
 
 Before I even started to figure out how it was going to work I thought I'd start looking for a plugin, or tutorials, as this design is seen on a fair few websites now, especially as more and more sites are being optimised for smaller screens. I looked for plugins/tutorials that offered near-similar functionality. I assumed it would be a short search **but** what I found was a bunch of 'plugins/tutorials' that had 'issues'. These were issues that I found after implementing them and wasted an hour or so on each plugin/tutorial.
 
@@ -128,11 +138,7 @@ THE HTML:
 <!-- phone -->
 ```
 
-
-
 Pretty straightforward here; you've got wrapping DIV's that hold the content together with some hidden over flows. This hidden overflow helps hide the slide out/in navigation panels for us. It looks a little more complicated as I've got the #phone wrapper on this example.
-
-
 
 THE CSS:
 ```css

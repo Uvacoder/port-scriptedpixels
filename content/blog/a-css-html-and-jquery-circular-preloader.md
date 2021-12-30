@@ -1,19 +1,24 @@
 ---
 title: 'A CSS, HTML and jQuery circular preloader'
 date: '2013-09-05'
+description: 'How I designed and created a circular loading indicator'
+tags: ['Responsive', 'Front-end', 'CSS', 'HTML', 'JS']
+category: 'Web Development'
 ---
 
 After getting frustrated with some code not working how I wanted it to work, I decided to do a little sketching on my iPad mini on the way in to work.
 
-This is what I drew: ![IMG_4981](images/IMG_4981-1024x1024.jpg)_This was drawn on a train in to London, please excuse the scruffiness_
+This is what I drew:
+<article-image src="blog/IMG_4981-1024x1024.jpg" alt="Sketch on iPad mini" ></article-image>
 
 What is this all about? I wanted to get my mind off the other work so I looked at creating a minimal preloader, using only CSS, HTML and little jQuery. I started with taking on the traditional "straight line" preloader and playing with the thickness of lines and their opacity. This was looking great, but I wanted to create something a little more exciting for the visitor - who wants to wait to view a site anyway? I wanted to make that wait a little more bearable.
 
 I looked at creating a circular pre-loader, yes this is traditional again, but making this in CSS-only would prove to be a challenge and something that I know that could be re-used in an upcoming project.
 
-![Screen Shot 2013-09-05 at 08.58.37](images/Screen-Shot-2013-09-05-at-08.58.372.png)
+<article-image src="blog/Screen-Shot-2013-09-05-at-08.58.372.png" alt="final version in code" ></article-image>
 
-![Screen Shot 2013-09-05 at 08.58.37](images/Screen-Shot-2013-09-05-at-08.58.371.png)_The final design made in Photoshop after importing the image from the iPad so I could get that red/orange background color_
+
+<article-image src="blog/Screen-Shot-2013-09-05-at-08.58.371.png" alt="The final design made in Photoshop after importing the image from the iPad so I could get that red/orange background color_" ></article-image>
 
 Lets get started, shall we:
 

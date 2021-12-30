@@ -1,6 +1,9 @@
 ---
 title: "Custom mini image gallery, made with jQuery"
 date: "2013-09-30"
+description: 'Responsive image gallery with slide-down panel'
+tags: ['Responsive', 'Front-end', 'CSS', 'HTML', 'JS']
+category: 'Web Development'
 ---
 
 [20/11/2013 UPDATE: This is now responsive and available [here](https://scriptedpixels.co.uk/playground/thumbGallery.html "Now Responsive :)")]
@@ -20,63 +23,59 @@ THE HTML
 ```html
 <div class="container">
 
-	<div class="PreviewImageContainer">
-		<div class="LargePreviewImageContainer">
-			<div class="og-fullimg">
-				<img src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg" alt="" >
-			</div>
-		</div>
+  <div class="PreviewImageContainer">
+    <div class="LargePreviewImageContainer">
+      <div class="og-fullimg">
+        <img src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg" alt="" >
+      </div>
+    </div>
+  
+    <div class="SmallPreviewImageContainer">
+      <a class="SmallImage" rel="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg" href="#">
+        <img class="thumb" src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg">
+      </a>
+      <a class="SmallImage" rel="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/2.jpg" href="#">
+        <img class="thumb" src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/2.jpg">
+      </a>
+      <a class="SmallImage" rel="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/3.jpg" href="#">
+        <img class="thumb" src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/3.jpg">
+      </a>
+    </div>
+  </div>
 
-		<div class="SmallPreviewImageContainer">
-			<a class="SmallImage" rel="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg" href="#">
-				<img class="thumb" src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg">
-			</a>
-			<a class="SmallImage" rel="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/2.jpg" href="#">
-				<img class="thumb" src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/2.jpg">
-			</a>
-			<a class="SmallImage" rel="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/3.jpg" href="#">
-				<img class="thumb" src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/3.jpg">
-			</a>
-		</div>
-	</div>
-
-	</div> <!-- container -->
+</div> <!-- container -->
 ```
 
 THE JAVASCRIPT
 ```js
-	<script>
-		$(document).ready(function(){
-
-		console.debug("Doc's ready");
-
-		// Assigns a click listener to all dom elements with a class of .SmallImage
-		$(".SmallImage").click(function() {
-			// Get the thumbnail's larger version. For the tutorial I use the same image.
-			// It looks for the image location in the thumbnails REL attribute
-			var image = $(this).attr("rel");
-
-			// Hide the large, full sized, image
-			$('.og-fullimg').hide();
-			// Edit the HTML of the large image to match the thumbnails larger version
-			$('.og-fullimg').html('<img src="' + image + '"/>');
-			// Lets fade that new large image back in
-			$('.og-fullimg').fadeIn('slow');
-			// return false to make sure the browser doesn't do anything 'funky' :)
-			return false;
-			// Done!
-		});
-
-	});
+<script>
+  $(document).ready(function(){
+    // Assigns a click listener to all dom elements with a class of .SmallImage
+    $(".SmallImage").click(function() {
+      // Get the thumbnail's larger version. For the tutorial I use the same image.
+      // It looks for the image location in the thumbnails REL attribute
+      var image = $(this).attr("rel");
+  
+      // Hide the large, full sized, image
+      $('.og-fullimg').hide();
+      // Edit the HTML of the large image to match the thumbnails larger version
+      $('.og-fullimg').html('<img src="' + image + '"/>');
+      // Lets fade that new large image back in
+      $('.og-fullimg').fadeIn('slow');
+      // return false to make sure the browser doesn't do anything 'funky' :)
+      return false;
+      // Done!
+    })
+  });
 </script>
 ```
 
 THE CSS
 ```css
-// setup the very basis for the document
+/* setup the very basis for the document */
 body {
-	text-align:center;
-	font-family:'Helvetica Neue';
+	font-family: 'Helvetica Neue';
+	text-align: center;
 	font-weight: lighter;
 	font-size: 16px;
 	background: #dc4600;
@@ -87,6 +86,7 @@ a {
 	color: #f0f0f0;
 	text-decoration: none;
 }
+
 .container {
 	clear: both;
 	display: block;
@@ -95,7 +95,8 @@ a {
 	min-height: 9000px;
 	position: relative;
 }
-// ANIMATION TRANSITION IF NEEDED
+
+/* ANIMATION TRANSITION IF NEEDED */
 .animate {
 	transition: all 0.35s ease-in-out;
 }
@@ -115,7 +116,8 @@ a {
 	margin-top: 10px;
 }
 
-.LargePreviewImageContainer, .LargePreviewImageContainer .og-fullimg {
+.LargePreviewImageContainer,
+.LargePreviewImageContainer .og-fullimg {
 	display: inline-block;
 	height: 330px;
 	text-align: center;

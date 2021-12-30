@@ -1,6 +1,9 @@
 ---
 title: "How I made the animated menu for Asian Football Awards"
 date: "2013-08-16"
+description: 'How I created the menu for Asian Football Awards website'
+tags: ['JavaScript', 'Responsive web development', 'Front-end', 'CSS', 'HTML', 'PHP']
+category: 'Web Development'
 ---
 
 This is going to be a post about how I made the animated menu for [Asian Football Awards](https://www.asianfootballawards.co.uk "Asian Football Awards").
@@ -40,11 +43,11 @@ At the very top I've created a wrapper called "mobile_menu" that contains the ME
 <?php wp_nav_menu(); ?>
 
 <div class="menu">
-<ul>
-<li> menu item 1 </li>
-<li> menu item 2 </li>
-<li> menu item 3 </li>
-</ul>
+  <ul>
+    <li> menu item 1 </li>
+    <li> menu item 2 </li>
+    <li> menu item 3 </li>
+  </ul>
 </div>
 ```
 
