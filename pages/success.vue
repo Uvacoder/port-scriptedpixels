@@ -10,6 +10,10 @@
         Thanks for getting in touch, I'll aim to get back to you as soon as I
         can.
       </p>
+
+      <p>
+        Back to the <nuxt-link to="/" class="underline">Home</nuxt-link> page.
+      </p>
     </div>
   </section>
 </template>
