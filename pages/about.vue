@@ -34,17 +34,14 @@
       or send me a message below:
     </p>
 
-    <em class="text-red-500">Form is currently disabled</em>
-
     <form
       name="contact"
-      aria-disabled="disabled"
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       class="mb-20 max-w-lg"
     >
-      <fieldset disabled>
+      <fieldset>
         <input type="hidden" name="form-name" value="contact" />
 
         <div>
@@ -52,7 +49,7 @@
           <input
             type="text"
             name="name"
-            class="focus:ring-indigo-500 focus:border-indigo-500 block w-full rounded-sm border-gray-300"
+            class="text-gray-700 focus:ring-indigo-500 focus:border-indigo-500 block w-full rounded-sm border-gray-300"
             placeholder="Agent Smith"
             aria-label="Your full name"
           />
@@ -64,7 +61,7 @@
             id="email"
             name="email"
             type="email"
-            class="focus:ring-indigo-500 focus:border-indigo-500 block w-full rounded-sm border-gray-300"
+            class="text-gray-700 focus:ring-indigo-500 focus:border-indigo-500 block w-full rounded-sm border-gray-300"
             aria-label="Your email address"
             placeholder="someone@domain.com"
           />
@@ -77,7 +74,7 @@
           <textarea
             id="message"
             rows="3"
-            class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-sm"
+            class="text-gray-700 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-sm"
             name="message"
             placeholder="Provide as much information as possible to help me, help you"
           />
