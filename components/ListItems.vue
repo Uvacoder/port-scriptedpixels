@@ -8,7 +8,7 @@
       title="postData.title"
       class="block"
     >
-      <h4 class="mt-0 mb-4 text-3xl md:text-6xl">
+      <h4 class="mt-0 mb-4 text-3xl md:text-4xl">
         {{ postData.title }}
       </h4>
 
@@ -37,7 +37,7 @@
       </section>
     </a>
     <nuxt-link v-else :to="`${route}/${postData.slug}`">
-      <h4 class="mt-0 mb-4 text-3xl md:text-6xl">
+      <h4 class="mt-0 mb-4 text-3xl md:text-4xl">
         {{ postData.title }}
       </h4>
 
