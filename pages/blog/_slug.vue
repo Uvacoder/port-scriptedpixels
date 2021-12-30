@@ -1,15 +1,26 @@
 <template>
   <section>
-    <h4 class="mt-32 mb-20 text-6xl mx-auto text-center">{{ blogPost.title }}</h4>
+    <h4 class="mt-32 mb-20 text-6xl mx-auto text-center">
+      {{ blogPost.title }}
+    </h4>
 
-    <section class="my-10 pt-2 px-3 rounded-sm text-sm border border-gray-700 max-w-3xl mx-auto">
-      <p class="mb-2"><span class="font-semibold">Date posted:</span> {{ blogPost.date }}</p>
+    <section
+      class="my-10 pt-2 px-3 rounded-sm border border-gray-700 max-w-3xl mx-auto"
+    >
+      <p class="mb-2 text-sm">
+        <span class="font-semibold">Date posted:</span> {{ blogPost.date }}
+      </p>
 
-      <p v-if="blogPost.category" class="mb-2"><span class="font-semibold">Category:</span> {{ blogPost.category }}</p>
+      <p v-if="blogPost.category" class="mb-2 text-sm">
+        <span class="font-semibold">Category:</span> {{ blogPost.category }}
+      </p>
 
-      <p v-if="blogPost.tags" class="mb-2">
+      <p v-if="blogPost.tags" class="mb-2 text-sm">
         <span class="font-semibold">Tags:</span>
-        <span v-for="(tag, i) in blogPost.tags" :key="tag + i" :class="i + 1 == tagsTotal ? '' : 'mr-2'"
+        <span
+          v-for="(tag, i) in blogPost.tags"
+          :key="tag + i"
+          :class="i + 1 == tagsTotal ? '' : 'mr-2'"
           >{{ tag }}{{ i + 1 == tagsTotal ? '' : ',' }}</span
         >
       </p>
@@ -17,7 +28,7 @@
 
     <nuxt-content :document="blogPost" class="max-w-3xl mx-auto" />
 
-    <prev-next :prev="prev" :next="next"/>
+    <prev-next :prev="prev" :next="next" />
   </section>
 </template>
 
@@ -35,7 +46,6 @@ export default {
         .fetch()
 
       return { blogPost, prev, next }
-
     } catch (err) {
       error({
         statusCode: 404,
