@@ -14,7 +14,6 @@ nav {
     a:nth-child(n+#{$i}).is-active,
     a:nth-child(n+#{$i}):hover.is-active {
       text-shadow: 0 0 15px nth($brandColoursList, $i);
-      text-shadow: 0 0 15px nth($brandColoursList, $i);
       color: nth($brandColoursList, $i);
       opacity: 1;
     }
