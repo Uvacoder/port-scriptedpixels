@@ -39,7 +39,7 @@
 
   // Code samples
   .nuxt-content-highlight .code-toolbar pre[class*="language-"] {
-    @apply shadow-lg rounded-sm border border-gray-800
+    @apply shadow-lg rounded-sm border border-gray-800 text-sm
   }
 
   .nuxt-content-highlight {
