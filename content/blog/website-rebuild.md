@@ -6,14 +6,15 @@ tags: ['Vue', 'Nuxt', 'Netlify', 'Markdown', 'Responsive', 'Front-end', 'CSS', '
 category: 'Web Development'
 ---
 
-This is version 10, I think, of my new site. I've been playing around with a new "design" for some time and kept
-putting it to a side and starting from scratch... several times.
+This must be version 10 of my new site. I've been playing around with a new website for some time and I kept
+putting it to a side, getting frustrated I didn't complete it, and then starting from scratch. I've finally settled down with a tech stack that I'm really happy with using and enjoy working with.
 
-I've had a holding page up for the last 2 months - I didn't want to pay hosting for a site that was not being
-utilised.
+So, I've decided to deploy what I've done so far and I'm forcing myself to make sure my brand and work is up to date.
+
+I'll be backdating some blog posts that I've had in draft format and also be publishing small tips and tricks here and there. The aim is to be pushing up a blog post _atleast_ once a week 📝.
 
 #### Tech stack
-I've moved away from WordPress, hooray!
+I've moved away from WordPress and I'm now building with:
 
 - Nuxt
 - NuxtContent
@@ -22,5 +23,10 @@ I've moved away from WordPress, hooray!
 - BitBucket
 - Sass
 - TailwindCss
+
+#### Process
+I write all my Work and Blog posts in [markdown](https://www.markdownguide.org). I can use [Vue components](https://vuejs.org/v2/guide/components.html) as well as showcase code snippets within markdown.
+
+To get a post published onto production; all I have to do is commit and push it up to my GitRepo. Netlify takes care of the rest from here. It'll run a command I've given `npm run generate` when it detects an update in my repo. This triggers an NPM task that generates and publishes all the static files to their CDN.
 
 All my content lives in a [GitRepo](https://bitbucket.org/KamBanwait/scriptedpixelsrebuild/src/master/), so it's version controlled and, most importantly, open for everyone and available for features like [Netlify hooks](https://docs.netlify.com/configure-builds/build-hooks/). This allows me to automatically deploy my site when a new change is pushed to a specific branch. A simple CI/CD setup.
