@@ -23,4 +23,4 @@ I've moved away from WordPress, hooray!
 - Sass
 - TailwindCss
 
-All my content lives in a [GitRepo](https://docs.netlify.com/configure-builds/build-hooks/), so it's version controlled and, most importantly, open for everyone and available for features like [Netlify hooks](https://docs.netlify.com/configure-builds/build-hooks/). This allows me to automatically deploy my site when a new change is pushed to a specific branch. A simple CI/CD setup.
+All my content lives in a [GitRepo](https://bitbucket.org/KamBanwait/scriptedpixelsrebuild/src/master/), so it's version controlled and, most importantly, open for everyone and available for features like [Netlify hooks](https://docs.netlify.com/configure-builds/build-hooks/). This allows me to automatically deploy my site when a new change is pushed to a specific branch. A simple CI/CD setup.
