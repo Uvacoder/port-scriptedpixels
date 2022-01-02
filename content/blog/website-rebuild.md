@@ -1,7 +1,7 @@
 ---
 title: 'Website rebuild'
 date: '2021-12-30'
-description: "I've rebuilt this site multiple times locally, but now it's in production. Here's what I've changed"
+description: "I've rebuilt this site multiple times locally, now it's in production. Here's what I've changed"
 tags: ['Vue', 'Nuxt', 'Netlify', 'Markdown', 'Responsive', 'Front-end', 'CSS', 'HTML', 'JS']
 category: 'Web Development'
 ---
