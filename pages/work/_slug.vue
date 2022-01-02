@@ -23,6 +23,8 @@
     </section>
 
     <nuxt-content class="max-w-3xl mx-auto" :document="workPost" />
+
+    <prev-next :prev="prev" :next="next" />
   </section>
 </template>
 
@@ -33,8 +35,13 @@ export default {
   async asyncData({ $content, params, error }) {
     try {
       const workPost = await $content('work', params.slug).fetch()
+      const [prev, next] = await $content('work')
+        .only('title', 'slug')
+        .sortBy('createdAt', 'asc')
+        .surround(params.slug)
+        .fetch()
 
-      return { workPost }
+      return { workPost, prev, next }
     } catch (err) {
       error({
         statusCode: 404,
