@@ -17,7 +17,11 @@
       <section
         class="border border-dashed border-b-0 border-l-0 border-r-0 pt-5 border-brandGray-200"
       >
-        <p class="mb-2 text-sm">
+        <p v-if="postData.category == 'Work'" class="mb-2 text-sm">
+          <span class="font-semibold">Date worked: </span> {{ formattedDate }}
+        </p>
+
+        <p v-else class="mb-2 text-sm">
           <span class="font-semibold">Date posted:</span> {{ formattedDate }}
         </p>
 
@@ -46,7 +50,11 @@
       <section
         class="border border-dashed border-b-0 border-l-0 border-r-0 pt-5 border-brandGray-200"
       >
-        <p class="mb-2 text-sm">
+        <p v-if="postData.category == 'Work'" class="mb-2 text-sm">
+          <span class="font-semibold">Date worked: </span> {{ formattedDate }}
+        </p>
+
+        <p v-else class="mb-2 text-sm">
           <span class="font-semibold">Date posted:</span> {{ formattedDate }}
         </p>
 
