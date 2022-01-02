@@ -1,7 +1,7 @@
 ---
 title: "Matches Fashion"
-description: '6 month contract where I created the new Inspire feature on the website. Initially tasked with general day-to-day maitenance/improvements, I was then asked to take ownership of the Inspire feature they had designed in-house and needed develpoment.'
-date: "2013-04-16"
+description: '2 month contract where I created the new Inspire feature on the website. Initially tasked with general day-to-day maitenance/improvements, I was then asked to take ownership of the Inspire feature they had designed in-house and needed develpoment.'
+date: "2012-02-01"
 tags: ['Archived', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'Contract', 'Custom CMS', 'Photoshop']
 category: 'Work'
 ---
