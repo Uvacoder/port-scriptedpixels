@@ -7,7 +7,3 @@ category: 'Work'
 ---
 
 Website Links: [Operational Solutions](https://operationalsolutionsltd.co.uk)
-
-Creating pure CSS, HTML and JS experiences across many of the sites ran by the Next e-commerce platform.
-
-I'm building pure HTML,CSS, and JS experiences, within Monetate, for customers before they're implemented within the main website(s).
