@@ -59,7 +59,7 @@ export default {
 
   &:after {
     background: url('../assets/images/arrow-down.svg') no-repeat center center;
-    transition: transform 250ms ease-in-out;
+    transition: transform 150ms ease-in-out;
     transform: translatey(-50%) rotate(0deg);
     background-size: contain;
     position: absolute;
@@ -76,7 +76,7 @@ export default {
 }
 
 .accordion-content {
-  transition: max-height 350ms ease-in-out;
+  transition: max-height 450ms ease-in-out;
   overflow-y: hidden;
   max-height: 0;
   color: #000;
