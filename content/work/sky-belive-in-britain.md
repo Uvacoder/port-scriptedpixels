@@ -1,6 +1,9 @@
 ---
-title: "sky sports: belive in britain"
-date: "2013-04-16"
+title: "Signal | Noise: Sky Sports: Belive in Britain"
+date: "2012-05-01"
+description: "3 month contract building out a dashboard using the Twitter API for Sky Sports. It displayed the latest tweets and stats about the sports events taking place during the Olympics."
+tags: ['Archived', 'JavaScript', 'jQuery', 'HTML', 'CSS', 'JSON', 'Photoshop', 'API', 'Freelance']
+category: 'Work'
 ---
 
 Website link: [Believe In Britain](https://www.believeinbritain.com "www.believeinbritain.com")
