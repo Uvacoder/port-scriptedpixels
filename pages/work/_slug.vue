@@ -8,7 +8,7 @@
       class="my-10 p-2 pb-0 rounded-sm border border-gray-700 max-w-3xl mx-auto"
     >
       <p class="mb-2 text-sm">
-        <span class="font-semibold">Date posted:</span> {{ workPost.date }}
+        <span class="font-semibold">Date worked:</span> {{ formattedDate }}
       </p>
 
       <p v-if="workPost.tags" class="mb-2 text-sm">
