@@ -52,7 +52,7 @@
 }
 
 $customFontFamily: 'CodeBoldRegular';
-$header-family: 'CodeLightRegular';
+$customFontFamily--light: 'CodeLightRegular';
 $header-weight: 700;
 
 nav {
@@ -66,10 +66,14 @@ p {
 h1, h2, h3, h4, h5 {
   -webkit-font-smoothing:antialiased;
   text-rendering: optimizeLegibility;
-  font-family: $header-family;
+  font-family: $customFontFamily;
 	-webkit-text-stroke: 0.40px;
 	letter-spacing: 3px;
 	margin: 1em 0 2em;
+
+  &.light {
+    font-family: $customFontFamily--light;
+  }
 }
 
 a {
