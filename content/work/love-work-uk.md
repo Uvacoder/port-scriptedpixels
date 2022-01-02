@@ -1,7 +1,7 @@
 ---
-title: "love work uk"
-description: 'Bespoke WordPress job-board website build for a small startup.'
-date: "2013-04-16"
+title: "Love Work UK"
+description: "A besoke WordPress job board website for a small recruitment startup, for start ups."
+date: "2012-11-01"
 tags: ['Archived', 'WordPress', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'Freelance']
 category: 'Work'
 ---
