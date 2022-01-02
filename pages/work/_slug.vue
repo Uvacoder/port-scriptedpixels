@@ -53,6 +53,19 @@ export default {
   computed: {
     tagsTotal() {
       return this.workPost.tags.length
+    },
+    formattedDate() {
+      const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }
+      const dateTimeFormat = new Intl.DateTimeFormat('en-gb', options)
+      const date = new Date(this.workPost.date)
+      const formatDate = dateTimeFormat.format(date)
+
+      return formatDate
     }
   },
   mounted() {
