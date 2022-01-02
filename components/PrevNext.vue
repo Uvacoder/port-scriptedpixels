@@ -4,14 +4,14 @@
   >
     <p v-if="prev" class="text-sm m-0">
       Prev:
-      <NuxtLink :to="{ name: 'blog-slug', params: { slug: prev.slug } }" class="underline">
+      <NuxtLink :to="{ params: { slug: prev.slug } }" class="underline">
         {{ prev.title }}
       </NuxtLink>
     </p>
     <span v-else>&nbsp;</span>
     <p v-if="next" class="text-sm m-0">
       Next:
-      <NuxtLink :to="{ name: 'blog-slug', params: { slug: next.slug } }" class="underline">
+      <NuxtLink :to="{ params: { slug: next.slug } }" class="underline">
         {{ next.title }}
       </NuxtLink>
     </p>
