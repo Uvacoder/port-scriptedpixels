@@ -2,6 +2,7 @@
 title: "Morph London: Piri Allergy"
 description: '1 month contract where I built out the new Piri Allergy website. Converting Photoshop designs to HTMl, CSS and JavaScript and ensuring that it was ready for content to be plugged in via their CMS with the use of placeholders.'
 date: "2012-04-01"
+dateWorked: "April 2012 - May 2012"
 tags: ['Archived', 'Website build', 'Contract', 'Custom build']
 category: 'Work'
 ---

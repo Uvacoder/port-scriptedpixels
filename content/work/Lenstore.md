@@ -2,6 +2,7 @@
 title: "Lenstore"
 description: "Lead front-end developer, Permanent. Leading a team of front-end develoeprs to help build and improve the existing website across UK, France, Germany and more...."
 date: "2019-03-01"
+dateWorked: "March 2019 - May 2020"
 tags: ['PHP', 'Vue', 'JavaScript', 'HTML', 'Sass', 'Responsive', 'jQuery']
 category: 'Work'
 ---

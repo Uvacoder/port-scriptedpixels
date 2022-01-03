@@ -2,9 +2,9 @@
 description: 'Design and the development of the website was carried out by myself. I worked closely with the Director when designing the site to ensure that the content he was going to write would be accessible on multiple platforms..'
 title: "Optimising Clinical Knowledge"
 date: "2013-03-01"
+dateWorked: "March 2013"
 tags: ['Archived', 'WordPress', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'Freelance']
 category: 'Work'
-archivedLink: 'http://www.optimisingclinicalknowledge.com'
 ---
 
 Design and the development of the website was carried out by myself. I worked closely with the Director when designing the site to ensure that the content he was going to write would be accessible on multiple platforms.

@@ -2,7 +2,8 @@
 title: "MADE.COM"
 description: 'Freelance Front-end Magento guiding the tech and design teams on a transition to adapt their website to be mobile friendly.'
 date: "2013-04-01"
-tags: ['Magento', 'PHP', 'HTML', 'Sass', 'Responsive', 'jQuery', 'Magento', 'Freelance']
+dateWorked: "July 2012 - April 2013"
+tags: ['Archived', 'Magento', 'PHP', 'HTML', 'Sass', 'Responsive', 'jQuery', 'Magento', 'Freelance']
 category: 'Work'
 ---
 

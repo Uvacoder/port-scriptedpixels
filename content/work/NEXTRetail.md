@@ -1,7 +1,8 @@
 ---
 title: "Next Retail: Childsplay Clothing"
-description: "4 month contract Senior front-end develoepr, creating A/B tests for Childsplay Clothing, Next and their international stores."
+description: "3 month contract Senior front-end develoepr, creating A/B tests for Childsplay Clothing, Next and their international stores."
 date: "2021-09-01"
+dateWorked: "September - December 2021"
 tags: ['Monetate', 'A/B testing', 'JavaScript', 'HTML', 'CSS', 'Responsive', 'jQuery', 'Freelance']
 category: 'Work'
 ---

@@ -1,7 +1,8 @@
 ---
 title: "Signal | Noise: Sky Sports: Belive in Britain"
-date: "2012-05-01"
 description: "3 month contract building out a dashboard using the Twitter API for Sky Sports. It displayed the latest tweets and stats about the sports events taking place during the Olympics."
+date: "2012-05-01"
+dateWorked: "May 2012 - July 2012"
 tags: ['Archived', 'JavaScript', 'jQuery', 'HTML', 'CSS', 'JSON', 'Photoshop', 'API', 'Freelance']
 category: 'Work'
 ---

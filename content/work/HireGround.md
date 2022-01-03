@@ -2,7 +2,8 @@
 title: "Hire Ground"
 description: "A besoke WordPress job board website for a small recruitment agency based in London."
 date: "2014-09-01"
-tags: ['WordPress', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'Freelance']
+dateWorked: "September 2014"
+tags: ['Archived', 'WordPress', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'Freelance']
 category: 'Work'
 ---
 

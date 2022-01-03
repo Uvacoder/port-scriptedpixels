@@ -2,6 +2,7 @@
 title: "Janes"
 description: "Senior Front-end developer, Permanent."
 date: "2020-05-01"
+dateWorked: "May 2020 - September 2021"
 tags: ['DotNet', 'Vue', 'JavaScript', 'HTML', 'Sass', 'Responsive', 'jQuery']
 category: 'Work'
 ---

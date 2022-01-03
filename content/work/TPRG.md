@@ -2,7 +2,8 @@
 title: "Theo Paphitis Retail Group"
 description: "2 1/2 year contract working on Ryman, Robert Dyas and London Graphic Centre. Building out new features and creating a new Magento Store for London Graphic Centre"
 date: "2016-09-01"
-tags: ['Magento 1', 'JavaScript', 'HTML', 'Sass', 'Responsive', 'jQuery', 'Freelance']
+dateWorked: "September 2016 - December 2018"
+tags: ['Archived', 'Magento 1', 'JavaScript', 'HTML', 'Sass', 'Responsive', 'jQuery', 'Freelance']
 category: 'Work'
 ---
 

@@ -2,7 +2,8 @@
 title: "Object Source"
 description: "4 month agency contract working on Magento 1 & 2. Supporting the Frontend team transition to Magento 2 as well as working on Magento 1 and implementing new features."
 date: "2016-05-01"
-tags: ['Magento 1', 'Magento 2', 'HTML', 'Sass', 'Responsive', 'jQuery', 'Freelance']
+dateWorked: "May 2016 - August 2016"
+tags: ['Archived', 'Magento 1', 'Magento 2', 'HTML', 'Sass', 'Responsive', 'jQuery', 'Freelance']
 category: 'Work'
 ---
 

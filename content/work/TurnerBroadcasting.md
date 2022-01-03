@@ -2,6 +2,7 @@
 title: "Turner Broadcasting"
 description: '1 month contract as a Creative Developer for Turner Broadcasting I have been tasked to develop a new single advertisement feature page, for Suzuki, that is going to be displayed within the CNN.com website.'
 date: "2012-04-01"
+dateWorked: "April 2012 - May 2012"
 tags: ['Archived', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'Contract', 'Custom CMS', 'Photoshop']
 category: 'Work'
 ---

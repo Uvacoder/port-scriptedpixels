@@ -2,7 +2,8 @@
 title: "All Beauty"
 description: "7 month contract developing their new Magento theme, working along side the designer and backend team."
 date: "2015-06-01"
-tags: ['Magento', 'PHP', 'HTML', 'Sass', 'Animation', 'Responsive', 'jQuery', 'Freelance']
+dateWorked: "June 2015 - December 2015"
+tags: ['Archived', 'Magento', 'PHP', 'HTML', 'Sass', 'Animation', 'Responsive', 'jQuery', 'Freelance']
 category: 'Work'
 ---
 

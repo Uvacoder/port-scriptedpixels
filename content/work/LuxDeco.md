@@ -2,7 +2,8 @@
 title: "LuxDeco"
 description: '6 month Front-end Magento developer contract. Helped finish up their re-design as well as improving & building features/functionality.'
 date: "2013-06-01"
-tags: ['Magento', 'HTML', 'Sass', 'Responsive', 'jQuery', 'Magento', 'Freelance']
+dateWorked: "July 2013 - December 2016"
+tags: ['Archived', 'Magento', 'HTML', 'Sass', 'Responsive', 'jQuery', 'Magento', 'Freelance']
 category: 'Work'
 ---
 

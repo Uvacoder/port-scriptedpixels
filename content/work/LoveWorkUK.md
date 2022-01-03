@@ -2,6 +2,7 @@
 title: "Love Work UK"
 description: "A besoke WordPress job board website for a small recruitment startup, for start ups."
 date: "2012-11-01"
+dateWorked: "November 2012 - February 2013"
 tags: ['Archived', 'WordPress', 'HTML', 'CSS', 'Sass', 'Responsive', 'jQuery', 'Freelance']
 category: 'Work'
 ---

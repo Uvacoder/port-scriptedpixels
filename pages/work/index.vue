@@ -24,6 +24,7 @@ export default {
         .only([
           'title',
           'date',
+          'dateWorked',
           'description',
           'slug',
           'tags',

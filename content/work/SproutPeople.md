@@ -2,7 +2,8 @@
 title: "Sprout People"
 description: "A single page site using GSAP animation for a small HR firm."
 date: "2015-05-01"
-tags: ['HTML', 'Sass', 'GSAP', 'Animation', 'Responsive', 'jQuery', 'Freelance']
+dateWorked: "May 2015"
+tags: ['Archived', 'HTML', 'Sass', 'GSAP', 'Animation', 'Responsive', 'jQuery', 'Freelance']
 category: 'Work'
 ---
 

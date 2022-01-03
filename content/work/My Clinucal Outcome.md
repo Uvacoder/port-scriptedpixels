@@ -2,7 +2,8 @@
 title: "My Clinical Outcomes"
 description: "5 month contract creating a triage web-app using React for patients."
 date: "2015-12-01"
-tags: ['React', 'DotNet' ,'HTML', 'Sass', 'Responsive', 'jQuery', 'Freelance']
+dateWorked: "December 2015 - April 2016"
+tags: ['Archived', 'React', 'DotNet' ,'HTML', 'Sass', 'Responsive', 'jQuery', 'Freelance']
 category: 'Work'
 ---
 
