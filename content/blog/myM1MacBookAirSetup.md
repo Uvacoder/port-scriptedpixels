@@ -13,6 +13,18 @@ Then Apple announced the M1 Silicone in the Air's chasis, along side a 13" MacBo
 
 TLDR; it's' faster and better in all the ways possible. The 2 USB-C Ports haven't been much of a pain as I thought they may have. I [use this](https://www.amazon.co.uk/gp/product/B08K7KS2K9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) to add additional ports, which hasn't been often!
 
+Safari browser [Speedometer](https://browserbench.org/Speedometer2.0/) test results:
+
+2015 MBP:
+
+<article-image src="blog/macsetup/MacBookPro2015.png" alt="trackpad settings" class="mb-10" ></article-image>
+
+
+2020 MacBook Air:
+
+<article-image src="blog/macsetup/MacBookAir2020.jpg" alt="trackpad settings" class="mb-10" ></article-image>
+
+
 ##### MacBook Air Spec
 - [Apple Silicone M1 Chip](https://www.apple.com/uk/newsroom/2020/11/apple-unleashes-m1/)
 - 8 Core CPU & GPU
@@ -46,7 +58,7 @@ TLDR; it's' faster and better in all the ways possible. The 2 USB-C Ports haven'
 - [Sequel Pro](https://www.sequelpro.com)
 
 #### Terminal
-- [Oh my zsh](http://ohmyz.sh/) `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+- [Oh my zsh](http://ohmyz.sh/)
 - [HomeBrew](https://brew.sh) - don’t use it all the time but it’s perfect for Iterm setup
 - [NodeJs](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com)
