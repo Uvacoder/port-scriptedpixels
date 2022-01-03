@@ -1,8 +1,8 @@
 <template>
   <section>
-    <h4 class="mt-32 mb-20 text-3xl md:text-6xl mx-auto text-center">
+    <h1 class="mt-32 mb-20 text-3xl md:text-6xl mx-auto text-center">
       {{ blogPost.title }}
-    </h4>
+    </h1>
 
     <section
       class="my-10 pt-2 px-3 rounded-sm border border-gray-700 max-w-3xl mx-auto"
