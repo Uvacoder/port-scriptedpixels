@@ -28,6 +28,7 @@ Safari browser [Speedometer](https://browserbench.org/Speedometer2.0/) test resu
 ##### MacBook Air Spec
 - [Apple Silicone M1 Chip](https://www.apple.com/uk/newsroom/2020/11/apple-unleashes-m1/)
 - 8 Core CPU & GPU
+- 16GB
 - Space Grey
 - Refurbished
 - Total: <strong>£1165.83</strong>
