@@ -54,6 +54,7 @@
   code {
     @apply p-1 px-2 tracking-tight bg-gray-900 shadow-lg rounded-sm border border-gray-800 text-sm;
     background-color: #2d2d2d;
+    word-break: break-all;
   }
 
   .nuxt-content-highlight {
