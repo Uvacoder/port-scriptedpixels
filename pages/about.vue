@@ -1,8 +1,16 @@
 <template>
-  <section class="mt-28 mb-16 max-w-3xl mx-auto w-full">
-    <h3 class="mt-0 mb-4 text-3xl">Hi there, I'm Kam Banwait</h3>
+  <section class="mt-28 mb-16 max-w-3xl mx-auto w-full flex flex-wrap">
+    <img
+      src="../assets/images/KamBanwait.png"
+      alt="Memoji of Kam Banwait waving"
+      class="w-32 h-auto"
+      width="100"
+      height="100"
+    />
 
-    <p>
+    <h3 class="m-0 text-3xl self-end">Hi there, I'm Kam Banwait</h3>
+
+    <p class="mt-5">
       I'm a creative Front-end developer with over 10 years of experience
       building websites and applications for many companies.
     </p>
