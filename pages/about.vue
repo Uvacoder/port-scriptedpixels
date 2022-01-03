@@ -3,7 +3,7 @@
     <img
       src="../assets/images/KamBanwait.png"
       alt="Memoji of Kam Banwait waving"
-      class="w-32 h-auto"
+      class="w-32 h-auto mb-5 md:mb-0"
       width="100"
       height="100"
     />
