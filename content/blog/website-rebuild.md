@@ -13,7 +13,7 @@ So, I've decided to deploy what I've done so far and I'm forcing myself to make 
 
 I'll be backdating some blog posts that I've had in draft for a whiel as well as publishing small tips-n-tricks. The aim is to be pushing up a blog post _atleast_ once a week 📝.
 
-#### Tech stack
+## Tech stack
 I've moved away from WordPress and now using the following:
 
 - Nuxt
@@ -24,7 +24,7 @@ I've moved away from WordPress and now using the following:
 - BitBucket
 - Netlify
 
-#### Process
+## Process
 I write all my posts in [markdown](https://www.markdownguide.org). I've chosen Nuxt so I can use [Vue components](https://vuejs.org/v2/guide/components.html) within my markdown files to show working examples inline with code snippets.
 
 To publish a post, I commit and push it up to my BitBucket repo & Netlify takes care of the rest. It'll run a command I've given `npm run generate` when it detects an update in my main repo branch. This triggers an NPM task that generates and publishes all the static files to their CDN.

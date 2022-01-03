@@ -6,7 +6,7 @@ tags: ['JavaScript', 'Responsive web development', 'Front-end']
 category: 'Web Development'
 ---
 
-I've been asked how I created my own version of [this](https://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview), so I decided to document it after it was put in to production here at [LuxDeco Discover page](https://luxdeco.com/discover) 
+I've been asked how I created my own version of [this](https://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview), so I decided to document it after it was put in to production here at [LuxDeco Discover page](https://luxdeco.com/discover)
 
 I decided to finally create my own version of the Grid for you to download.
 
@@ -17,7 +17,7 @@ To show you what the structure of the new mini-gallery I drew at the image below
 <article-image src="blog/IMG_0302-1024x768.png" alt="preview"></article-image>
 
 
-#### The grid modifications:
+## The grid modifications:
 
 I started off with editing a few bits of the Grid JavaScript first. I've included comments in the 'grid.js' file and I've pasted some key parts below. The changes start from line 341 in Grid.js:
 
@@ -95,17 +95,17 @@ PreviewGallery : function() {
 }
 ```
 
-#### HTML for each grid item
+## HTML for each grid item
 
 For each grid item I've had to include some extra data-attributes. These hold the thumbnail paths as well as our URL's.
 ```html
 <li>
-  <a href="https://scriptedpixels.co.uk/blog" 
-     data-thumb-1="images/1.jpg" 
-     data-thumb-2="images/2.jpg" 
-     data-thumb-3="images/3.jpg" 
-     data-largesrc="images/2.jpg" 
-     data-title="Veggies sunt bona vobis" 
+  <a href="https://scriptedpixels.co.uk/blog"
+     data-thumb-1="images/1.jpg"
+     data-thumb-2="images/2.jpg"
+     data-thumb-3="images/3.jpg"
+     data-largesrc="images/2.jpg"
+     data-title="Veggies sunt bona vobis"
      data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu."
   >
     <img src="images/2.jpg" alt="img02"/>

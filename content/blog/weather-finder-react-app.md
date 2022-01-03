@@ -14,7 +14,7 @@ I wanted to share the React app that I've created. I've found that going through
 
 I've given myself a long break from this piece and come back to it today. I've actually broken down some of the tutorial in a [previous post](https://scriptedpixels.co.uk/stateless-functional-components-in-react/) already.
 
-#### Down to the details
+## Down to the details
 
 What this app actually does is...
 
@@ -127,18 +127,18 @@ getWeather()
   };
 ```
 
-#### Issues
+## Issues
 
 I noticed a couple of issues with the App once I had finished the tutorial:
 
 1. If you misspelt a City/Country then the app would fail and a user is presented with no error message(s)
 2. If you were to submit empty fields then the App would show a generic error message
 
-#### The fix
+## The fix
 
 I've added the following code to handle the error when a misspelt City or Country is submitted:
 
-#### Original code:
+## Original code:
 
 ```js
 getWeather = async e => {
@@ -169,7 +169,7 @@ getWeather = async e => {
 };
 ```
 
-#### My fix:
+## My fix:
 
 ```js
 getWeather = async e => {

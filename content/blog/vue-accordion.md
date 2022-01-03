@@ -8,7 +8,7 @@ category: 'Web Development'
 
 I've created a super small Vue Accordion component that accepts 3 props: a header, the content, and if it should be open by default. This renders an accordion with the passed in heading, content, and whether it should be expanded (open) or not.
 
-#### demo
+## demo
 
 <accordion :is-open="true" header="Duis exercitation laborum veniam tempor voluptate amet elit qui." content="Aliqua deserunt ea magna cupidatat enim culpa. Officia anim labore occaecat minim officia. Incididunt quis ipsum eu sunt quis voluptate excepteur. Ut sit ullamco consectetur nisi mollit veniam ex incididunt. Laborum sit ut cupidatat eiusmod Lorem eiusmod Lorem deserunt laboris ex in. Labore eu voluptate elit incididunt occaecat esse dolor non duis mollit." ></accordion>
 
@@ -17,7 +17,7 @@ I've created a super small Vue Accordion component that accepts 3 props: a heade
 <accordion header="Duis exercitation laborum veniam tempor voluptate amet elit qui." content="Aliqua deserunt ea magna cupidatat enim culpa. Officia anim labore occaecat minim officia. Incididunt quis ipsum eu sunt quis voluptate excepteur. Ut sit ullamco consectetur nisi mollit veniam ex incididunt. Laborum sit ut cupidatat eiusmod Lorem eiusmod Lorem deserunt laboris ex in. Labore eu voluptate elit incididunt occaecat esse dolor non duis mollit." ></accordion>
 
 
-#### The template
+## The template
 ```javascript
 <template>
   <div class="accordion" :class="{ open: opened }" @click="toggleOpen">
@@ -31,7 +31,7 @@ I've created a super small Vue Accordion component that accepts 3 props: a heade
 </template>
 ```
 
-#### Vue JS
+## Vue JS
 ```javascript
 <script>
 export default {
@@ -64,7 +64,7 @@ export default {
 </script>
 ```
 
-#### Styling (sass)
+## Styling (sass)
 ```css
 <style lang="scss">
 .accordion {
