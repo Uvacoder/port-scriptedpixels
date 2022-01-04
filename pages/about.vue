@@ -101,7 +101,27 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      title: 'About Kam Banwait, Scripted Pixels Ltd',
+      description:
+        'About Kam Banwait, the developer behind Scripted Pixels Ltd.'
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style>

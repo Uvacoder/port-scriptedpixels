@@ -10,11 +10,5 @@
 </template>
 
 <script>
-export default {
-  head() {
-    return {
-      title: 'Scripted Pixels | Home Page'
-    }
-  }
-}
+export default {}
 </script>

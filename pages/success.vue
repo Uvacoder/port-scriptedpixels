@@ -19,7 +19,20 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'Scripted Pixels: Success!',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Your messasge has been sent, Thank you.'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style></style>
