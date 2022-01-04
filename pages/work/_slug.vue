@@ -70,6 +70,18 @@ export default {
   },
   mounted() {
     Prism.highlightAll()
+  },
+  head() {
+    return {
+      title: this.workPost.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.workPost.description
+        }
+      ]
+    }
   }
 }
 </script>
