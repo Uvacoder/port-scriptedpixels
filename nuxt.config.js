@@ -73,7 +73,8 @@ export default {
   ],
 
   sitemap: {
-    hostname: 'https://www.scriptedpixels.co.uk'
+    hostname: 'https://www.scriptedpixels.co.uk',
+    gzip: true
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
