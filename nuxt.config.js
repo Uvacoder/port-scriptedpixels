@@ -72,6 +72,10 @@ export default {
     'nuxt-purgecss'
   ],
 
+  sitemap: {
+    hostname: 'https://www.scriptedpixels.co.uk'
+  },
+
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
