@@ -36,8 +36,8 @@ export default {
     try {
       const workPost = await $content('work', params.slug).fetch()
       const [prev, next] = await $content('work')
-        .only('title', 'slug')
-        .sortBy('createdAt', 'asc')
+        .only('title', 'slug', 'date')
+        .sortBy('date', 'asc')
         .surround(params.slug)
         .fetch()
 
