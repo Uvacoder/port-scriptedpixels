@@ -10,7 +10,14 @@ Download the [Font here](https://github.com/tonsky/FiraCode) and install.
 
 I use both VSCode and WebStorm as my daily IDE's. For both of these I have Fira Code set as the font for the text editor. The advantages of using ligatures are shown below.
 
-<article-image src="blog/ligatures.png" alt="Ligatures examples" class="mb-10"></article-image>
+How map array looks with ligatures enabled:
+<article-image src="blog/ligatures-example.png" alt="Ligatures examples" class="mt-5 mb-10"></article-image>
+
+How map array looks with ligatures disabled:
+<article-image src="blog/ligatures-example-disabled.png" alt="Ligatures examples" class="mt-5 mb-10"></article-image>
+
+Example from GitRepo:
+<article-image src="blog/ligatures.png" alt="Ligatures examples" class="mt-5 mb-10"></article-image>
 
 
 You'll need to enable font-ligatures in the IDE settings:
