@@ -61,7 +61,8 @@ export default {
     // '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxt/image'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -69,8 +70,13 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxt/content',
     '@nuxtjs/axios',
-    'nuxt-purgecss'
+    'nuxt-purgecss',
+    '@nuxt/image'
   ],
+
+  image: {
+    // Options
+  },
 
   sitemap: {
     hostname: 'https://www.scriptedpixels.co.uk',

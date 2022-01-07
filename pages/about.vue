@@ -1,7 +1,7 @@
 <template>
   <section class="mt-28 mb-16 max-w-3xl mx-auto w-full flex flex-wrap">
-    <img
-      src="../assets/images/KamBanwait.png"
+    <nuxt-img
+      src="/KamBanwait.png"
       alt="Memoji of Kam Banwait waving"
       class="w-32 h-auto mb-5 md:mb-0"
       width="100"
