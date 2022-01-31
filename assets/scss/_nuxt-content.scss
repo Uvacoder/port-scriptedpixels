@@ -48,11 +48,11 @@
 
   // Code samples
   .nuxt-content-highlight .code-toolbar pre[class*="language-"] {
-    @apply shadow-lg rounded-sm border border-gray-800 text-sm
+    @apply shadow-lg rounded-sm border border-gray-900 text-sm
   }
 
   code {
-    @apply p-1 px-2 tracking-tight bg-gray-900 shadow-lg rounded-sm border border-gray-800 text-sm;
+    @apply p-1 px-2 tracking-tight bg-gray-900 rounded-sm text-sm;
     background-color: #2d2d2d;
     word-break: break-all;
   }
