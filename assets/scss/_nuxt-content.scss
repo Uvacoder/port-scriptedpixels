@@ -52,9 +52,13 @@
   }
 
   code {
-    @apply p-1 px-2 tracking-tight bg-gray-900 rounded-sm text-sm;
+    @apply shadow-lg py-1 px-2 tracking-tight rounded-sm text-sm;
     background-color: #2d2d2d;
     word-break: break-all;
+  }
+
+  .nuxt-content-highlight code {
+    @apply p-0 pt-1 shadow-none;
   }
 
   .nuxt-content-highlight {

@@ -58,7 +58,7 @@ export default {
   color: #000;
 
   &:after {
-    background: url('../assets/images/arrow-down.svg') no-repeat center center;
+    background: url('~/assets/images/arrow-down.svg') no-repeat center center;
     transition: transform 150ms ease-in-out;
     transform: translatey(-50%) rotate(0deg);
     background-size: contain;
