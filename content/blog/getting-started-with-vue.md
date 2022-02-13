@@ -161,11 +161,11 @@ You should now see the rendered message, "Hello you!" ! 🎉 🥳
 
 What we've done so far is pretty basic but it's very exciting when you start to think about what we can do next!
 
-The core feature of Vue is declarative rendering - we describe how the HTML will look based on the JavaScript state. When the state is changed, the HTML will update automatically. State changes triggers the updates and we consider this as **reactive**.
+The core feature of Vue is declarative rendering - we describe how the HTML will look based on the JavaScript state. When the state is changed, the HTML will update automatically. State changes trigger the updates and we consider this as **reactive**.
 
 We'll look at binding our state to a text input field and use that to update our state.
 
-Within the #vueApp HTML lets add the following:
+Within the `<div id="vueApp">...</div>` HTML lets add the following:
 
 ```html
 <div id="vueApp">
@@ -178,9 +178,9 @@ Within the #vueApp HTML lets add the following:
 </div>
 ```
 
-`v-model` is a special HTML attribute, in Vue it's called a directive, that we add to regular HTML. It tells Vue to bind something from the component's state, in this case `message`, to the HTML node. This is used by Vue and it won't effect our HTML. It's similar to how you can use `data-attribute-name="some value"` on any HTML node and you make use of that how you wish with JavaScript's queryselector.
+`v-model` is a special HTML attribute, in Vue it's called a **directive**, that we add to regular HTML. It tells Vue to bind something from the component's state, in this case `message`, to the HTML node. This is only used by Vue and it won't effect our HTML. It's similar to how you can use `data-attribute-name="some value"` on any HTML node when you want to use JavaScript's `Element.querySelectorAll`.
 
-In the browser you'll see the message is rendered in the input field and above it. As you start to type in the input field, you will see Vue automatically update the text above it. This is called 2-way binding.
+In the browser you'll see the message is rendered above and in the input field. When you start to edit the text in the input field, you will see Vue automatically update any instance of `{{ message }}`. This is called 2-way binding.
 
 <article-image src="blog/getting-started-with-vue/Hello-You.png" alt="Hello You! rendered in the browser with Dev Tools open" ></article-image>
 
