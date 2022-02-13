@@ -41,6 +41,10 @@
     @apply text-xl mt-12 mb-3;
   }
 
+  .introduction {
+    @apply text-xl my-5;
+  }
+
   a {
     text-decoration: underline;
     position: relative;

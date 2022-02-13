@@ -6,7 +6,9 @@ tags: ['Vue', 'Front-end', 'Javascript']
 category: 'Web Development'
 ---
 
+<p class="introduction">
 This post is for anyone that wants to play around with Vue without having to faff around with build tools. It's also a great way to start introducting Vue in to your exsting site/application - this has been the reason why I've loved using Vue and have implemented it in many companies I've worked in.
+</p>
 
 ## Prerequisites
 - You'll need to setup a new blank `index.html` file with the following:
