@@ -70,6 +70,77 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.blogPost.description
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.blogPost.title
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.blogPost.description
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'post'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `https://www.scriptedpixels.co.uk/blog/${this.$route.params.slug}`
+        },
+        {
+          hid: 'twitter:url',
+          name: 'twitter:url',
+          content: `https://www.scriptedpixels.co.uk/blog/${this.$route.params.slug}`
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.blogPost.title
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.blogPost.description
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: this.blogPost.image
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.blogPost.image
+        },
+        {
+          property: 'post:published_time',
+          content: this.blogPost.createdAt
+        },
+        {
+          property: 'post:modified_time',
+          content: this.blogPost.updatedAt
+        },
+        {
+          property: 'post:tag',
+          content: this.blogPost.tags ? this.blogPost.tags.toString() : ''
+        },
+        { name: 'twitter:label1', content: 'Written by' },
+        { name: 'twitter:data1', content: 'Kam Banwait' },
+        // { name: 'twitter:label2', content: 'Filed under' },
+        {
+          name: 'twitter:data2',
+          content: this.blogPost.tags ? this.blogPost.tags.toString() : ''
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://www.scriptedpixels.co.uk/blog/${this.$route.params.slug}`
         }
       ]
     }

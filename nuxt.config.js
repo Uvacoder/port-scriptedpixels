@@ -16,26 +16,71 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
+    htmlAttrs: {
+      lang: 'en-GB'
+    },
     title: 'Scripted Pixels',
     meta: [
       { charset: 'utf-8' },
+      { name: 'HandheldFriendly', content: 'True' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
+        content: 'Scripted Pixels: Design, Develop, Deliver.'
+      },
+      {
+        property: 'og:site_name',
         content: 'Scripted Pixels: Design, Develop, Deliver'
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://www.scriptedpixels.co.uk'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Scripted Pixels: Design, Develop, Deliver.'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'The home to all web development related work & posts.'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/scriptedPixelsLogo--initials.png'
+      },
+      { property: 'og:image:width', content: '124' },
+      { property: 'og:image:height', content: '56' },
+      { name: 'twitter:site', content: '@scriptedpixels' },
+      { name: 'twitter:card', content: '' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://www.scriptedpixels.co.uk'
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Scripted Pixels: Design, Develop, Deliver.'
       }
     ],
     link: [
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico'
+        href: '/favicon-310.ico'
+      },
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: 'https://www.scriptedpixels.co.uk'
       }
-    ],
-    bodyAttrs: {
-      class: ''
-    }
+    ]
   },
 
   content: {
