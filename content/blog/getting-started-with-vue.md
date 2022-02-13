@@ -87,7 +87,7 @@ Now we've got the basics setup, lets get something rendered in the page.
 
 We want to add some default data, called **state**, in the empty object we've passed in to the `createApp` method. This object is actaully a **component**.
 
-We add state to this new component by creating adding function called `data`, that doesn't take in any parameters, and return an object. This data function is called a **component option**, hence this type of setup is called the `options API` in Vue:
+We add state to this new component by adding a function called `data` that doesn't take in any parameters and returns an object. This data function is called a **component option**, hence this type of setup is called the `options API` in Vue:
 
 ```js
 Vue.createApp({
