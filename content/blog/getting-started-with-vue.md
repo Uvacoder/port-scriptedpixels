@@ -1,10 +1,12 @@
 ---
 title: 'Getting started with Vue'
 date: '2022-02-13'
-description: 'How to get started with using Vue, the basic setup without any build tools..'
+description: 'How to get started with using Vue via a CDN, the options API, and no build tools...'
 tags: ['Vue', 'Front-end', 'Javascript']
 category: 'Web Development'
 ---
+
+This post is for anyone that wants to play around with Vue without having to faff around with build tools. It's also a great way to start introducting Vue in to your exsting site/application - this has been the reason why I've loved using Vue and have implemented it in many companies I've worked in.
 
 ## Prerequisites
 - You'll need to setup a new blank `index.html` file with the following:
