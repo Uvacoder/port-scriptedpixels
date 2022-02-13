@@ -182,7 +182,9 @@ Within the `<div id="vueApp">...</div>` HTML lets add the following:
 
 In the browser you'll see the message is rendered above and in the input field. When you start to edit the text in the input field, you will see Vue automatically update any instance of `{{ message }}`. This is called 2-way binding.
 
-<article-image src="blog/getting-started-with-vue/Hello-You.png" alt="Hello You! rendered in the browser with Dev Tools open" ></article-image>
+Here's a working example:
+
+<hello-vue></hello-vue>
 
 Vue is handling the input change events in the background and updating the HTML with the newly entered text! This takes away the manual JS we would usually write to set-up event listeners and then update the HTML. I've managed to half the size of a vanialla JS file using Vue instead. It also made the code a lot easier to read.
 
