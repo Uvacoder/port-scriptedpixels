@@ -3,7 +3,7 @@ title: "Tempo Web Design"
 description: "My 1st full-time job as a web developer after graduating from University. A small agency based in Dorking that specialised in SEO and Web."
 date: "2009-10-01"
 dateWorked: "October 2009 - January 2011"
-tags: ['Archived' 'CSS', 'JavaScript', 'HTML', 'Responsive', 'jQuery']
+tags: ['Archived', 'CSS', 'JavaScript', 'HTML', 'Responsive', 'jQuery']
 category: 'Work'
 ---
 
