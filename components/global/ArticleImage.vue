@@ -1,5 +1,10 @@
 <template>
-  <img :src="imgSrc()" :alt="getAlt()" class="article-image" />
+  <div>
+    <img :src="imgSrc()" :alt="getAlt()" class="article-image mb-5 shadow-lg" />
+    <div>
+      <p class="my-5 text-center text-sm w-100"><slot name="caption"></slot></p>
+    </div>
+  </div>
 </template>
 
 <script>

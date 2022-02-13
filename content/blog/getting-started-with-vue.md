@@ -39,9 +39,7 @@ This post is for anyone that wants to play around with Vue without having to faf
 ## Initiating Vue
 We've requested the Vue framework from `https://www.unpkg.com/vue@3` and we now have a `Vue` object in our global scope. You can check this by opening the `index.html` file with LiveServer and opening the dev-tools & the console tab. Type `Vue` and press the enter key. You should see something like this being returned:
 
-<article-image src="blog/getting-started-with-vue/vue-global-object.png" alt="the Vue global object in the browser's dev-tools console tab" class="mb-5" ></article-image>
-
-_This is very much like how we load jQuery_
+<article-image src="blog/getting-started-with-vue/vue-global-object.png" alt="the Vue global object in the browser's dev-tools console tab" ><template v-slot:caption>_This is very much like how we load jQuery_</template></article-image>
 
 
 To start using Vue we have to tell it where to work its magic. Lets add some HTML to the document. The ID we use here will be used later.
@@ -183,6 +181,8 @@ Within the #vueApp HTML lets add the following:
 `v-model` is a special HTML attribute, in Vue it's called a directive, that we add to regular HTML. It tells Vue to bind something from the component's state, in this case `message`, to the HTML node. This is used by Vue and it won't effect our HTML. It's similar to how you can use `data-attribute-name="some value"` on any HTML node and you make use of that how you wish with JavaScript's queryselector.
 
 In the browser you'll see the message is rendered in the input field and above it. As you start to type in the input field, you will see Vue automatically update the text above it. This is called 2-way binding.
+
+<article-image src="blog/getting-started-with-vue/Hello-You.png" alt="Hello You! rendered in the browser with Dev Tools open" ></article-image>
 
 Vue is handling the input change events in the background and updating the HTML with the newly entered text! This takes away the manual JS we would usually write to set-up event listeners and then update the HTML. I've managed to half the size of a vanialla JS file using Vue instead. It also made the code a lot easier to read.
 
