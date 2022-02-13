@@ -35,18 +35,14 @@ This post is for anyone that wants to play around with Vue without having to faf
 
 
 ## Initiating Vue
-We've called in the Vue framework from `unpkg.com/vue@3` so we now have `Vue` in our global scope. You can check this by opening the index.html file with liveserver and popping open the dev tools console. Type in the following and press the enter key:
+We've requested the Vue framework from `https://www.unpkg.com/vue@3` and we now have a `Vue` object in our global scope. You can check this by opening the `index.html` file with LiveServer and opening the dev-tools & the console tab. Type `Vue` and press the enter key. You should see something like this being returned:
 
-``` js
-// note the capital V here
-Vue
-```
+<article-image src="blog/getting-started-with-vue/vue-global-object.png" alt="the Vue global object in the browser's dev-tools console tab" class="mb-5" ></article-image>
 
-You should see something like the below being returned:
+_This is very much like how we load jQuery_
 
-<article-image src="blog/getting-started-with-vue/vue-global-object.png" alt="the Vue global objectin the browser devtools" class="mb-5" ></article-image>
 
-To start using Vue we have to tell it where to work its magic. Lets add some HTML to the document:
+To start using Vue we have to tell it where to work its magic. Lets add some HTML to the document. The ID we use here will be used later.
 
 ```html
 <div id="vueApp">
@@ -76,23 +72,22 @@ Vue.createApp({})
 
 Now we've initiated a new instance of an application we want to tell Vue to `mount` this application within our HTML.
 
-We do this by using another method from Vue called `mount()` and we pass this method the HTML ID we created earlier: `#vueApp`. This mount method has to be chained to the end of `createApp({})`:
+We do this by using another method from Vue called `mount()` and we pass this method the ID we used earlier: `#vueApp`. This mount method has to be chained to `createApp({})`:
 
 ```js
 Vue.createApp({}).mount('#vueApp')
 ```
 
-Great! We've added Vue to the page and initiated our application. If you've installed Vue devtools then you should see that it's recognised we have Vue on the page by showing a coloured icon.
+**Great!** We've added Vue to the page and initiated our application. If you've installed the Vue DevTools browser extension then you should see that it's acknowledged Vue on the page by showing a coloured icon.
 
 
+### Show me something in the page
 
-### Get something showing on the page
+Now we've got the basics setup, lets get something rendered in the page.
 
-Now we've got the basics setup, lets get something on the page.
+We want to add some default data, called **state**, in the empty object we've passed in to the `createApp` method. This object is actaully a **component**.
 
-We want to add some default data, called state, in the empty object we've passed in to the `createApp`. This object is actaully a component!
-
-We add state to this new component by creating adding function called `data`, that doesn't take in any parameters, and returns an object. This data function is called a component option, hence this type of setup is called the `options api` for Vue:
+We add state to this new component by creating adding function called `data`, that doesn't take in any parameters, and return an object. This data function is called a **component option**, hence this type of setup is called the `options API` in Vue:
 
 ```js
 Vue.createApp({
@@ -104,7 +99,7 @@ Vue.createApp({
 }).mount('#vueApp')
 ```
 
-Now, this object will contain our application state (our data) that we want to display on the page within our new component. To do this we simply createa key : value pair and set the key to something we will later use in the HTML. The value can be an empty string, but for the purpose of this post we'll set some default state:
+Now, this object will contain our application state (our data) that we want to display on the page within our new component. To do this we simply create a `key : value` pair and set the key to something we will later reference in the HTML. The value can be an empty string, **Object**, **Integer**, **Array**, and even a **function**. For the purpose of this post I'll set it to some string:
 
 ```js
 Vue.createApp({
@@ -116,7 +111,7 @@ Vue.createApp({
 }).mount('#vueApp')
 ```
 
-This state, `message`, is now acessible within our HTML. We use Vue's template syntax, mustaches, `{{ }}` to access this returned data in our HTML by adding the following:
+This state, `message`, is now acessible within our HTML. We use Vue's template syntax, mustaches, `{{ }}` to access this returned data in our HTML by adding the following within the `<div>` we created earlier:
 
 ```html
 <div id="vueApp">
@@ -162,31 +157,33 @@ Your index.html document should now look like:
 
 You should now see the rendered `{{ message }}`, "Hello you!" ! 🎉 🥳
 
-### Get some of that 2-way input binding going
+### 2-way data binding
 
-What we've done so far is pretty basic, but very exciting when you think about what we can do next.
+What we've done so far is pretty basic but it's very exciting when you start to think about what we can do next!
 
-The core feature of Vue is declarative rendering - we describe how the HTML will look based on JavaScript state. Whenthe state is changed, the HTML will update automatically. State triggers the updates when it's changed and we consider this as **reactive**
+The core feature of Vue is declarative rendering - we describe how the HTML will look based on the JavaScript state. When the state is changed, the HTML will update automatically. State changes triggers the updates and we consider this as **reactive**.
 
-We'll look at binding our state to the HTML and updating it using an text input field. Within the #vueApp HTML lets add the following:
+We'll look at binding our state to a text input field and use that to update our state.
+
+Within the #vueApp HTML lets add the following:
 
 ```html
 <div id="vueApp">
   {{ message }}
 
+  <!-- Just to put the input below the message -->
   <br />
 
   <input type="text" v-model="message" />
 </div>
 ```
 
-`v-model` is a special HTML attribute, called a directive, that we add to our regular HTML to tell Vue to bind something from the components state, message is specified here, to the HTML node. This is something for Vue and it won't effect our HTML. Similar to how you can use `data-attribute-name="some value"`.
+`v-model` is a special HTML attribute, in Vue it's called a directive, that we add to regular HTML. It tells Vue to bind something from the component's state, in this case `message`, to the HTML node. This is used by Vue and it won't effect our HTML. It's similar to how you can use `data-attribute-name="some value"` on any HTML node and you make use of that how you wish with JavaScript's queryselector.
 
-In the browser you'll see the message is rendered in the input field and above it. As you star to edit the text in the input field, you will see Vue automatically update the text above it. This is called 2-way binding.
+In the browser you'll see the message is rendered in the input field and above it. As you start to type in the input field, you will see Vue automatically update the text above it. This is called 2-way binding.
 
-Vue is handling the input change events in the background and updating the HTML with the newly entered text, stupidly fast! This takes away the manual JS we would usually write to set up event listeners and innerHTML updates.
+Vue is handling the input change events in the background and updating the HTML with the newly entered text! This takes away the manual JS we would usually write to set-up event listeners and then update the HTML. I've managed to half the size of a vanialla JS file using Vue instead. It also made the code a lot easier to read.
 
-I see this as **'Vue is updating the HTML as the state is being updated'**.
+It's best to look at this as **"Vue is updating the HTML as the state is being updated"**.
 
-
-I hope this super simple setup and intro to Vue is useful and I'll be looking to follow this up with a basic 'counter' exmaple to show how we can listen to DOM events within Vue **but** looking at how they're more functional and upate the _state_.
+I hope this short intro and setup to Vue is useful. I'll following this up with a basic 'counter' app soon to show how we can listen to DOM events within Vue.
