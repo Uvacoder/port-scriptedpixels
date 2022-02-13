@@ -155,7 +155,7 @@ Your index.html document should now look like:
 </html>
 ```
 
-You should now see the rendered `{{ message }}`, "Hello you!" ! 🎉 🥳
+You should now see the rendered message, "Hello you!" ! 🎉 🥳
 
 ### 2-way data binding
 
