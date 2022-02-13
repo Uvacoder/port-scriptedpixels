@@ -2,7 +2,7 @@
 title: "Stateless, functional, components in React"
 date: '2018-11-03'
 description: 'A look in to functional React components'
-tags: ['React', 'Front-end', 'JS']
+tags: ['React', 'Front-end', 'JavaScript']
 category: 'Web Development'
 ---
 
@@ -12,11 +12,9 @@ I decided I wanted to update my **very, very,** outdated blog with what I'm curr
 
 The difference between the two, to me, is simple.
 
-A `Class` component is used when we're dealing with the `state` of a component and a `stateless` component, is well, 
-used when we don't need to deal with the `state` of the App. I know there's more to it than that but if you keep 
-that in mind when building a new component to your app then it'll help you write a cleaner, leaner, and simpler component.
+A `Class` component is used when we're dealing with the `state` of a component and a `stateless` component, is well, used when we don't need to deal with the `state` of the App. I know there's more to it than that but if you keep that in mind when building a new component to your app then it'll help you write a cleaner, leaner, and simpler component.
 
-Does the component have any sort of `state` involved? If not, it's a functional, dumb, component that's going to 
+Does the component have any sort of `state` involved? If not, it's a functional, dumb, component that's going to
 display the data it's passed via `props`.
 
 An example, taken from a "[Find what the weather is](https://www.youtube.com/watch?v=204C9yNeOYI&t=2450s)" tutorial I followed recently:
@@ -39,8 +37,7 @@ export default class Forms extends Component {
 }
 ```
 
-The example above has no state management and has a a `prop` of `getWeather` being passed down from `App.js`. This 
-prop is a function that's used to make an API call to [https://www.openweathermap.org.](https://www.openweathermap.org)
+The example above has no state management and has a a `prop` of `getWeather` being passed down from `App.js`. This prop is a function that's used to make an API call to [https://www.openweathermap.org.](https://www.openweathermap.org)
 
 The above can easily be changed to a functional React component. See below:
 
@@ -58,11 +55,10 @@ const Forms = props => (
 export default Forms;
 ```
 
-We don't need to import the `Component` from React here as we won't be making use of the methods it supplies, such 
-as `ComponentDidMount()` or `ComponentWillUpdate()`.
+We don't need to import the `Component` from React here as we won't be making use of the methods it supplies, such as `ComponentDidMount()` or `ComponentWillUpdate()`.
 
-Turning this in to a functional component, using ES6, also gives us some nice little features. We use an arrow 
-function and pass in `props` : `Const Forms = props =>()`. This allows us to drop the word "`this`" from the 
+Turning this in to a functional component, using ES6, also gives us some nice little features. We use an arrow
+function and pass in `props` : `Const Forms = props =>()`. This allows us to drop the word "`this`" from the
 component. Making larger components easier to navigate. See the `onSubmit`
 
 ```js

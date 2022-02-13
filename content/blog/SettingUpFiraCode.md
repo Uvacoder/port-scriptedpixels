@@ -2,7 +2,7 @@
 title: 'Fira Code as my IDE font'
 date: '2022-01-04'
 description: "FiraCode is a font that supports ligatures, using this in my IDE makes reading code a lot easier... and it looks cleaner and cooler!"
-tags: ['IDE', 'Front-end', 'ligatures', 'CSS', 'HTML', 'JS']
+tags: ['IDE', 'Front-end', 'ligatures', 'CSS', 'HTML', 'JavaScript']
 category: 'Web Development'
 ---
 

@@ -2,11 +2,11 @@
 title: "A two in one open and close button"
 date: "2013-09-30"
 description: 'Responsive image gallery with slide-down panel'
-tags: ['Responsive', 'Front-end', 'CSS', 'HTML', 'JS']
+tags: ['Responsive', 'Front-end', 'CSS', 'HTML', 'JavaScript']
 category: 'Web Development'
 ---
 
-A quick post showing a concept I had in mind about a HTML/CSS button that controls the opening and closing of 
+A quick post showing a concept I had in mind about a HTML/CSS button that controls the opening and closing of
 an accordion element. I wanted to make this with pure HTML/CSS to eliminate the use of images or sprites for buttons.
 This was purely just for fun.
 
@@ -149,8 +149,6 @@ JavaScript:
 
 I think it's quite clear to see what's happening here. When the #button is clicked a class called "open" is added to the #button and a DIV called with the ID of "content".
 
-When this class is added to the DOM elements the CSS style, above, is applied. This is where the magic happens. When 
-they get given the class 'open' they're also taking on the new heights and rotation values. These are accompanied by 
-the "transition" property that allows the animation to occur. The good thing with this is that if a browser doesn't support the animation then it'll just 'jump open' instead of smoothly animating open.
+When this class is added to the DOM elements the CSS style, above, is applied. This is where the magic happens. When they get given the class 'open' they're also taking on the new heights and rotation values. These are accompanied by the "transition" property that allows the animation to occur. The good thing with this is that if a browser doesn't support the animation then it'll just 'jump open' instead of smoothly animating open.
 
 Please, ask questions, highlight issues, complain or provide some constructive feedback below – everything is welcome!

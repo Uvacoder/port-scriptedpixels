@@ -2,7 +2,7 @@
 title: 'M1 MacBook Air for Web Development'
 date: '2021-04-22'
 description: 'Migrating from my top-end early 2015 13" MacBook Pro was a breeze. I decided to do a clean install and use iCloud backup/restore for my user profile & documents. This meant I would only install what I actually needed...'
-tags: ['MacBook Pro', 'M1', 'Apple', 'Front-end', 'CSS', 'HTML', 'JS', 'Git', 'IDE']
+tags: ['MacBook Pro', 'M1', 'Apple', 'Front-end', 'CSS', 'HTML', 'JavaScript', 'Git', 'IDE']
 category: 'Web Development'
 ---
 ## What the Air replaced

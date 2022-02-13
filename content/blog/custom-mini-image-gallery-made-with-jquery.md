@@ -2,7 +2,7 @@
 title: "Custom mini image gallery, made with jQuery"
 date: "2013-09-30"
 description: 'Responsive image gallery with slide-down panel'
-tags: ['Responsive', 'Front-end', 'CSS', 'HTML', 'JS']
+tags: ['Responsive', 'Front-end', 'CSS', 'HTML', 'JavaScript']
 category: 'Web Development'
 ---
 
@@ -29,7 +29,7 @@ THE HTML
         <img src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg" alt="" >
       </div>
     </div>
-  
+
     <div class="SmallPreviewImageContainer">
       <a class="SmallImage" rel="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg" href="#">
         <img class="thumb" src="https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/thumbs/1.jpg">
@@ -55,7 +55,7 @@ THE JAVASCRIPT
       // Get the thumbnail's larger version. For the tutorial I use the same image.
       // It looks for the image location in the thumbnails REL attribute
       var image = $(this).attr("rel");
-  
+
       // Hide the large, full sized, image
       $('.og-fullimg').hide();
       // Edit the HTML of the large image to match the thumbnails larger version
