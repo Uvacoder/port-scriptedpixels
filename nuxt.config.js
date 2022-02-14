@@ -88,7 +88,8 @@ export default {
       prism: {
         theme: 'prismjs/themes/prism-tomorrow.css'
       }
-    }
+    },
+    liveEdit: false
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
