@@ -6,7 +6,8 @@ tags: ['Animation', 'Front-end', 'CSS']
 category: 'Web Development'
 ---
 
-I've mainly used this effect for highlighting navigation links when a page is currently being used, or when another navigation link is being hovered over.
+<p class="introduction">I've mainly used this effect for highlighting navigation links when a page is currently being used, or when another navigation link is being hovered over.</p>
+
 
 You can see it in action here:
 

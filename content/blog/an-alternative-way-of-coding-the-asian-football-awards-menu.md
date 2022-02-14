@@ -6,7 +6,7 @@ tags: ['JavaScript', 'Responsive web development', 'Front-end', 'css', 'html']
 category: 'Web Development'
 ---
 
-As promised, although it's a little later than I said it would be, here's my take on how I should have coded the menus for the Asian Football Awards website, for mobile particularly, I [posted about last week](animated-menu).
+<p class="introduction">As promised, although it's a little later than I said it would be, here's my take on how I should have coded the menus for the Asian Football Awards website, for mobile particularly, I [posted about last week](animated-menu).</p>
 
 I've created a [JSFiddle](https://jsfiddle.net/scriptedpixels/LtCk7) demo so you can grab the HTML, JS, CSS and see it in action:
 

@@ -6,6 +6,8 @@ tags: ['Responsive', 'Front-end', 'CSS', 'HTML', 'JavaScript']
 category: 'Web Development'
 ---
 
+<p class="introduction">Responsive image gallery with slide-down panel</p>
+
 [20/11/2013 UPDATE: This is now responsive and available [here](https://scriptedpixels.co.uk/playground/thumbGallery.html "Now Responsive :)")]
 
 This is a short tutorial on how I created the mini gallery, seen after clicking the large image, on [LuxDeco's Discover page](https://www.luxdeco.com/discover "The mini gallery on LuxDeco "). I've been asked to write up how I created the gallery as part of another tutorial found [here](https://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview "Grid with expanding preview"). I recommend reading through the tutorial on how to get the whole grid setup before continuing with this article, just so you're up to speed and don't get lost with code examples I use.

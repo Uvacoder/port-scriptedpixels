@@ -5,10 +5,9 @@ description: 'Responsive image gallery with slide-down panel'
 tags: ['Responsive', 'Front-end', 'CSS', 'HTML', 'JavaScript']
 category: 'Web Development'
 ---
-
-A quick post showing a concept I had in mind about a HTML/CSS button that controls the opening and closing of
-an accordion element. I wanted to make this with pure HTML/CSS to eliminate the use of images or sprites for buttons.
-This was purely just for fun.
+<p class="introduction">
+A quick post showing a concept I had in mind about a HTML/CSS button that controls the opening and closing of an accordion element. I wanted to make this with pure HTML/CSS to eliminate the use of images or sprites for buttons. This was purely just for fun.
+</p>
 
 The Demo:
 

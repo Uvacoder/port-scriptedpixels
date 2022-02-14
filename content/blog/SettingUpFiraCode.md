@@ -6,6 +6,8 @@ tags: ['IDE', 'Front-end', 'ligatures', 'CSS', 'HTML', 'JavaScript']
 category: 'Web Development'
 ---
 
+<p class="introduction">FiraCode is a font that supports ligatures, using this in my IDE makes reading code a lot easier... and it looks cleaner and cooler!</p>
+
 <style>
   @import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
   code, code[class*="language-"], pre[class*="language-"] {

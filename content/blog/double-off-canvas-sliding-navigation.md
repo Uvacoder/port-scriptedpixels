@@ -6,9 +6,11 @@ tags: ['Animation', 'Front-end', 'CSS', 'HTML', 'PHP']
 category: 'Web Development'
 ---
 
-Whilst working at my current contract, at [LuxDeco](https://www.luxdeco.com 'LuxDeco'), I was tasked with creating a 
-mobile optimised Magento theme where the design featured two slide-out/in info panels. These were to act similar to 
-the slide out/in panels featured in the new Facebook mobile-app; the user is able to view a hidden panel that's 
+<p class="introduction">How I went about implementing a left and right slide in/out panel for LuxDeco</p>
+
+Whilst working at my current contract, at [LuxDeco](https://www.luxdeco.com 'LuxDeco'), I was tasked with creating a
+mobile optimised Magento theme where the design featured two slide-out/in info panels. These were to act similar to
+the slide out/in panels featured in the new Facebook mobile-app; the user is able to view a hidden panel that's
 hidden off the left and right-hand side of the main content page.
 
 Here's a sketch of what I was looking to create:

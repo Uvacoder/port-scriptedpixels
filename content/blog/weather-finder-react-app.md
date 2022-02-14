@@ -6,6 +6,8 @@ tags: ['API', 'JavaScript', 'React', 'Responsive web development', 'REST', 'Fron
 category: 'Web Development'
 ---
 
+<p class="introduction">A React application that uses the Open Weathermap API for local weather informaiton.</p>
+
 My version of the "Weather Finder App", from [this tutorial](https://www.youtube.com/watch?v=204C9yNeOYI&t=2450s), can be used [here](https://scriptedpixels.co.uk/playground/weather-finder/).
 
 I wanted to share the React app that I've created. I've found that going through tutorials is a good way to learn a framework **but** I feel that when you don't revisit, or review, what you've coded then you don't truly understand what you've built.

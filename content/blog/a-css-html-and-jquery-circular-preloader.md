@@ -6,6 +6,8 @@ tags: ['Responsive', 'Front-end', 'CSS', 'HTML', 'JS']
 category: 'Web Development'
 ---
 
+<p class="introduction">How I designed and created a circular loading indicator</p>
+
 After getting frustrated with some code not working how I wanted it to work, I decided to do a little sketching on my iPad mini on the way in to work.
 
 This is what I drew:

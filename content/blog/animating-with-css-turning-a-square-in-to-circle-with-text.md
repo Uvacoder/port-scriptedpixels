@@ -6,13 +6,15 @@ tags: ['CSS', 'Front-end', 'HTML']
 category: 'Web Development'
 ---
 
+<p class="introduction">Using CSS3 and HTML to create a small animation when something is hovered</p>
+
 Just having some fun with some CSS3 animation and HTML. No jQuery or JavaScript used.
 
 The example below shows how to use the `transform: rotate(xxxdeg);` in CSS when an object has been hovered, `:hover`. I've used `transition: all 0.35s ease-in-out;` to set the time and easing of the animation too. Clicking the "CSS" tab will reveal all, as well as the prefixes for browser support.
 
 Each square had to be held in a container as the "A link" text was also rotating when inside the main square `DIV`. This was a good "fault" as it gave me more control over the animations for the text. The text is set to be 100%, height and width, inside the containing DIV so that the whole square becomes a target. The opacity and absolute positioning of the text is animated with:
 
-_when not hovered_ 
+_when not hovered_
 ```css
 .ObjectContainer a {
   position: absolute;
@@ -26,7 +28,7 @@ _when not hovered_
 }
 ```
 
-_when hovered_ 
+_when hovered_
 ```css
 ObjectContainer:hover a {
   opacity: 1;

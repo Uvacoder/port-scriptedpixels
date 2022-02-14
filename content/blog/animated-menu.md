@@ -6,7 +6,7 @@ tags: ['JavaScript', 'Responsive web development', 'Front-end', 'CSS', 'HTML', '
 category: 'Web Development'
 ---
 
-This is going to be a post about how I made the animated menu for [Asian Football Awards](https://www.asianfootballawards.co.uk "Asian Football Awards").
+<p class="introduction">This is going to be a post about how I made the animated menu for [Asian Football Awards](https://www.asianfootballawards.co.uk "Asian Football Awards").</p>
 
 You can see the menu in action below, via [instagram](https://instagram.com/scriptedpixels):
 

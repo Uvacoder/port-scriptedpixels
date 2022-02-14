@@ -6,6 +6,8 @@ tags: ['Vue', 'Nuxt', 'Netlify', 'Markdown', 'Responsive', 'Front-end', 'CSS', '
 category: 'Web Development'
 ---
 
+<p class="introduction">I've rebuilt this site multiple times locally, now it's in production. Here's what I've changed</p>
+
 This must be version 10 of my new site. I've been playing around with a new website for some time and I kept
 putting it to a side, getting frustrated I didn't complete it, and then starting from scratch. I've finally settled down with a tech stack that I enjoy working with and using on a daily basis.
 
