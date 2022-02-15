@@ -49,8 +49,9 @@ Safari browser [Speedometer](https://browserbench.org/Speedometer2.0/) test resu
 - Microsoft Edge - hardly used but it's good to do some cross browser testing
 
 ## Applications
-- [GitTower](https://www.git-tower.com/p/refer-a-friend/R-V6U62EWPZV)
+- [GitTower](https://www.git-tower.com/mac)
   - git GUI application. I used to use Git all via the command-line, but after discovering this app I decided that I could work faster and better with the GUI. It's now on Windows too.
+  - **If you're intrested in purchasing a license then I'd recommend using my [Referral link](https://www.git-tower.com/p/refer-a-friend/R-V6U62EWPZV)** 🙏🏽
 - [MAMPPro](https://www.mamp.info/en/downloads/) - mostly used for WordPress
 - [RunJS](https://runjs.app) - small JS scratchpad
 - [LuLu](https://objective-see.com/products/lulu.html) - network monitor to block adware etc
