@@ -10,9 +10,21 @@ category: 'Web Development'
 ## What the Air replaced
 My 2015 MacBook Pro (MBP) was a pretty beefy machine. It was spec'd out and I upgraded the SSD to help make it run faster - it all helped in the long run and I easily could've kept using it for another year or 2.
 
-Then Apple announced the M1 Silicone in the Air's chasis, along side a 13" MacBook Pro. I've always loved the design of the Air. It's the ultimate portable laptop, but it lacked power due to the CPU and cooling system. So I'd never wanted to use it for design and development. Now they've made it a powerhouse with the new Apple Silicone. I had to get my hands on it to see how it stacked up against my 2015 MBP.
+Then Apple announced their M1 Silicone in the existing MacBookAir chasis, along side a 13" MacBook Pro. I've always loved the design and portability of the Air. It was the ultimate commuting laptop, but it lacked power due to the hot Intel CPU, the low resolition screen and a decent cooling system. So I'd never wanted to use it for development & design work.
 
-TLDR; it's' faster and better in all the ways possible. The 2 USB-C Ports haven't been much of a pain as I thought they may have. I [use this](https://www.amazon.co.uk/gp/product/B08K7KS2K9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) to add additional ports, which hasn't been often!
+Apple's new Silicone generated some crazy hype after they presented some insane stats. I had to get my hands on it to see how it stacked up against my 2015 MBP.
+
+TLDR; it's' faster and better in every way possible. I purchased [this](https://www.amazon.co.uk/gp/product/B08K7KS2K9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) to add additional ports as the Air removes a lot, but it's stil in the box waiting to be used!
+
+### MacBook Air Spec
+- [Apple Silicone M1 Chip](https://www.apple.com/uk/newsroom/2020/11/apple-unleashes-m1/)
+- 8 Core CPU & GPU
+- 16GB
+- Space Grey
+- Refurbished from Apple
+- Total: <strong>£1165.83</strong>
+
+### Browser benchmark
 
 Safari browser [Speedometer](https://browserbench.org/Speedometer2.0/) test results:
 
@@ -20,26 +32,19 @@ Safari browser [Speedometer](https://browserbench.org/Speedometer2.0/) test resu
 
 <article-image src="blog/macsetup/MacBookPro2015.png" alt="trackpad settings" class="mb-10" ></article-image>
 
-
 2020 MacBook Air:
 
 <article-image src="blog/macsetup/MacBookAir2020.jpg" alt="trackpad settings" class="mb-10" ></article-image>
 
+<br />
 
-### MacBook Air Spec
-- [Apple Silicone M1 Chip](https://www.apple.com/uk/newsroom/2020/11/apple-unleashes-m1/)
-- 8 Core CPU & GPU
-- 16GB
-- Space Grey
-- Refurbished
-- Total: <strong>£1165.83</strong>
+## My developer tools 🛠
 
-## IDE
+### IDE
 - [Visual Studio Code](https://code.visualstudio.com/?wt.mc_id=DX_841432)
 - [Webstorm](https://www.jetbrains.com/webstorm/)
-- Font-ligatures - enable and use a font like [Fira Code](https://github.com/tonsky/FiraCode)
 
-## Browsers
+### Browsers
 - Most important setting for any browser
   - <strong>Change default search engine to DuckDuckGo</strong> - I don't like Google services and I stay away from them as much as possible, except YouTube, so I use a throw-away account that's only used for their services
 - Safari - mostly used for personal day to day and also development
@@ -48,10 +53,10 @@ Safari browser [Speedometer](https://browserbench.org/Speedometer2.0/) test resu
 - Chrome - used for dev tools and client work
 - Microsoft Edge - hardly used but it's good to do some cross browser testing
 
-## Applications
+### Applications
 - [GitTower](https://www.git-tower.com/mac)
   - git GUI application. I used to use Git all via the command-line, but after discovering this app I decided that I could work faster and better with the GUI. It's now on Windows too.
-  - **If you're intrested in purchasing a license then I'd recommend using my [Referral link](https://www.git-tower.com/p/refer-a-friend/R-V6U62EWPZV)** 🙏🏽
+  - **If you're intrested in purchasing a license then I'd recommend using my [Referral link](https://www.git-tower.com/p/refer-a-friend/R-V6U62EWPZV) as you'll get 10% off your license**  🙏🏽
 - [MAMPPro](https://www.mamp.info/en/downloads/) - mostly used for WordPress
 - [RunJS](https://runjs.app) - small JS scratchpad
 - [LuLu](https://objective-see.com/products/lulu.html) - network monitor to block adware etc
@@ -60,7 +65,7 @@ Safari browser [Speedometer](https://browserbench.org/Speedometer2.0/) test resu
 - [Sketch](https://www.sketch.com/) / [Figma](https://www.figma.com/downloads/) / [Adobe XD](https://www.adobe.com/uk/products/xd.html)
 - [Sequel Pro](https://www.sequelpro.com)
 
-## Terminal
+### Terminal
 - [Oh my zsh](http://ohmyz.sh/)
 - [HomeBrew](https://brew.sh) - don’t use it all the time but it’s perfect for Iterm setup
 - [NodeJs](https://nodejs.org/en/)
