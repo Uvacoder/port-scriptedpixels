@@ -1,0 +1,9 @@
+# Redirects from what the browser requests to what we serve
+/wp-login.php       /
+/sellers.json       /
+/ads.txt            /
+/.env               /
+//web/**/*          /
+//blog/**/*         /
+//wp/**/*           /
+//wp1/**/*          /
