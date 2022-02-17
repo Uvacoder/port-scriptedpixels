@@ -73,7 +73,7 @@ export default {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon-310.ico'
+        href: '/favicon-32.png'
       },
       {
         hid: 'canonical',
