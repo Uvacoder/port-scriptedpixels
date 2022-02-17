@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>Scripted Pixels' Image gallery with Thumbnails</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<style type="text/css">
+		/* setup the very basis for the document */
+		body {
+			text-align:center;
+			font-family:'Helvetica Neue';
+			font-weight: lighter;
+			font-size: 16px;
+			background: #FA4E06;
+			padding: 50px 0 0 0;
+			margin: 0 auto;
+		}
+			a {
+				color: #f0f0f0;
+				text-decoration: none;
+			}
+		.container {
+			clear: both;
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+			min-width: 320px;
+			max-width: 600px;
+			position: relative;
+			text-align: center;
+		}
+		/* ANIMATION TRANSITION IF NEEDED */
+			.animate {
+				-webkit-transition: all 0.35s ease-in-out;
+				-moz-transition: all 0.35s ease-in-out;
+				-ms-transition: all 0.35s ease-in-out;
+				-o-transition: all 0.35s ease-in-out;
+				transition: all 0.35s ease-in-out;
+			}
+		.PreviewImageContainer {
+		    display: block;
+		    height: auto;
+		    margin: 0 auto;
+		    position: relative;
+		    min-width: 300px;
+		    max-width: 90%;
+		    border: solid thin #fb6c29;
+		    padding: 0 1rem;
+		}
+			/* -------------- SIZE 480 to 768 ----------------- */
+		    @media only screen and (min-width: 700px) {
+			    .PreviewImageContainer {
+			    	margin: 0 2rem;
+			    }
+		    }
+		    /* -------------- SIZE 480 to 768 ----------------- */
+		        @media only screen and (min-width: 700px) {
+		        }
+		        /* -------------- SIZE 480 to 768 ----------------- */
+		            @media only screen and (min-width: 700px) {
+		            }
+
+			.LargePreviewImageContainer {
+				margin-top: 10px;
+			}
+				.LargePreviewImageContainer, .LargePreviewImageContainer .og-fullimg {
+				    display: inline-block;
+				    height: auto;
+				    width: 100%;
+				    text-align: center;
+				}
+					.LargePreviewImageContainer .og-fullimg img {
+					    height: 100%;
+					    margin: 0 auto;
+					    max-height: 100%;
+					    width: 100%;
+					}
+			.SmallPreviewImageContainer {
+			    bottom: -1%;
+			    display: inline-block;
+			    height: auto;
+			    left: 0;
+			    position: relative;
+			    text-align: center;
+			    width: 100%;
+			    margin: 10px auto;
+			}
+				.SmallPreviewImageContainer .SmallImage {
+					display: inline-block;
+				    height: auto;
+				    margin: 0 1.5%;
+				    width: 29%;
+				}
+				.SmallPreviewImageContainer .thumb {
+				    width: 100%;
+				    height: auto;
+				}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<div class="PreviewImageContainer">
+			<div class="LargePreviewImageContainer">
+				<div class="og-fullimg">
+					<img src="images/1Big.jpg" alt="" >
+				</div>
+			</div>
+
+			<div class="SmallPreviewImageContainer">
+				<a class="SmallImage" rel="images/1Big.jpg" href="#">
+					<img class="thumb" src="images/1.jpg">
+				</a>
+				<a class="SmallImage" rel="images/2Big.jpg" href="#">
+					<img class="thumb" src="images/2.jpg">
+				</a>
+				<a class="SmallImage" rel="images/3Big.jpg" href="#">
+					<img class="thumb" src="images/3.jpg">
+				</a>
+			</div>
+		</div>
+
+	</div> <!-- container -->
+
+	<!-- jQuery libraries -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/detectmobilebrowser.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- TOUCH EVENTS -->
+		<script src="js/jquery.tappable.js"></script>
+
+	<!-- Let's do stuff when the Doc is ready, shall we -->
+	<script>
+		$(document).ready(function(){
+			// Assigns a click listener to all dom elements with a class of .SmallImage
+			$(".SmallImage").click(function() {
+				// Get the thumbnail's larger version. For the tutorial I use the same image.
+				// It looks for the image location in the thumbnails REL attribute
+				var image = $(this).attr("rel");
+
+				// Hide the large, full sized, image
+				$('.og-fullimg').hide();
+				// Edit the HTML of the large image to match the thumbnails larger version
+				$('.og-fullimg').html('<img src="' + image + '"/>');
+				// Lets fade that new large image back in
+				$('.og-fullimg').fadeIn('slow');
+				// return false to make sure the browser doesn't do anything 'funky' :)
+				return false;
+				// Done!
+			});
+		});
+	</script>
+</body>
+</html>

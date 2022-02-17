@@ -1,0 +1,108 @@
+/* 
+	24 COLUMN - RESPONSIVE GRID SYSTEM
+	DEVELOPED BY DENIS LEBLANC
+	URL - http://responsive.gs
+	VERSION - 2.0
+	LICENSED UNDER GPL & MIT
+
+	.row
+		Add this class to any element that spans the entire width of your container to clear any floating child elements. Also allows you to define spacing between rows.
+
+		.col
+			Add this class to child elements of a row to float left and add the default gutter width. This class must be used in conjuction with one of the span classes below.
+
+		.span_1, .span_2, .span_3, .span_4, .span_5, .span_6, .span_7, 
+		.span_8, .span_9, .span_10, .span_11, .span_12
+			Add one of these classes to a each col element to set it’s fluid width. On smaller screen sizes these elements will default to stack vertically.
+
+	.row, .col, .clr, .group
+		Add either of these classes to an element to clear it’s floating children. Uses the 'clearfix' method.
+
+	THINGS TO REMEMBER
+	.col:first-child
+		The last col element gets the right margin removed with the col:first-child pseudo selector in order to fit within it’s parent element along with it’s siblings. The browser support for this goes as far back as IE7 so if you’re one of those innocent bastards still having to support IE6 then you’ll need to add an additional last class to your markup and CSS to remove the right margins.
+
+	MODIFIED BY - Kam Banwat @ www.scriptepixels.co.uk
+*/
+
+/* SELF CLEARING FLOATS - CLEARFIX METHOD */
+.row:after, .col:after, .clr:after, .group:after { 
+	content: ""; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; }
+
+/* DEFAULT ROW STYLES */
+.row {
+	margin-bottom: 1.5em;
+}
+/* set according to preference*/
+
+/* DEFAULT COLUMN STYLES */
+.col { 
+	display: block;
+	float:left;
+	width: 100%;
+	min-height: 25px;
+	background: #F0F0F0;
+	/*
+		For content/image heavy sites
+		I'd recommend removing these transitions
+	*/
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+@media (min-width: 768px) {
+	.col { 
+		margin-left: 2%;
+	}
+}
+/* add even margins at bottom of each .row and .col */
+@media (max-width: 768px) {
+	.col, .row { 
+		margin-bottom: 1em;
+	}
+	.col:last-child { 
+		margin-bottom: 0em;
+	}
+}
+
+/* RESET MARGINS */
+.col:first-child {
+	margin-left: 0;
+}
+/* all browsers except IE6 and lower */
+
+/*
+	APPLY GRID WHEN ON SCREENS > TABLETS
+*/
+@media (min-width: 768px) {
+	.span_1 { width: 2.25%; }
+	.span_2 { width: 6.5%; }
+	.span_3 { width: 10.75%; }
+	.span_4 { width: 15.0%; }
+	.span_5 { width: 19.25%; }
+	.span_6 { width: 23.5%; }
+	.span_7 { width: 27.75%; }
+	.span_8 { width: 32.0%; }
+	.span_9 { width: 36.25%; }
+	.span_10 { width: 40.5%; }
+	.span_11 { width: 44.75%; }
+	.span_12 { width: 49.0%; }
+	.span_13 { width: 53.25%; }
+	.span_14 { width: 57.5%; }
+	.span_15 { width: 61.75%; }
+	.span_16 { width: 66.0%; }
+	.span_17 { width: 70.25%; }
+	.span_18 { width: 74.5%; }
+	.span_19 { width: 78.75%; }
+	.span_20 { width: 83.0%; }
+	.span_21 { width: 87.25%; }
+	.span_22 { width: 91.5%; }
+	.span_23 { width: 95.75%; }
+	.span_24 { width: 100%; }
+}
