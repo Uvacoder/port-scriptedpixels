@@ -1,7 +1,7 @@
 export default {
-  privateRuntimeConfig: {
-    apiSecret: process.env.KAM_TEST_PROD_VAR
-  },
+  // privateRuntimeConfig: {
+  //   apiSecret: process.env.KAM_TEST_PROD_VAR
+  // },
 
   server: {},
 
