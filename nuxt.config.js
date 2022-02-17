@@ -117,8 +117,13 @@ export default {
     '@nuxt/content',
     '@nuxtjs/axios',
     'nuxt-purgecss',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/robots'
   ],
+
+  robots: {
+    UserAgent: '*'
+  },
 
   image: {
     // Options
