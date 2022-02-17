@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Scripted Pixels' Image gallery with Thumbnails</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<style type="text/css">
+		/* setup the very basis for the document */
+		body {
+			text-align:center;
+			font-family:'Helvetica Neue';
+			font-weight: lighter;
+			font-size: 16px;
+			background: #FA4E06;
+			padding-top: 50px;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+			a {
+				color: #f0f0f0;
+				text-decoration: none;
+			}
+		.container {
+			clear: both;
+			display: block;
+			margin: 0 auto;
+			max-width: 1024px;
+			position: relative;
+		}
+		/* ANIMATION TRANSITION IF NEEDED */
+			.animate {
+				-webkit-transition: all 0.35s ease-in-out;
+				-moz-transition: all 0.35s ease-in-out;
+				-ms-transition: all 0.35s ease-in-out;
+				-o-transition: all 0.35s ease-in-out;
+				transition: all 0.35s ease-in-out;
+			}
+		/* GRID ELEMENTS */
+			.og-grid {
+				list-style: none;
+				padding: 20px 0;
+				margin: 0 auto;
+				text-align: center;
+				width: 100%;
+			}
+
+			.og-grid li {
+				display: inline-block;
+				margin: 10px 5px 0 5px;
+				vertical-align: top;
+				height: 250px;
+			}
+
+			.og-grid li > a,
+			.og-grid li > a img {
+				border: none;
+				outline: none;
+				display: block;
+				position: relative;
+			}
+
+			.og-grid li.og-expanded > a::after {
+				top: auto;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-bottom-color: #ddd;
+				border-width: 15px;
+				left: 50%;
+				margin: -20px 0 0 -15px;
+			}
+
+			.og-expander {
+				position: absolute;
+				background: #ddd;
+				top: auto;
+				left: 0;
+				width: 100%;
+				margin-top: 10px;
+				text-align: left;
+				height: 0;
+				overflow: hidden;
+			}
+
+			.og-expander-inner {
+				padding: 10px 20px;
+				height: 100%;
+			}
+
+			.og-close {
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				top: 20px;
+				right: 20px;
+				cursor: pointer;
+			}
+
+			.og-close::before,
+			.og-close::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				top: 50%;
+				height: 1px;
+				background: #888;
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+
+			.og-close::after {
+				-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+
+			.og-close:hover::before,
+			.og-close:hover::after {
+				background: #333;
+			}
+
+			.og-fullimg,
+			.og-details {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+			.og-fullimg {
+				width: 100%;
+			}
+			.og-details {
+				padding: 0;
+			}
+
+			.og-fullimg {
+				text-align: center;
+			}
+
+			.og-fullimg img {
+				display: inline-block;
+				max-height: 100%;
+				max-width: 100%;
+			}
+
+			.og-details h3 {
+				font-size: 30px;
+				font-weight: 300;
+				padding: 10px 0;
+			}
+				.og-details p {
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 22px;
+					color: #999;
+				}
+				.og-details a {
+					font-weight: 700;
+					font-size: 16px;
+					color: #333;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					padding: 10px 20px;
+					border: 3px solid #333;
+					display: inline-block;
+					margin: 30px 0 0;
+					outline: none;
+				}.og-details a::before {
+					content: '\2192';
+					display: inline-block;
+					margin-right: 10px;
+				}.og-details a:hover {
+					border-color: #999;
+					color: #999;
+				}
+
+			.og-loading {
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background: #ddd;
+				box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -25px 0 0 -25px;
+				-webkit-animation: loader 0.5s infinite ease-in-out both;
+				-moz-animation: loader 0.5s infinite ease-in-out both;
+				animation: loader 0.5s infinite ease-in-out both;
+			}
+
+			@-webkit-keyframes loader {
+				0% { background: #ddd; }
+				33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+				66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+			}
+
+			@-moz-keyframes loader {
+				0% { background: #ddd; }
+				33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+				66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+			}
+
+			@keyframes loader {
+				0% { background: #ddd; }
+				33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+				66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+			}
+
+		/* IMAGE GALLERY */
+		.previewImageContainer {
+			float: left;
+		    display: inline-block;
+		    height: auto;
+		    position: relative;
+		    text-align: center;
+		    width: 100%;
+		    margin: 0 auto;
+		    padding: 0 10px;
+		}
+			iframe {
+				width: 100%;
+				height: auto;
+				display: none;
+			}
+			.largepreviewImageContainer {
+				margin-top: 10px;
+			}
+				.largepreviewImageContainer, .largepreviewImageContainer .og-fullimg {
+				    display: inline-block;
+				    height: auto;
+				    text-align: center;
+				    width: 100%;
+				}
+					.largepreviewImageContainer .og-fullimg img {
+					    height: 100%;
+					    margin: 0 auto;
+					    max-height: 100%;
+					    max-width: 100%;
+					    width: auto;
+					}
+			.SmallPreviewImageContainer {
+			    bottom: 0;
+			    display: inline-block;
+			    height: auto;
+			    left: 0;
+			    margin: 0;
+			    position: relative;
+			    text-align: center;
+			    width: 100%;
+			}
+				.SmallPreviewImageContainer .SmallImage {
+					display: inline-block;
+				    height: auto;
+				    margin: 0 1% 0;
+				    width: 32%;
+				    max-width: 100px;
+				    min-height: 73px;
+				}
+					.SmallPreviewImageContainer .SmallImage:first-child{
+						margin-left: 0;
+					}
+					.SmallPreviewImageContainer .SmallImage:last-child{
+						margin-right: 0;
+					}
+				.SmallPreviewImageContainer .thumb {
+				    width: 100%;
+				    height: auto;
+				}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<ul id="og-grid" class="og-grid">
+			<li>
+				<!--
+					<a
+					href="http://www.scriptedpixels.co.uk/blog" - THE PAGE LINK
+					data-thumb-1="images/1.jpg" - THUMBNAIL ONE
+					data-thumb-2="images/2.jpg" - THUMBNAIL TWO
+					data-thumb-3="images/3.jpg" - THUMBNAIL THREE
+					data-largesrc="images/2.jpg" - THE LARGE IMAGE
+					data-title="Veggies sunt bona vobis" - PREVIEW TTILE
+					data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu."  - PREIEW DESCRIPTION TEXT
+					>
+				-->
+				<a href="http://www.scriptedpixels.co.uk/blog" data-video="//www.youtube.com/embed/DMOOLd_44Mo" data-title="Veggies sunt bona vobis" data-description="<a href='http:////www.google.com'>Komatsuna prairie</a> turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+					<img src="images/2.jpg" alt="img02"/>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.scriptedpixels.co.uk/blog" data-thumb-1="images/1.jpg" data-thumb-2="images/2.jpg" data-thumb-3="images/3.jpg" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+					<img src="images/3.jpg" alt="img03"/>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.scriptedpixels.co.uk/blog" data-thumb-1="images/1.jpg" data-thumb-2="images/2.jpg" data-thumb-3="images/3.jpg" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+					<img src="images/1.jpg" alt="img01"/>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.scriptedpixels.co.uk/blog" data-thumb-1="images/1.jpg" data-thumb-2="images/2.jpg" data-thumb-3="images/3.jpg" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+					<img src="images/2.jpg" alt="img02"/>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.scriptedpixels.co.uk/blog" data-thumb-1="images/1.jpg" data-thumb-2="images/2.jpg" data-thumb-3="images/3.jpg" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+					<img src="images/3.jpg" alt="img03"/>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.scriptedpixels.co.uk/blog" data-thumb-1="images/1.jpg" data-thumb-2="images/2.jpg" data-thumb-3="images/3.jpg" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+					<img src="images/1.jpg" alt="img01"/>
+				</a>
+			</li>
+		</ul>
+
+	</div> <!-- container -->
+
+	<!-- jQuery libraries -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/detectmobilebrowser.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- TOUCH EVENTS -->
+		<script src="js/jquery.tappable.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/grid.js"></script>
+
+	<!-- Let's do stuff when the Doc is ready, shall we -->
+	<script>
+		$(document).ready(function(){
+			Grid.init();
+		});
+	</script>
+</body>
+</html>

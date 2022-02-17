@@ -39,7 +39,7 @@
 				-o-transition: all 0.35s ease-in-out;
 				transition: all 0.35s ease-in-out;
 			}
-		.PreviewImageContainer {
+		.previewImageContainer {
 		    display: block;
 		    height: auto;
 		    margin: 0 auto;
@@ -51,7 +51,7 @@
 		}
 			/* -------------- SIZE 480 to 768 ----------------- */
 		    @media only screen and (min-width: 700px) {
-			    .PreviewImageContainer {
+			    .previewImageContainer {
 			    	margin: 0 2rem;
 			    }
 		    }
@@ -62,22 +62,22 @@
 		            @media only screen and (min-width: 700px) {
 		            }
 
-			.LargePreviewImageContainer {
+			.largepreviewImageContainer {
 				margin-top: 10px;
 			}
-				.LargePreviewImageContainer, .LargePreviewImageContainer .og-fullimg {
+				.largepreviewImageContainer, .largepreviewImageContainer .og-fullimg {
 				    display: inline-block;
 				    height: auto;
 				    width: 100%;
 				    text-align: center;
 				}
-					.LargePreviewImageContainer .og-fullimg img {
+					.largepreviewImageContainer .og-fullimg img {
 					    height: 100%;
 					    margin: 0 auto;
 					    max-height: 100%;
 					    width: 100%;
 					}
-			.SmallPreviewImageContainer {
+			.smallpreviewImageContainer {
 			    bottom: -1%;
 			    display: inline-block;
 			    height: auto;
@@ -87,13 +87,13 @@
 			    width: 100%;
 			    margin: 10px auto;
 			}
-				.SmallPreviewImageContainer .SmallImage {
+				.smallpreviewImageContainer .smallImage {
 					display: inline-block;
 				    height: auto;
 				    margin: 0 1.5%;
 				    width: 29%;
 				}
-				.SmallPreviewImageContainer .thumb {
+				.smallpreviewImageContainer .thumb {
 				    width: 100%;
 				    height: auto;
 				}
@@ -103,21 +103,21 @@
 <body>
 	<div class="container">
 
-		<div class="PreviewImageContainer">
-			<div class="LargePreviewImageContainer">
+		<div class="previewImageContainer">
+			<div class="largepreviewImageContainer">
 				<div class="og-fullimg">
 					<img src="images/1Big.jpg" alt="" >
 				</div>
 			</div>
 
-			<div class="SmallPreviewImageContainer">
-				<a class="SmallImage" rel="images/1Big.jpg" href="#">
+			<div class="smallpreviewImageContainer">
+				<a class="smallImage" rel="images/1Big.jpg" href="#">
 					<img class="thumb" src="images/1.jpg">
 				</a>
-				<a class="SmallImage" rel="images/2Big.jpg" href="#">
+				<a class="smallImage" rel="images/2Big.jpg" href="#">
 					<img class="thumb" src="images/2.jpg">
 				</a>
-				<a class="SmallImage" rel="images/3Big.jpg" href="#">
+				<a class="smallImage" rel="images/3Big.jpg" href="#">
 					<img class="thumb" src="images/3.jpg">
 				</a>
 			</div>
@@ -135,8 +135,8 @@
 	<!-- Let's do stuff when the Doc is ready, shall we -->
 	<script>
 		$(document).ready(function(){
-			// Assigns a click listener to all dom elements with a class of .SmallImage
-			$(".SmallImage").click(function() {
+			// Assigns a click listener to all dom elements with a class of .smallImage
+			$(".smallImage").click(function() {
 				// Get the thumbnail's larger version. For the tutorial I use the same image.
 				// It looks for the image location in the thumbnails REL attribute
 				var image = $(this).attr("rel");

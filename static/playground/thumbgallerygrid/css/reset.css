@@ -1,0 +1,71 @@
+/* 
+	Reset - Adapted from Myer reset
+	URL - http://meyerweb.com/eric/tools/css/reset/
+	License - PUBLIC DOMAIN
+*/
+/* Reset */
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, caption, canvas, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, form, footer, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav,object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, tt, table, tbody, textarea, tfoot, thead, time, tr, th, td, u, ul, var, video {
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+	white-space: normal;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+:focus {
+	outline: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+	SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
+	If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill 
+*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	-webkit-text-size-adjust: 100%;
+    background: #FA4E06;
+    min-width: 320px;
+}
+html {
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+	font-size: 30px;
+    font-size: 3.0rem;
+    line-height: 1.4;
+}
+h2 {
+    font-size: 2.0rem;
+    font-size: 20px;
+}
+p {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
