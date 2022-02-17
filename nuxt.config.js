@@ -118,11 +118,18 @@ export default {
     '@nuxtjs/axios',
     'nuxt-purgecss',
     '@nuxt/image',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    'nuxt-logrocket'
   ],
 
   robots: {
     UserAgent: '*'
+  },
+
+  logRocket: {
+    logRocketId: 'scriptedpixelsltd/main-website',
+    devModeAllowed: false,
+    config: {}
   },
 
   image: {
