@@ -2,7 +2,7 @@
 title: "A two in one open and close button"
 date: "2013-09-30"
 description: 'Responsive image gallery with slide-down panel'
-tags: ['Responsive', 'Front-end', 'CSS', 'HTML', 'JavaScript']
+tags: ['Responsive', 'CSS', 'HTML', 'JavaScript']
 category: 'Web Development'
 ---
 <p class="introduction">

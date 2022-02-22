@@ -2,7 +2,7 @@
 title: "Custom mini image gallery, made with jQuery"
 date: "2013-09-30"
 description: 'Responsive image gallery with slide-down panel'
-tags: ['Responsive', 'Front-end', 'CSS', 'HTML', 'JavaScript']
+tags: ['Responsive', 'CSS', 'HTML', 'JavaScript']
 category: 'Web Development'
 ---
 

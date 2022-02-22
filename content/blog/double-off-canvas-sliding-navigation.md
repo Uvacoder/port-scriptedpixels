@@ -2,7 +2,7 @@
 title: 'Double off-canvas, sliding, navigation'
 date: '2013-11-20'
 description: 'How I went about implementing a left and right slide in/out panel for LuxDeco'
-tags: ['Animation', 'Front-end', 'CSS', 'HTML', 'PHP']
+tags: ['Animation', 'CSS', 'HTML', 'PHP']
 category: 'Web Development'
 ---
 

@@ -2,7 +2,7 @@
 title: 'Getting started with Vue'
 date: '2022-02-13'
 description: 'How to get started with using Vue via a CDN, the options API, and no build tools...'
-tags: ['Vue', 'Front-end', 'JavaScript']
+tags: ['Vue', 'JavaScript']
 category: 'Web Development'
 ---
 

@@ -2,7 +2,7 @@
 title: "Simple animated underline"
 date: "2015-06-05"
 description: 'A simple underline effect for navigation links'
-tags: ['Animation', 'Front-end', 'CSS']
+tags: ['Animation', 'CSS']
 category: 'Web Development'
 ---
 

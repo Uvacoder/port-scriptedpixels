@@ -2,7 +2,7 @@
 title: 'Vue Accordion Component'
 date: '2020-10-02'
 description: 'A Vue accordion component that can be re-used to create....'
-tags: ['Vue', 'JavaScript', 'Front-end']
+tags: ['Vue', 'JavaScript']
 category: 'Web Development'
 ---
 <p class="introduction">I've created a super small Vue Accordion component that accepts 3 props: a header, the content, and if it should be open by default. This renders an accordion with the passed in heading, content, and whether it should be expanded (open) or not.</p>

@@ -2,7 +2,7 @@
 title: 'A CSS, HTML and jQuery circular preloader'
 date: '2013-09-05'
 description: 'How I designed and created a circular loading indicator'
-tags: ['Responsive', 'Front-end', 'CSS', 'HTML', 'JavaScript']
+tags: ['Responsive', 'CSS', 'HTML', 'JavaScript']
 category: 'Web Development'
 ---
 

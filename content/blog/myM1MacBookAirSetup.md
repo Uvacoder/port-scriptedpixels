@@ -1,7 +1,7 @@
 ---
 title: 'M1 MacBook Air for Web Development'
 date: '2021-04-22'
-tags: ['MacBook Pro', 'M1', 'Apple', 'Front-end', 'CSS', 'HTML', 'JavaScript', 'Git', 'IDE']
+tags: ['MacBook Pro', 'M1', 'Apple', 'CSS', 'HTML', 'JavaScript', 'Git', 'IDE']
 category: 'Web Development'
 ---
 

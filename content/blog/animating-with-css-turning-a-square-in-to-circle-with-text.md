@@ -2,7 +2,7 @@
 title: "Animating with CSS, turning a Square in to a Circle, with text."
 date: "2013-08-22"
 description: 'Using CSS3 and HTML to create a small animation when something is hovered'
-tags: ['CSS', 'Front-end', 'HTML']
+tags: ['CSS', 'HTML']
 category: 'Web Development'
 ---
 

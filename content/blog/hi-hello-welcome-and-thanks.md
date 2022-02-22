@@ -2,13 +2,13 @@
 title: "Hi, hello, welcome and thanks..."
 date: "2013-08-07"
 description: 'Welcome to my blog...'
-tags: ['Front-end']
+tags: []
 category: 'Web Development'
 ---
 
 This is going to be kept short and sweet as I just want test out a "live post" after trying X amount of test posts!
 
-I guess I'll provide some information about what this blog will be for, and I hope to refer back to this just 
+I guess I'll provide some information about what this blog will be for, and I hope to refer back to this just
 in-case I feel as though I'm going off track on future posts.
 
 I really want my posts to relate to...

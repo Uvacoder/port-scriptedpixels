@@ -2,7 +2,7 @@
 title: "How I made the animated menu for Asian Football Awards"
 date: "2013-08-16"
 description: 'How I created the menu for Asian Football Awards website'
-tags: ['JavaScript', 'Responsive', 'Front-end', 'CSS', 'HTML', 'PHP']
+tags: ['JavaScript', 'Responsive', 'CSS', 'HTML', 'PHP']
 category: 'Web Development'
 ---
 

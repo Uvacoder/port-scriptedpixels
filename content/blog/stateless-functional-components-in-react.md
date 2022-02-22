@@ -2,7 +2,7 @@
 title: "Stateless, functional, components in React"
 date: '2018-11-03'
 description: 'A look in to functional React components'
-tags: ['React', 'Front-end', 'JavaScript']
+tags: ['React', 'JavaScript']
 category: 'Web Development'
 ---
 

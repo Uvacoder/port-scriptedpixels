@@ -2,7 +2,7 @@
 title: 'Rendering lists in Vue.js'
 description: "Using v-for to render a list of items in HTML from the application state."
 date: '2022-02-16'
-tags: ['Vue', 'Front-end', 'JavaScript']
+tags: ['Vue', 'JavaScript']
 category: 'Web Development'
 ---
 
