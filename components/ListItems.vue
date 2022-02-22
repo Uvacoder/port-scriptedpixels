@@ -1,5 +1,5 @@
 <template>
-  <li class="mb-20">
+  <li class="list-complete-item mb-20">
     <nuxt-link :to="`${route}/${postData.slug}`">
       <h4 class="mt-0 mb-4 text-3xl md:text-4xl">
         {{ postData.title }}
@@ -83,3 +83,19 @@ export default {
   }
 }
 </script>
+
+<style>
+.list-complete-item {
+  transition: all 250ms ease-in-out;
+}
+
+.list-complete-enter,
+.list-complete-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.list-complete-leave-active {
+  position: absolute;
+}
+</style>

@@ -2,7 +2,7 @@
 title: 'React Weather Finder App'
 date: '2019-01-18'
 description: 'A React application that uses the Open Weathermap API for local weather informaiton.'
-tags: ['API', 'JavaScript', 'React', 'Responsive', 'REST', 'Front-end']
+tags: ['API', 'JavaScript', 'React', 'Responsive', 'REST', 'Front-end', 'React']
 category: 'Web Development'
 ---
 

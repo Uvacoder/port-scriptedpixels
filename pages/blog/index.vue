@@ -21,14 +21,18 @@
       <p class="text-sm">{{ filteredBlogPosts.length }} Blogpost(s)</p>
     </aside>
 
-    <ul class="md:mt-10 w-full md:w-4/5">
+    <transition-group
+      name="list-complete"
+      tag="ul"
+      class="md:mt-10 w-full md:w-4/5"
+    >
       <ListItem
         v-for="post in filteredBlogPosts"
         :key="post.slug"
         :post-data="post"
         :route="path"
       />
-    </ul>
+    </transition-group>
   </section>
 </template>
 
