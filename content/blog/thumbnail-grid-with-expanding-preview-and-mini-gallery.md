@@ -2,7 +2,7 @@
 title: "Thumbnail grid with expanding preview and mini gallery"
 date: "2013-11-19"
 description: 'My version of a thumbnail gallery grid'
-tags: ['JavaScript', 'Responsive web development', 'Front-end']
+tags: ['JavaScript', 'Responsive', 'Front-end']
 category: 'Web Development'
 ---
 

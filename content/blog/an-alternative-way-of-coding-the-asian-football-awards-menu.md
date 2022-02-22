@@ -2,7 +2,7 @@
 title: "An alternative way of coding the Asian Football Awards menu"
 date: "2013-08-21"
 description: 'An alternative I created the menu for Asian Football Awards website'
-tags: ['JavaScript', 'Responsive web development', 'Front-end', 'css', 'html']
+tags: ['JavaScript', 'Responsive', 'Front-end', 'CSS', 'HTML']
 category: 'Web Development'
 ---
 

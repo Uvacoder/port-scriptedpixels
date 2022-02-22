@@ -2,7 +2,7 @@
 title: "My custom 24 column responsive grid"
 date: "2013-09-04"
 description: 'A custom 24 responsive grid'
-tags: ['Responsive web development', 'Front-end', 'CSS', 'HTML']
+tags: ['Responsive', 'Front-end', 'CSS', 'HTML']
 category: 'Web Development'
 ---
 
