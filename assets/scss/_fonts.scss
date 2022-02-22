@@ -53,8 +53,8 @@
   font-style: normal;
 }
 
-$customFontFamily: 'CodeBoldRegular';
-$customFontFamily--light: 'CodeLightRegular';
+$customFontFamily: 'CodeBoldRegular', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$customFontFamily--light: 'CodeLightRegular',  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 $header-weight: 700;
 
 nav {
