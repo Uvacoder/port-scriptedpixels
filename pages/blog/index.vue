@@ -4,9 +4,7 @@
   >
     <aside class="mt-10 w-full md:w-1/5">
       <h5 class="title mt-0 mb-4 text-xl">Filter posts:</h5>
-      <ul
-        class="overflow-x-auto flex shadow-inner md:block md:overflow-x-visible"
-      >
+      <ul class="overflow-x-auto flex md:block md:overflow-x-visible">
         <li
           v-for="(tag, index) in tags"
           :key="tag + index"
