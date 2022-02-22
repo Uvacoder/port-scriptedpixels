@@ -53,9 +53,10 @@ export default {
       const path = route.path
 
       const allTags = blogPosts.map((post) => {
-        const postTags = post.tags !== undefined ? post.tags : ''
-
-        const filterdPostTags = postTags.filter((postTag) => {
+        const filterdPostTags = (post.tags !== undefined
+          ? post.tags
+          : ''
+        ).filter((postTag) => {
           return postTag !== undefined
         })
 
@@ -84,7 +85,6 @@ export default {
   computed: {
     filteredBlogPosts() {
       const filteredPosts = this.blogPosts.filter((blogpost) => {
-        // eslint-disable-next-line no-console
         if (!this.selectedTag || this.selectedTag.length === 0) return blogpost
 
         if (blogpost.tags.includes(this.selectedTag)) {
@@ -96,9 +96,12 @@ export default {
     }
   },
   methods: {
-    //   listTags(tags) {}
     setTag(event) {
-      this.selectedTag = event.target.getAttribute('data-tag')
+      if (this.selectedTag.length > 0) {
+        this.selectedTag = ''
+      } else {
+        this.selectedTag = event.target.getAttribute('data-tag')
+      }
     }
   },
   layout: 'blog'
