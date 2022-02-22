@@ -97,7 +97,7 @@ export default {
   },
   methods: {
     setTag(event) {
-      if (this.selectedTag.length > 0) {
+      if (event.target.getAttribute('data-tag') == this.selectedTag) {
         this.selectedTag = ''
       } else {
         this.selectedTag = event.target.getAttribute('data-tag')
