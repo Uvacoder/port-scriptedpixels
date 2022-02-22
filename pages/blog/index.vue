@@ -4,20 +4,22 @@
   >
     <aside class="mt-10 w-full md:w-1/5">
       <h5 class="title mt-0 mb-4 text-xl">Filter posts:</h5>
-      <ul>
+      <ul
+        class="overflow-x-auto flex shadow-inner md:block md:overflow-x-visible"
+      >
         <li
           v-for="(tag, index) in tags"
           :key="tag + index"
-          class="inline mr-2 mb-2 md:block hover:cursor-pointer md:mb-1 md:mr-0"
+          class="flex-none pb-4 mr-4 md:block md:pb-1 md:mr-0 hover:cursor-pointer"
           :data-tag="tag"
-          :class="selectedTag == tag ? 'font-bold' : ''"
+          :class="selectedTag == tag ? 'font-medium' : ''"
           @click="setTag"
         >
           {{ tag }}
         </li>
       </ul>
 
-      <h5 class="title mt-10 mb-1 text-l">Stats</h5>
+      <h5 class="title mt-3 mb-1 text-l">Stats</h5>
       <p class="text-sm">{{ filteredBlogPosts.length }} Blogpost(s)</p>
     </aside>
 
