@@ -94,7 +94,7 @@ We add state to this new component by adding a function called `data` that doesn
 
 ```js
 Vue.createApp({
-  data() {
+  data () {
     return {
       // data returned in this returned object
     }
@@ -106,7 +106,7 @@ Now, this object will contain our application state (our data) that we want to d
 
 ```js
 Vue.createApp({
-  data() {
+  data () {
     return {
       message: 'Hello you!'
     }
@@ -146,7 +146,7 @@ Your index.html document should now look like:
 
   <script>
     Vue.createApp({
-      data() {
+      data () {
         return {
           message: 'Hello you!'
         }

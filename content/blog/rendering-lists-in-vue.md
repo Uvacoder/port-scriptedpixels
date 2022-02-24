@@ -1,5 +1,5 @@
 ---
-title: 'Rendering lists in Vue.js'
+title: 'Rendering lists in Vue'
 description: "Using v-for to render a list of items in HTML from the application state."
 date: '2022-02-16'
 tags: ['Vue', 'JavaScript']
@@ -21,7 +21,7 @@ Lets say we have the following data in our Vue app:
 
 ```js
 const vueApp = Vue.createApp({
-  data() {
+  data () {
     return {
       items: [
         {
@@ -85,24 +85,24 @@ Using the index isn't best practice and should be avoided, it'll keep code linte
 For larger objects in an array you can reduce the amount of repeated code you write by destructuring the object and pulling out the values you need:
 
 Data:
-```js
-{
-	"userId": 1,
-	"id": 1,
-	"title": "delectus aut autem",
-	"completed": false
-}
-```
+  ```js
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "completed": false
+  }
+  ```
 
-Vue:
-```html
-<ul>
-  <li v-for="{userId, id, title, completed} in items" :key="id">
-    <p>{{ userId }} : {{ title }}</p>
-    <p>{{ completed }}</p>
-  </li>
-</ul>
-```
+  Vue:
+  ```html
+  <ul>
+    <li v-for="{userId, id, title, completed} in items" :key="id">
+      <p>{{ userId }} : {{ title }}</p>
+      <p>{{ completed }}</p>
+    </li>
+  </ul>
+  ```
 
 ### Updating the list using the dev console
 

@@ -49,7 +49,7 @@ export default {
       required: false
     }
   },
-  data() {
+  data () {
     return {
       opened: this.isOpen || false
     }
