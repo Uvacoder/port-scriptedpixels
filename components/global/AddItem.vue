@@ -11,6 +11,7 @@
 
     <button
       class="py-2 px-4 border-r border-none bg-green-500"
+      :disabled="!newItem.length"
       @click="addNewItemToList"
     >
       Add item
@@ -64,3 +65,10 @@ export default {
   }
 }
 </script>
+
+<style>
+button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+</style>

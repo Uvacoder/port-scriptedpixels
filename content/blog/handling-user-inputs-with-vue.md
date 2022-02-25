@@ -95,7 +95,7 @@ const vueApp = Vue.createApp({
 
 Functions in the methods object can be called from within the HTML using directives or from within the Vue app code. To call the function from within the Vue app itself, you would need to use `this.addNewItemToList()`.
 
-We ca write regular JavaScript within these functions. We're simply going to check if there's any text in `newItem` and then push the value into the array of items with a random id. We'll then reset the value if `newItem` to an empty string so the user can write their next item without having to delete their last entry:
+We write regular JavaScript within these functions. We're simply going to check if there's any text in `newItem` and then push the value into the array of items with a random id. We'll then reset the value of `newItem` to an empty string, so the user can write their next item without having to delete their last entry:
 
 ```js
 ...
@@ -113,8 +113,7 @@ We ca write regular JavaScript within these functions. We're simply going to che
   }
 ...
 ```
-
-A demo of what we've created is below. I've added a directive to the input to call the `addNewItemToList` method when a user presses the enter key:
+I've also added a directive to the input to call the `addNewItemToList` method. This listens out for a keydown event with a modifier called `.enter` so it only fires when a user presses the enter key:
 
 ```html
 <input
@@ -126,6 +125,29 @@ A demo of what we've created is below. I've added a directive to the input to ca
   @keydown.enter="addNewItemToList"
 />
 ```
+
+We can also disable the `<button>` when `newItem` is empty. We use the `:disabled="!newItem.length"` below to check if there's no length to the `newItem` string. This then enables the disabled attribute on the button, and then removes the attribute when `newItem` has a length greater than 0:
+
+```js
+<button
+  class="py-2 px-4 border-r border-none bg-green-500"
+  :disabled="!newItem.length"
+  @click="addNewItemToList">
+  Add item
+</button>
+```
+
+We style the disabled button state with the following:
+
+```css
+button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+```
+
+## Demo
+A demo of what we've created is below:
 
 <add-item></add-item>
 
