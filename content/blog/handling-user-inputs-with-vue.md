@@ -126,9 +126,9 @@ I've also added a directive to the input to call the `addNewItemToList` method. 
 />
 ```
 
-We can also disable the `<button>` when `newItem` is empty. We use the `:disabled="!newItem.length"` below to check if there's no length to the `newItem` string. This then enables the disabled attribute on the button, and then removes the attribute when `newItem` has a length greater than 0:
+We can also use Vue to bind the state of `newItem` to a disabled properpty on the `<button>` We use the `:disabled="!newItem.length"` below to check if there's no length to the `newItem` string. This then enables the disabled attribute on the button, and then removes the attribute when `newItem` has a length greater than 0:
 
-```js
+```html
 <button
   class="py-2 px-4 border-r border-none bg-green-500"
   :disabled="!newItem.length"
