@@ -68,7 +68,7 @@ Next we need to add a button for the user to click so the item is added to the a
 </ul>
 ```
 
-The methd we call with the `v-on:click` directive needs to be added to our Vue code. We have to create a `methods: {}` object, under our `data()` function, in our Vue code:
+The method we call with the `v-on:click` directive needs to be added to our Vue code. We have to create a `methods: {}` object, under our `data()` function, in our Vue code:
 
 ```js
 const vueApp = Vue.createApp({
@@ -95,12 +95,14 @@ const vueApp = Vue.createApp({
 
 Functions in the methods object can be called from within the HTML using directives or from within the Vue app code. To call the function from within the Vue app itself, you would need to use `this.addNewItemToList()`.
 
-We write regular JavaScript within these functions. We're simply going to push the value of `newItem` from our state in to the array of items with a random id. We'll then reset the value if `newItem` to an empty string so the user can write their next item without having to delete their last entry:
+We ca write regular JavaScript within these functions. We're simply going to check if there's any text in `newItem` and then push the value into the array of items with a random id. We'll then reset the value if `newItem` to an empty string so the user can write their next item without having to delete their last entry:
 
 ```js
 ...
   methods: {
     addNewItemToList () {
+      if (!this.newItem.length) return
+
       this.items.push({
         id: Math.floor(Math.random() * (100 - 1) + 1),
         label: this.newItem
@@ -120,7 +122,7 @@ A demo of what we've created is below. I've added a directive to the input to ca
   type="text"
   aria-label="Type a new item to add to your list"
   class="text-black p-2"
-  placeholder="Enter then name of your next item"
+  placeholder="Next item..."
   @keydown.enter="addNewItemToList"
 />
 ```

@@ -52,6 +52,8 @@ export default {
 
   methods: {
     addNewItemToList() {
+      if (!this.newItem.length) return
+
       this.items.push({
         id: Math.floor(Math.random() * (100 - 1) + 1),
         label: this.newItem
