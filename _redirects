@@ -1,12 +1,21 @@
 # Redirects from what the browser requests to what we serve
-/wp-login.php       /
-/sellers.json       /
-/ads.txt            /
-/.env               /
-//web/**/*          /
-//blog/**/*         /
-//wp/**/*           /
-//wp1/**/*          /
+/wp-login.php                       /
+/wp-admin.php                       /
+/css/index.php                      /
+/editor.php                         /
+/3index.php                         /
+/2index.php                         /
+/1index.php                         /
+//wp1/wp-includes/wlwmanifest.xm    /
+//cms/wp-includes/wlwmanifest.xm    /
+/wp-includes/ALFA_DATA/alfacgiapi/  /
+/sellers.json                       /
+/ads.txt                            /
+/.env                               /
+//web/**/*                          /
+//blog/**/*                         /
+//wp/**/*                           /
+//wp1/**/*                          /
 /my-custom-24-column-responsive-grid-thanks-for-nothing-twitter-bootstrap       /playground/basicresponsivegrid/index.html
 
 /how-i-made-the-animated-menu-for-asian-football-awards       /blog/animated-menu

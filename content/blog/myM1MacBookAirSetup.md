@@ -103,7 +103,7 @@ I prefer to use the F-Keys for their default functionality when in applications.
 
 <article-image src="blog/macsetup/Keyboard-FKeys.png" alt="F keys" ></article-image>
 
-The other thing that I odd on MacOS was the keyboard Tab key wouldn't tab between OS Promt options. Changing the below enables this.
+The other thing that I find odd on MacOS is the keyboard 'Tab key' wouldn't tab between OS Promt options. Changing the below enables this:
 
 <article-image src="blog/macsetup/Keyboard-TabNavigation.png" alt="Tab key" ></article-image>
 
