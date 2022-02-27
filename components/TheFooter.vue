@@ -4,8 +4,9 @@
   >
     <p class="mb-3 md:mb-0 text-xs mx-1">
       <span class="block mb-2">&copy; Scripted Pixels Ltd 2021</span>
-      <a href="https://logrocket.com" target="_blank">LogRocket</a> is used to
-      monitor performance/errors on the site 🤓
+      <a href="https://logrocket.com" target="_blank">LogRocket</a> &
+      <a href="https://sentry.io" target="_blank">Sentry</a> is used to monitor
+      performance/errors on the site 🤓
     </p>
 
     <ul class="flex flex-wrap gap-5 text-xs items-center md:self-end mx-1">
