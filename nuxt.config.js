@@ -119,7 +119,8 @@ export default {
     'nuxt-purgecss',
     '@nuxt/image',
     '@nuxtjs/robots',
-    'nuxt-logrocket'
+    'nuxt-logrocket',
+    '@nuxtjs/sentry'
   ],
 
   robots: {
@@ -130,6 +131,15 @@ export default {
     logRocketId: 'scriptedpixelsltd/main-website',
     devModeAllowed: false,
     config: {}
+  },
+
+  sentry: {
+    dsn: process.env.SENTRY_DSN,
+    // https://sentry.nuxtjs.org/sentry/options
+    config: {
+      // Add native Sentry config here
+      // https://docs.sentry.io/platforms/javascript/guides/vue/configuration/options/
+    }
   },
 
   image: {
