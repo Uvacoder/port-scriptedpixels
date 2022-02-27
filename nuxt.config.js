@@ -119,8 +119,8 @@ export default {
     'nuxt-purgecss',
     '@nuxt/image',
     '@nuxtjs/robots',
-    'nuxt-logrocket',
-    '@nuxtjs/sentry'
+    '@nuxtjs/sentry',
+    'nuxt-logrocket'
   ],
 
   robots: {
