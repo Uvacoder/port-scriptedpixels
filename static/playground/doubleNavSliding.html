@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <!-- My adaptation of : Copyright (c) David Bushell | http://dbushell.com -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Scripted Pixels' Double sliding panel Naviation.</title>
+
+    <script src="js/modernizr.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/doubleNavsliding.css">
+
+</head>
+<body>
+<div id="Phone">
+    <div id="outer-wrap">
+        <div id="inner-wrap">
+
+            <!-- Page header -->
+            <header id="pageHeader" role="banner">
+                <div class="block">
+                    <h1 class="block-title">Header</h1>
+                    <a class="nav-btn" id="nav-open-btn" href="#nav" data-nav="js-nav">Menu </a>
+                    <a class="nav-btn btn2" id="nav-open-btn2" href="#nav2" data-nav="js-nav2">Menu</a>
+                </div>
+            </header>
+
+            <!-- Left hand naviation -->
+            <nav id="nav" role="navigation" class="navigation">
+                <div class="block">
+                    <h2 class="block-title">Main Navigation</h2>
+                    <ul>
+                        <li class="is-active">
+                            <a href="#">Chapter 1</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 2</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 3</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 4</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 5</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 6</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 7</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 8</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 9</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 10</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 11</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 12</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 13</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 14</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </nav>
+
+            <!-- Right hand naviation -->
+            <nav id="nav2" role="navigation" class="navigation">
+                <div class="block">
+                    <h2 class="block-title">Secondary Navigation</h2>
+                    <ul>
+                        <li class="is-active">
+                            <a href="#">Chapter 1</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 2</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 3</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 4</a>
+                        </li><!--
+                     --><li>
+                            <a href="#">Chapter 5</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main site content -->
+            <div id="main" role="main">
+                <article class="block prose">
+                    <h1>Some title...</h1>
+                    
+                    <p>Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+
+                </article>
+            </div>
+        </div>
+        <!-- Footer should go here somewhere -->
+        
+    <!-- inner-wrap -->
+    </div>
+<!-- outer-wrap -->
+</div> 
+<!-- phone -->
+
+<!-- Get some JS -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/fastclick.js"></script>
+
+<script>
+    $(function() {
+      FastClick.attach(document.body);
+    });
+</script>
+
+</body>
+</html>

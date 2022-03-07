@@ -10,7 +10,7 @@ I've been asked how I created my own version of [this](https://tympanus.net/codr
 
 I decided to finally create my own version of the Grid for you to download.
 
-I've got a working example [here](https://scriptedpixels.co.uk/playground/thumbGalleryGrid.html). You can also download the code from [this link](https://www.putlocker.com/file/5204FA1C7F182E7D).
+I've got a working example [here](https://scriptedpixels.co.uk/playground/thumbgallerygrid/thumbGalleryGrid.html). You can also download the code from [this link](https://www.putlocker.com/file/5204FA1C7F182E7D).
 
 To show you what the structure of the new mini-gallery I drew at the image below. It may not be as clear as it could be, but I think it's a good rough outline.
 
@@ -124,6 +124,6 @@ Once you've edited the grid elements as needed you'll need to fire it all up wit
 </script>
 ```
 
-You can see it all in action [here](https://scriptedpixels.co.uk/playground/thumbGalleryGrid.html "Scripted Pixels Thumbnail Grid with Mini-Gallery"). You can also download the code from [this link](https://s000.tinyupload.com/?file_id=88527630786784161460 "Scripted Pixels Thumbnail Grid") too!
+You can see it all in action [here](https://scriptedpixels.co.uk/playground/thumbgallerygrid/thumbGalleryGrid.html "Scripted Pixels Thumbnail Grid with Mini-Gallery"). You can also download the code from [this link](https://s000.tinyupload.com/?file_id=88527630786784161460 "Scripted Pixels Thumbnail Grid") too!
 
 Hope it's of some use to you all! Please, ask questions, highlight issues, complain or provide some constructive feedback below – everything is welcome!
