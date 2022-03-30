@@ -3,14 +3,14 @@
     class="flex flex-wrap md:flex-nowrap gap-10 max-w-7xl mx-auto px-3 md:px-6 pt-12"
   >
     <aside class="mt-10 w-full md:w-1/5">
-      <h5 class="title mt-0 mb-4 text-xl">Filter posts:</h5>
+      <h5 class="title mt-0 mb-4 text-xl">Filter by tag:</h5>
       <ul class="overflow-x-auto flex md:block md:overflow-x-visible">
         <li
           v-for="(tag, index) in tags"
           :key="tag + index"
           class="flex-none pb-4 mr-4 md:block md:pb-1 md:mr-0 hover:cursor-pointer"
           :data-tag="tag"
-          :class="selectedTag == tag ? 'font-medium' : ''"
+          :class="selectedTag == tag ? 'font-bold' : ''"
           @click="setTag"
         >
           {{ tag }}
@@ -76,12 +76,14 @@ export default {
       return false
     }
   },
+
   data() {
     return {
       tags: [],
       selectedTag: ''
     }
   },
+
   computed: {
     filteredBlogPosts() {
       const filteredPosts = this.blogPosts.filter((blogpost) => {
