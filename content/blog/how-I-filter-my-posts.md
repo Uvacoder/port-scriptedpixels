@@ -89,3 +89,4 @@ The template can now render each post within `filteredBlogPosts` using my `<List
 />
 ```
 
+Computed properties look very similar to methods, but there's a big advantage of using a computed property over a method. Computed properties are cached, depending on their reactive dependencies. They're only re-calculated when Vue has detected a change in the depedencies, where as methods will run whever a re-render happens.
