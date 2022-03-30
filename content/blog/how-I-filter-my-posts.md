@@ -80,7 +80,7 @@ computed: {
 
 The template can now render each post within `filteredBlogPosts` using my `<ListItem>` component:
 
-```htm
+```html
 <ListItem
   v-for="post in filteredBlogPosts"
   :key="post.slug"
