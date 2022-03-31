@@ -9,6 +9,12 @@ category: 'Work'
 
 Website Links: [Childsplay Clothing](http://childsplayclothing.co.uk/) [Next](http://next.co.uk)
 
-Creating pure CSS, HTML and JS experiences across many of the sites ran by the Next e-commerce platform.
+As a senior front-end developer I worked a short but fast-paced contract to help across multiple e- commerce stores within Next Retail.
 
-I'm building pure HTML,CSS, and JS experiences, within Monetate, for customers before they're implemented within the main website(s).
+My main focus was on ChildsPlay Clothing. I built A/B tests using Monetate (KIBO) to help Next understand what new features they were investigating provided the best user experience and return for the business.
+
+With customers spending large sums of money on kids clothing, the quality and experience had to meet the client’s expected high level of quality.
+
+I guided newer, mid/junior members of the team up-skill by mentoring, testing and code reviewing with helpful feedback where needed.
+
+I also looked after releases for the team as well as presented newer methods of creating faster experiences.
