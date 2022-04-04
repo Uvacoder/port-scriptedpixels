@@ -8,9 +8,9 @@
         <li
           v-for="(tag, index) in tags"
           :key="tag + index"
-          class="flex-none pb-4 mr-4 md:block md:pb-1 md:mr-0 hover:cursor-pointer"
+          class="flex-none pb-4 mr-4 md:block md:pb-1 md:mr-0 hover:cursor-pointer transition-all"
           :data-tag="tag"
-          :class="selectedTag == tag ? 'font-bold' : ''"
+          :class="selectedTag == tag ? 'selectedTag' : ''"
           @click="setTag"
         >
           {{ tag }}
@@ -63,7 +63,7 @@ export default {
         return filterdPostTags
       })
 
-      const tags = [...new Set(allTags.flat(1))]
+      const tags = ([...new Set(allTags.flat(1))]).sort()
 
       return {
         blogPosts,
@@ -109,3 +109,9 @@ export default {
   layout: 'blog'
 }
 </script>
+
+<style>
+.selectedTag {
+  @apply font-bold text-brandPink;
+}
+</style>
