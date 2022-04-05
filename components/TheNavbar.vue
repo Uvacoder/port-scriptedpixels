@@ -4,32 +4,40 @@
   >
     <div class="max-w-7xl mx-auto px-3 md:px-6">
       <div class="flex justify-center md:justify-start items-center py-3">
-        <!-- <nuxt-link to="/" class="ml-0 mr-auto">
+        <nuxt-link to="/" class="ml-0 mr-auto visible">
           <img
-            src="~/assets/images/scriptedpixelslogoInitial--white.svg"
+            src="../static/scriptedpixelslogoInitial--white.svg"
             width="150"
             height="85"
             aria-hidden=""
             alt="Scripted Pixes Logo"
-            class="w-7 md:block"
+            class="w-7 md:hidden"
           />
-        </nuxt-link> -->
+          <img
+            src="../static/scriptedpixels-logo--white.svg"
+            width="200"
+            height="20"
+            aria-hidden=""
+            alt="Scripted Pixes Logo"
+            class="w-50 hidden md:block"
+          />
+        </nuxt-link>
 
         <nav role="navigation" aria-label="main navigation" class="text-white">
           <template :class="[isActive ? 'is-active' : '']">
             <nuxt-link
-              class="tracking-widest mr-3 md:mr-3 text-lg"
+              class="tracking-widest mr-1 md:mr-3 text-lg"
               exact
               :to="{ name: 'index' }"
               >Home</nuxt-link
             >
             <nuxt-link
-              class="tracking-widest mr-3 md:mr-3 text-lg"
+              class="tracking-widest mr-1 md:mr-3 text-lg"
               :to="{ name: 'about' }"
               >About</nuxt-link
             >
             <nuxt-link
-              class="tracking-widest mr-3 md:mr-3 text-lg"
+              class="tracking-widest mr-1 md:mr-3 text-lg"
               :to="{ name: 'work' }"
               >Work</nuxt-link
             >
