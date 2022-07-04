@@ -2,7 +2,7 @@
 title: "Hi, hello, welcome and thanks..."
 date: "2013-08-07"
 description: 'Welcome to my blog...'
-tags: []
+tags: ['Introduction']
 category: 'Web Development'
 ---
 
@@ -19,8 +19,5 @@ I really want my posts to relate to...
 - Snippet's of code I find useful
 - Rants - about general things in tech, but related to the "web"
 
-... and more, I hope.
-
-I hope this evolves in to more as I'm aiming to post on a daily basis. Easier said than done but I've been advised that blogging not only helps on a personal level but on a professional, career, level too.
-
-To whoever decides to follow this via RSS, twitter or Facebook - I'll aim to get them integrated as much as possible!
+I hope this evolves in to more as I'm aiming to post on a daily basis. Easier said than done, but I've been advised 
+that blogging not only helps on a personal level but on a professional, career, level too.
