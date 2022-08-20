@@ -108,7 +108,8 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/sitemap',
-    '@nuxt/image'
+    '@nuxt/image',
+    'nuxt-purgecss'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -116,7 +117,6 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxt/content',
     '@nuxtjs/axios',
-    'nuxt-purgecss',
     '@nuxt/image',
     '@nuxtjs/robots',
     '@nuxtjs/sentry',
