@@ -14,9 +14,6 @@
   "peerDependencies": {
     "babel-core": "6.x || ^7.0.0-bridge.0"
   },
-  "resolutions": {
-    "autoprefixer": "10.4.5"
-  },
   "dependencies": {
     "@nuxt/content": "^1",
     "@nuxtjs/axios": "^5.13.6",
