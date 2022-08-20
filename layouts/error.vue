@@ -17,7 +17,7 @@
 export default {
   props: {
     error: {
-      type: String,
+      type: [String, Object],
       default: 'error'
     }
   }
