@@ -69,6 +69,13 @@ export default {
         content: 'Scripted Pixels: Design, Develop, Deliver.'
       }
     ],
+    metaInfo: {
+      noscript: [
+        {
+          innerHTML: '<img src="//in.getclicky.com/101368919ns.gif" alt="clicky tracking pixel"width="1" height="1" />'
+        }
+      ]
+    },
     link: [
       {
         rel: 'icon',
@@ -80,7 +87,12 @@ export default {
         rel: 'canonical',
         href: 'https://www.scriptedpixels.co.uk'
       }
-    ]
+    ],
+    script: [
+      {
+        src: '//static.getclicky.com/101368919.js',
+      }
+    ],
   },
 
   content: {
