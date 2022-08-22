@@ -26,11 +26,5 @@
         </a>
       </li>
     </ul>
-
-    <!-- <script async src="//static.getclicky.com/101368919.js"></script> -->
-    <!-- <noscript>
-      <img src="//in.getclicky.com/101368919ns.gif" alt="clicky tracking pixel"
-        width="1" height="1" />
-    </noscript> -->
   </footer>
 </template>
