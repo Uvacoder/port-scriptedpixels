@@ -72,7 +72,8 @@ export default {
     metaInfo: {
       noscript: [
         {
-          innerHTML: '<img src="//in.getclicky.com/101368919ns.gif" alt="clicky tracking pixel"width="1" height="1" />'
+          innerHTML:
+            '<img src="//in.getclicky.com/101368919ns.gif" alt="clicky tracking pixel"width="1" height="1" />'
         }
       ]
     },
@@ -90,9 +91,9 @@ export default {
     ],
     script: [
       {
-        src: '//static.getclicky.com/101368919.js',
+        src: '//static.getclicky.com/101368919.js'
       }
-    ],
+    ]
   },
 
   content: {
@@ -151,6 +152,15 @@ export default {
     config: {
       // Add native Sentry config here
       // https://docs.sentry.io/platforms/javascript/guides/vue/configuration/options/
+      tracesSampleRate: 0.2,
+      vueOptions: {
+        tracing: true,
+        tracingOptions: {
+          hooks: ['mount', 'update'],
+          timeout: 2000,
+          trackComponents: true
+        }
+      }
     }
   },
 
