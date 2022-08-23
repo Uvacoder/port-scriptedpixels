@@ -1,7 +1,7 @@
 ---
 title: 'DaisyUI, Tailwind, Vue and Vite'
 description: "How to setup DaisyUI, a component library based on tailwindcss, with Vue and Vite"
-date: '2022-09-01'
+date: '2022-08-21'
 tags: ['Vue', 'Vite', 'DaisyUI', 'tailwindcss', 'JavaScript']
 category: 'Web Development'
 ---
